@@ -95,41 +95,6 @@
             font-size: 3em;
         }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000000;
-    background: #000000;
-    color: #808080;
-  }
-  .header {
-    background-color: #000000;
-    color: #808080;
-  }
-  .nav {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  .footer {
-    background-color: #000000;
-    color: #808080;
-  }
-  .footer-nav {
-    background-color: #000000;
-    color: #808080;
-  }
-  .nav-group {
-    background-color: #000000;
-    color: #808080;
-  }
-  .footer-nav-group {
-    background-color: #000000;
-    color: #808080;
-  }
-  .footer-copyright {
-    background-color: #000000;
-    color: #808080;
-  }
-}
         /* コンテンツ */
 
         .content {
@@ -473,4 +438,40 @@
   background-color: #b3d9ff;
   box-shadow: 0 0 0;
   transform: translate(5px, 5px);
+}
+/*ダークモード用*/
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    background: #000000;
+    color: #808080;
+  }
+  .header {
+    background-color: #000000;
+    color: #808080;
+  }
+  .nav {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .footer {
+    background-color: #000000;
+    color: #808080;
+  }
+  .footer-nav {
+    background-color: #000000;
+    color: #808080;
+  }
+  .nav-group {
+    background-color: #000000;
+    color: #808080;
+  }
+  .footer-nav-group {
+    background-color: #000000;
+    color: #808080;
+  }
+  .footer-copyright {
+    background-color: #000000;
+    color: #808080;
+  }
 }

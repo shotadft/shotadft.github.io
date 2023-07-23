@@ -12,7 +12,7 @@
             background-color: var(--main-bg);
             transition: .5s;
         }
-        a {
+        .button_dl a {
           text-decoration:none
 	}
 

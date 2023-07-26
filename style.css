@@ -5,15 +5,32 @@
            }
 
       body {
-            background: #ffffff;
+            background: white;
             color: #444;
             font-size: 16px;
-            font-family: 'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, 'ＭＳ Ｐゴシック', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif, 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial;
             line-height: 1.42857;
             color: var(--main-text);
             background-color: var(--main-bg);
             transition: .5s;
         }
+
+	p {
+	    margin: 40px; 
+    	    padding: 0;
+    	    text-align: left;
+	}
+	h2 {
+	    margin: 40px; 
+    	    padding: 0;
+    	    text-align: left;
+	}
+	h3 {
+	    margin: 40px; 
+    	    padding: 0;
+    	    text-align: left;
+	}
+
         .button_dl a {
           text-decoration:none
 	}
@@ -433,36 +450,36 @@
 /*ダークモード用*/
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #000000;
-    background: #000000;
-    color: #808080;
+    background-color: black;
+    background: black;
+    color: write;
   }
   .header {
-    background-color: #000000;
-    color: #808080;
+    background-color: black;
+    color: write;
   }
   .nav {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: black;
+    color: write;
   }
   .footer {
-    background-color: #000000;
-    color: #808080;
+    background-color: black;
+    color: write;
   }
   .footer-nav {
-    background-color: #000000;
-    color: #808080;
+    background-color: black;
+    color: write;
   }
   .nav-group {
-    background-color: #000000;
-    color: #808080;
+    background-color: black;
+    color: write;
   }
   .footer-nav-group {
-    background-color: #000000;
-    color: #808080;
+    background-color: black;
+    color: write;
   }
   .footer-copyright {
-    background-color: #000000;
-    color: #808080;
+    background-color: black;
+    color: write;
   }
 }

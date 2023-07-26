@@ -411,7 +411,7 @@
   background: #e25407;
   opacity: 0.6;
   border-radius: 50%;
-  z-index: 101;
+  z-index: 1000;
   }
 
   /* Font Awesome */
@@ -430,7 +430,6 @@
     left: 0;
     margin: auto;
     text-align: center;
-    z-index: 101;
   }
 
 /* マウスオーバー時 */

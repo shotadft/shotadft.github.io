@@ -13,6 +13,7 @@ else
 {
 	language_money = '$';
 }
+console.log('通貨単位の割り出し - 完了');
 
 document.addEventListener("DOMContentLoaded", function() {
 function Price(Divided, Price_n){
@@ -24,5 +25,6 @@ function Price(Divided, Price_n){
     paragraph.innerText = language_money + Price_n;
     replyDivided.appendChild(paragraph);
 }
+
     Price('OpenBrowserPrice', 0);
 });

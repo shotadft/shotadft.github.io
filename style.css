@@ -494,3 +494,9 @@
     color: write;
   }
 }
+@media (min-width: 800px) {
+   div.column { width: 240px; float: left; }
+}
+@media (max-width: 799px) {
+   div.column { width: 100%; }
+}

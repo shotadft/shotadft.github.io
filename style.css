@@ -30,6 +30,16 @@
     	    padding: 0;
     	    text-align: left;
 	}
+	img {
+	    margin: 2.5px; 
+    	    padding: 0;
+    	    text-align: left;
+	}
+	.app_select_button {
+	    margin: 2.5px; 
+    	    padding: 0;
+    	    text-align: left;
+	}
 
         .button_dl a {
           text-decoration:none

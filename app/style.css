@@ -1,0 +1,39 @@
+h3.heading_title {
+	 color: black;
+     border-bottom: solid 3px darkgray;
+}
+
+.app_select_button {
+    background: white;
+    background-color: white;
+    width: 200px;
+    height: 260px;
+    border: 1.5px solid white; 
+    border-radius: 10px;
+	position: relative;
+}
+.app_select_button p {
+    margin: 0; 
+    padding: 0;
+    text-align: left;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+.app_select_button img {
+    margin: 0; 
+    padding: 0;
+	width: 200px;
+    height: 175px;
+	object-fit: cover;
+	border-radius: 10px;
+}   
+.app_select_button a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.app_price {
+    color: #fc341c;
+    position: absolute;
+    bottom: 0;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}

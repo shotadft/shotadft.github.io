@@ -411,7 +411,6 @@
   background: #e25407;
   opacity: 0.6;
   border-radius: 50%;
-  z-index: 1000;
   }
 
   /* Font Awesome */
@@ -440,7 +439,7 @@
 
 /* ダウンロードボタン */
 .button_dl a {
-    background: #eee;
+    background: #eeeeee;
     border-radius: 3px;
     position: relative;
     display: flex;

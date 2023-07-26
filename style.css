@@ -1,4 +1,6 @@
-      html {
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+     html {
            scroll-behavior: smooth;
            }
 
@@ -6,7 +8,7 @@
             background: #ffffff;
             color: #444;
             font-size: 16px;
-            font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, 'ＭＳ Ｐゴシック', sans-serif;
+            font-family: 'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, 'ＭＳ Ｐゴシック', sans-serif;
             line-height: 1.42857;
             color: var(--main-text);
             background-color: var(--main-bg);

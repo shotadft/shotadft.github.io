@@ -6,19 +6,17 @@ h3.heading_title {
 }
 
 div.app_index {
-background: whitesmoke;
-background-color: whitesmoke;
 display: inline-block;
 margin: 0; 
 padding: 0;
-｝
+}
 
-div.app_select_button {
+.app_select_button {
     background: white;
     background-color: white;
     width: 200px;
     height: 260px;
-    border: 2px solid white; 
+    border: 2px solid whitesmoke; 
     border-radius: 10px;
     position: relative;
 }
@@ -45,5 +43,5 @@ div.app_price {
     color: #fc341c;
     position: absolute;
     bottom: 0;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }

@@ -35,6 +35,8 @@
 <meta property="og:description" content="ただのホームページ。ツールとかソフトの置き場。">
     <meta property="og:image" content="https://www.shotadft.com/img/banner.webp" />
     <meta property="og:site_name" content="Shotadft・承太劇場のホームページ">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="slide.css">
 </head>
 <body>
 <script src="script/app_prc.js"></script>
@@ -57,7 +59,8 @@
 </noscript>
 <div class="main">Shotadftのホームページ<br /> ソフトがあるサイト</div>
 	<h3 class="heading_title">ソフトウェア・アプリ</h3>
-	<div class="app_index">
+	<ul class="app_index">
+	<li>
         <div class="app_select_button">
 		    <a href="/app/Openbrowser/" id="OpenBrowser">
                 <img src="https://shotadft.com/img/app/Openbrowser_icon.png" alt="アイコン">
@@ -66,7 +69,8 @@
             </a>
             <div class="app_price" id="OpenBrowserPrice"></div>
         </div>
-	</div>
+	</li>
+	</ul>
 		<h3 class="heading_title">ウェブアプリ</h3>
 	<div class="app_index">
 		<p>無いよ。</p>
@@ -79,5 +83,16 @@
         </div>
         <div class="footer-copyright">Copyright &copy; 2022-2023 Shota_dft.</div>
     </div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+//選択画像の設定
+$('.app_index').slick({
+	infinite: true,
+	slidesToShow: 8,
+	focusOnSelect: true,
+	asNavFor: '.gallery',
+});
+</script>
 </body>
 </html>

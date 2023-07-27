@@ -31,6 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     replyDivided.appendChild(paragraph);
 }
+	// 価格設定プログラム
+	Price('OpenBrowserPrice', 0);
 });
-
-export {Price};

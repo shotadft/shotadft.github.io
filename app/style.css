@@ -19,6 +19,7 @@ padding: 0;
     border: 2px solid whitesmoke; 
     border-radius: 10px;
     position: relative;
+    display:table-cell;
 }
 .app_select_button p {
     margin: 0; 

@@ -5,15 +5,22 @@ h3.heading_title {
      border-bottom: solid 3px darkgray;
 }
 
+div.app_index {
+background: whitesmoke;
+background-color: whitesmoke;
+display: inline-block;
+margin: 0; 
+padding: 0;
+｝
+
 div.app_select_button {
     background: white;
     background-color: white;
     width: 200px;
     height: 260px;
-    border: 1.5px solid whitesmoke; 
+    border: 2px solid white; 
     border-radius: 10px;
     position: relative;
-    display: inline-block;
 }
 .app_select_button p {
     margin: 0; 

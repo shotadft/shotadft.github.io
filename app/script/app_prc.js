@@ -15,7 +15,7 @@ else
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-export function Price(Divided, Price_n){
+export default function Price(Divided, Price_n){
     this.Price_n = Price_n;
     this.Divided = Divided;
     const replyDivided = document.getElementById(this.Divided);

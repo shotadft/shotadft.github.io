@@ -6,7 +6,7 @@ h3.heading_title {
 }
 
 div.app_index {
-display: inline-table;
+display: table;
 margin: 0; 
 padding: 0;
 }

@@ -15,7 +15,7 @@ else
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-function Price(Divided, Price_n){
+export default function Price(Divided, Price_n){
     this.Price_n = Price_n;
     this.Divided = Divided;
     const replyDivided = document.getElementById(this.Divided);
@@ -31,6 +31,4 @@ function Price(Divided, Price_n){
     }
     replyDivided.appendChild(paragraph);
 }
-// ↓価格設定プログラム↓
-    Price('OpenBrowserPrice', 0);
 });

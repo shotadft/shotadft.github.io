@@ -15,7 +15,7 @@ else
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-export default function Price(Divided, Price_n){
+    function Price(Divided, Price_n){
     this.Price_n = Price_n;
     this.Divided = Divided;
     const replyDivided = document.getElementById(this.Divided);
@@ -32,3 +32,5 @@ export default function Price(Divided, Price_n){
     replyDivided.appendChild(paragraph);
 }
 });
+
+export {Price};

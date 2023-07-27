@@ -6,7 +6,6 @@ h3.heading_title {
 }
 
 div.app_index {
-display: table;
 margin: 0; 
 padding: 0;
 }
@@ -19,7 +18,7 @@ padding: 0;
     border: 2px solid whitesmoke; 
     border-radius: 10px;
     position: relative;
-    display: table-cell;
+    display: table;
 }
 .app_select_button p {
     margin: 0; 

@@ -18,7 +18,6 @@
  <link rel="stylesheet" href="/style.css">
  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
  <script src="/script/main.js"></script>
- <script src="/app/script/app_prc.js"></script>
  <meta name="twitter:card" content="summary_large_image">
  <meta property="og:url" content="https://shotadft.com/app/Openbrowser">
  <meta property="og:title" content="Shotadftのホームページ - Openbrowser">
@@ -35,6 +34,11 @@
 </style>
 </head>
 <body>
+<script type="module" src="/app/script/app_prc.js"></script>
+<script type="module">
+import { Price } from 'https://www.shotadft.com/app/script/app_prc.js';
+Price('OpenBrowserPrice', 0);
+</script>
 <p><a href="/app/">ツール一覧に戻る</a></p>
 <noscript>
 <p>忠告:このページではJavaScriptを使用しています。</p>

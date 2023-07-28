@@ -37,12 +37,10 @@
     <meta property="og:site_name" content="Shotadft・承太劇場のホームページ">
 </head>
 <body>
-<script src="script/app_prc.js"></script>
-<script>
-      document.addEventListener("DOMContentLoaded", function()
-      {
-          window.globalFunction.Price('OpenBrowserPrice', 0);
-      });
+<script type="module" src="script/app_prc.js"></script>
+<script type="module">
+import { Price } from 'https://www.shotadft.com/app/script/app_prc.js';
+Price('OpenBrowserPrice', 0);
 </script>
     <div class="nav">
         <ul class="nav-group">

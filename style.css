@@ -463,35 +463,35 @@
   body {
     background-color: black;
     background: black;
-    color: write;
+    color: white;
   }
   .header {
     background-color: black;
-    color: write;
+    color: white;
   }
   .nav {
     background-color: black;
-    color: write;
+    color: white;
   }
   .footer {
     background-color: black;
-    color: write;
+    color: white;
   }
   .footer-nav {
     background-color: black;
-    color: write;
+    color: white;
   }
   .nav-group {
     background-color: black;
-    color: write;
+    color: white;
   }
   .footer-nav-group {
     background-color: black;
-    color: write;
+    color: white;
   }
   .footer-copyright {
     background-color: black;
-    color: write;
+    color: white;
   }
 }
 @media (min-width: 800px) {

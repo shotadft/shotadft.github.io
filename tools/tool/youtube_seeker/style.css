@@ -15,3 +15,31 @@
 	    text-align: center;
             transition: .5s;
         }
+/*ダークモード用*/
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    background: black;
+    color: write;
+  }
+  button {
+    color: write;
+  }
+  h3 {
+    color: write;
+  }
+  p {
+    color: write;
+  }
+  textarea {
+    background-color: gray;
+    background: gray;
+    color: write;
+  }
+}
+@media (min-width: 800px) {
+   div.column { width: 240px; float: left; }
+}
+@media (max-width: 799px) {
+   div.column { width: 100%; }
+}

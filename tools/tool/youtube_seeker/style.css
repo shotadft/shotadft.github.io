@@ -20,21 +20,21 @@
   body {
     background-color: black;
     background: black;
-    color: write;
+    color: white;
   }
   button {
-    color: write;
+    color: white;
   }
   h1 {
-    color: write;
+    color: white;
   }
   p {
-    color: write;
+    color: white;
   }
   textarea {
     background-color: gray;
     background: gray;
-    color: write;
+    color: white;
   }
 }
 @media (min-width: 800px) {

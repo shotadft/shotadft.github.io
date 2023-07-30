@@ -90,21 +90,6 @@ goButton.onclick = () => {
         }
     };
 };
-
-$(document).on('click', '.pagination a', function() {
-　val = $(this).attr("href");
-	if (val = val.match(/(youtu)/g))
-	{
-		selectText.value = val;
-		goButton.click();
-		
-		return false;
-	}
-	else
-	{
-		return false;
-	}
-});
     </script>
     <style>
     #select_text {
@@ -115,7 +100,7 @@ $(document).on('click', '.pagination a', function() {
     }
     button#go {
 	width: 8em;
-  	height: 25px;
+  	height: 22px;
 	vertical-align: top;
     }
     </style>

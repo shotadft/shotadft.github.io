@@ -22,7 +22,7 @@ goButton.onclick = () => {
                 return null;
             };
             const ag2idToEmbed = function(id) {
-                  let ytIframe = '<iframe src="https://www.youtube.com/embed/'+ id +'" width="560" height="315" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                  let ytIframe = '<iframe src="https://www.youtube.com/embed/'+ id +'" width="560" height="315" frameborder="0" allow="accelerometer; encrypted-media; autoplay; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                 return ytIframe;
             };
             const ytUrlRegExp = /(?<!=\")\b(?:https?):\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\/[\w!?/+\-|:=~;.,*&@#$%()'"[\]]+/g;
@@ -31,7 +31,8 @@ goButton.onclick = () => {
             //テキスト内からホスト名がyoutubeのURLにマッチする文字列をすべて取得
             let urls = txt.match(ytUrlRegExp);
             //youtubeのURLがあった場合
-            if(urls){
+            if(urls)
+	    {
             //すべてのURLをチェックして置換処理
             for(let i = 0; i < urls.length; i++){
             let url = urls[i],
@@ -53,8 +54,8 @@ goButton.onclick = () => {
                         txt = txt.replace(replaceRegExp, ag2idToEmbed(youTubeId));
                     }
                 }
-            }
-            return txt;
+	    }
+            	return txt;
             };
             const className = 'movie_frame';
             //置換処理をする要素をクラス名で指定
@@ -72,3 +73,16 @@ goButton.onclick = () => {
         }
     };
 };
+
+$(document).on('click', '.pagination a', function() {
+　val = $(this).attr("href");
+	if (val != val.macth('youtube.com', 'youtu.be'))
+	{
+		console.log('Youtube Please.');
+	}
+	else
+	{
+		selectText.value = val;
+		goButton.click();
+	}
+});

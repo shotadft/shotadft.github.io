@@ -22,7 +22,7 @@ goButton.onclick = () => {
                 return null;
             };
             const ag2idToEmbed = function(id) {
-                  let ytIframe = '<iframe src="https://www.youtube.com/embed/'+ id +'" width="560" height="315" frameborder="0" allow="accelerometer; encrypted-media; autoplay; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                  let ytIframe = '<iframe src="https://www.youtube.com/embed/'+ id +'" width="768" height="432" frameborder="0" allow="accelerometer; encrypted-media; autoplay; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                 return ytIframe;
             };
             const ytUrlRegExp = /(?<!=\")\b(?:https?):\/\/(?:www\.)?(?:youtube\.com|youtu\.be)\/[\w!?/+\-|:=~;.,*&@#$%()'"[\]]+/g;
@@ -76,7 +76,7 @@ goButton.onclick = () => {
 
 $(document).on('click', '.pagination a', function() {
 　val = $(this).attr("href");
-	if (val === 'youtube.com' || val === 'youtu.be')
+	if (val === 'youtu')
 	{
 		selectText.value = val;
 		goButton.click();	

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Noto+Sans+JP:wght@500&display=swap');
+
+     html {
+           scroll-behavior: smooth;
+           }
+
+      body {
+            background: white;
+            color: #444444;
+            font-size: 16px;
+            font-family: 'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, sans-serif;
+            line-height: 1.42857;
+	          margin: auto; 
+    	      padding: 0;
+            transition: .5s;
+        }

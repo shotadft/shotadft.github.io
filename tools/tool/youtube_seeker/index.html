@@ -17,16 +17,19 @@
 <link rel="stylesheet" href="style.css" />
     <script src="script/main.js"></script>
     <style>
-    #select_text {
+    textarea#select_text {
 	resize: none;
 	outline: none;
-	}
+	vertical-align: top;
+    }
+    button#go {
+	vertical-align: top;
+    }
     </style>
   </head>
   <body>
       <h1>Youtube Seeker</h1>
-      <textarea name="select" id="select_text" cols="50" rows="1" spellcheck="false"></textarea>
-      <button id="go">Go</button>
+      <textarea name="select" id="select_text" cols="50" rows="1" spellcheck="false"></textarea><button id="go">Go</button>
       <br />
       <div class="movie_frame"></div>
   </body>

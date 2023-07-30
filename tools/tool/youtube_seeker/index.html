@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -89,6 +89,17 @@ goButton.onclick = () => {
             }
         }
     };
+$(document).ready(function() {
+    $("#text").keyup(function(event) {
+        if (event.which === 13) {
+            $("#submit").click();
+        }
+    });
+ 
+    $("#submit").click(function() {
+        goButton.click();
+    })
+});
 };
     </script>
     <style>

@@ -10,7 +10,8 @@
             font-size: 16px;
             font-family: 'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, sans-serif;
             line-height: 1.42857;
-	          margin: auto; 
-    	      padding: 0;
+	    margin: 0 auto; 
+    	    padding: 0;
+	    text-align: center;
             transition: .5s;
         }

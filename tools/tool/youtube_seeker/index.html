@@ -107,7 +107,8 @@ $(document).on('click', '.pagination a', function() {
 });
     </script>
     <style>
-    textarea#select_text {
+    #select_text {
+	width: 50em;
 	resize: none;
 	outline: none;
 	vertical-align: top;
@@ -121,7 +122,7 @@ $(document).on('click', '.pagination a', function() {
   </head>
   <body>
       <h1>Youtube Seeker</h1>
-      <textarea name="select" id="select_text" cols="50" rows="1" spellcheck="false"></textarea><button id="go">Watch</button>
+      <input name="select" id="select_text" cols="50" rows="1" spellcheck="false"></input><button id="go">Watch</button>
       <br />
       <div class="movie_frame"></div>
 	<hr />

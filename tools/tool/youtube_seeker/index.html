@@ -93,7 +93,7 @@ goButton.onclick = () => {
 
 $(document).on('click', '.pagination a', function() {
 　val = $(this).attr("href");
-	if (val = /(youtu)/g)
+	if (val = val.match(/(youtu)/g))
 	{
 		selectText.value = val;
 		goButton.click();

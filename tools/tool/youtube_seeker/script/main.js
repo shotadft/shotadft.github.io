@@ -76,13 +76,13 @@ goButton.onclick = () => {
 
 $(document).on('click', '.pagination a', function() {
 　val = $(this).attr("href");
-	if (val != val.macth('youtube.com', 'youtu.be'))
+	if (val === 'youtube.com' || val === 'youtu.be')
 	{
-		console.log('Youtube Please.');
+		selectText.value = val;
+		goButton.click();	
 	}
 	else
 	{
-		selectText.value = val;
-		goButton.click();
+		console.log('Youtube Please.');
 	}
 });

@@ -90,7 +90,7 @@ goButton.onclick = () => {
         }
     };
 $(document).ready(function() {
-    $("#text").keyup(function(event) {
+    $(selectText).keyup(function(event) {
         if (event.which === 13) {
             $("#submit").click();
         }

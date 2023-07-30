@@ -76,13 +76,15 @@ goButton.onclick = () => {
 
 $(document).on('click', '.pagination a', function() {
 　val = $(this).attr("href");
-	if (val === 'youtu')
+	if (val = /(youtu)/g)
 	{
 		selectText.value = val;
-		goButton.click();	
+		goButton.click();
+		
+		return false;
 	}
 	else
 	{
-		console.log('Youtube Please.');
+		return false;
 	}
 });

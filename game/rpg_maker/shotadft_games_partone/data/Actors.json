@@ -1,0 +1,9 @@
+[
+null,
+{"id":1,"battlerName":"Actor1_1","characterIndex":0,"characterName":"Actor1","classId":1,"equips":[8,1,2,3,0],"faceIndex":0,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"ハロルド","nickname":"人間","note":"","profile":"ツクールMVのクソゲーやバカゲーでお馴染みの勇者。"},
+{"id":2,"battlerName":"Actor1_8","characterIndex":7,"characterName":"Actor1","classId":2,"equips":[2,1,2,3,0],"faceIndex":7,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"テレーゼ","nickname":"人間","note":"","profile":""},
+{"id":3,"battlerName":"Actor3_8","characterIndex":7,"characterName":"Actor3","classId":3,"equips":[3,0,2,3,4],"faceIndex":7,"faceName":"Actor3","traits":[],"initialLevel":1,"maxLevel":99,"name":"マーシャ","nickname":"人間","note":"","profile":""},
+{"id":4,"battlerName":"Actor2_7","characterIndex":6,"characterName":"Actor2","classId":4,"equips":[4,0,2,3,4],"faceIndex":6,"faceName":"Actor2","traits":[],"initialLevel":1,"maxLevel":99,"name":"ルキウス","nickname":"人間","note":"","profile":""},
+{"id":5,"battlerName":"Actor4_1","characterIndex":0,"characterName":"Shotadft","classId":5,"equips":[5,0,0,3,0],"faceIndex":0,"faceName":"Actor4","traits":[{"code":64,"dataId":2,"value":1},{"code":64,"dataId":3,"value":1},{"code":41,"dataId":5,"value":1}],"initialLevel":99,"maxLevel":99,"name":"承太","nickname":"人間(一応)","note":"","profile":"主人公兼世界の管理者。\n実は自分の世界を11兆回\"消滅\"させてしまったことがある"},
+{"id":6,"battlerName":"","characterIndex":2,"characterName":"Pika","classId":6,"equips":[0,0,0,0,5],"faceIndex":0,"faceName":"Other1","traits":[{"code":31,"dataId":4,"value":1},{"code":53,"dataId":5,"value":1},{"code":52,"dataId":1,"value":1},{"code":52,"dataId":2,"value":1},{"code":51,"dataId":9,"value":1}],"initialLevel":50,"maxLevel":99,"name":"ピカチュウ先生","nickname":"ねずみポケモン","note":"","profile":"とある異世界で教授をやってたりしてるポケモン。\n承太とはパートナーで、カービィ(ブルー)とはOVTEC研究仲間。"}
+]

@@ -1,0 +1,11 @@
+[
+null,
+{"id":1,"animationId":6,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":97,"name":"剣","note":"","params":[0,0,10,0,0,0,0,0],"price":500,"wtypeId":2},
+{"id":2,"animationId":6,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":99,"name":"斧","note":"","params":[0,0,10,0,0,0,0,0],"price":500,"wtypeId":4},
+{"id":3,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":101,"name":"杖","note":"","params":[0,0,10,0,0,0,0,0],"price":500,"wtypeId":6},
+{"id":4,"animationId":11,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":102,"name":"弓","note":"","params":[0,0,10,0,0,0,0,0],"price":500,"wtypeId":7},
+{"id":5,"animationId":0,"description":"グレイバルドを使用可能とする魔導書。\n別世界の魔力を使用する","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":187,"name":"GRYBLDの魔導書","note":"","params":[0,500,0,0,500,0,500,0],"price":0,"wtypeId":6},
+{"id":6,"animationId":112,"description":"ただのアサルトライフル。","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0.5}],"iconIndex":116,"name":"AK-47","note":"","params":[0,0,450,0,0,0,0,0],"price":4320,"wtypeId":9},
+{"id":7,"animationId":114,"description":"ROKET ランチャー","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0.5}],"iconIndex":115,"name":"RPG-18","note":"","params":[0,0,500,0,0,0,0,0],"price":8234,"wtypeId":9},
+{"id":8,"animationId":6,"description":"勇者が待つことを許される剣。","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0},{"code":22,"dataId":6,"value":0.5}],"iconIndex":97,"name":"勇者の剣","note":"","params":[0,0,500,0,0,0,0,0],"price":0,"wtypeId":2}
+]

@@ -111,7 +111,6 @@ anchor_twitterPlace.className = 'twitter-timeline';
 anchor_twitterPlace.href = 'https://twitter.com/Shotadft0780?ref_src=twsrc%5Etfw';
 anchor_twitterPlace.textContent = 'Tweets by Shotadft0780';
 anchor_twitterPlace.setAttribute('data-height', '600');
-setInterval(() => {
 if(window.matchMedia('(prefers-color-scheme: dark)').matches == true)
 {
 anchor_twitterPlace.setAttribute('data-theme', 'dark');
@@ -120,7 +119,6 @@ else
 {
 anchor_twitterPlace.setAttribute('data-theme', 'light');
 }
-}, 500);
 
 TwitterTimelineGets.appendChild(anchor_twitterPlace);
 	</script>

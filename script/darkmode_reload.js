@@ -4,7 +4,7 @@ const darkmodeDOM = document;
 
 // オブザーバーを作る
 const observer = new IntersectionObserver(() => {
-  isDarkmode = (location.reload();)
+  isDarkmode = location.reload();
 })
 
 // darkmodeDOMの監視開始

@@ -1,6 +1,6 @@
 let isDarkmode = false;
 
-const darkmodeDOM = document;
+const darkmodeDOM = document.getElementById('darkmode-dummy');
 
 // オブザーバーを作る
 const observer = new IntersectionObserver(() => {

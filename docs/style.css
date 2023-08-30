@@ -11,7 +11,7 @@
             line-height: 1.42857;
             color: var(--main-text);
             background-color: var(--main-bg);
-            transition: .5s;
+            transition: 0.5s;
         }
 	p {
 	    margin: 2.5px; 

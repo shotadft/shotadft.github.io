@@ -22,7 +22,6 @@
 	    margin: 2.5px; 
     	    padding: 0;
     	    text-align: left;
-	    font-size: 24px;
 	}
 	h2 {
 	    margin: 2.5px; 
@@ -34,6 +33,7 @@
     	    padding: 0;
     	    text-align: left;
 	}
+
 	img {
 	    margin: 2.5px; 
     	    padding: 0;
@@ -126,7 +126,7 @@
             color: #fff;
             text-align: center;
             font-weight: bold;
-            font-size: 3em;
+	    font-size: 24px;
         }
 
         /* コンテンツ */

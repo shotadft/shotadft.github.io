@@ -123,6 +123,10 @@
             font-weight: bold;
 	    font-size: 17px;
         }
+        .main h1 {
+	    margin: auto;
+	    text-align: center;
+	}
 
         /* コンテンツ */
 

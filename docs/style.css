@@ -452,7 +452,6 @@
     padding: 10px 25px;
     color: #313131;
     transition: 0.3s ease-in-out;
-    font-weight: 600;
     box-shadow: 5px 5px 0 #6bb6ff;
 }
 
@@ -461,6 +460,7 @@
   box-shadow: 0 0 0;
   transform: translate(5px, 5px);
 }
+
 /*ダークモード用*/
 @media (prefers-color-scheme: dark) {
   body {
@@ -501,6 +501,7 @@
     color: white;
   }
 }
+
 @media (min-width: 800px) {
    div.column { width: 240px; float: left; }
 }

@@ -13,8 +13,8 @@ body {
   }
 }
 @media (min-width: 800px) {
-   div.column { width: 240px; float: left; }
+   body.column { width: 240px; float: left; }
 }
 @media (max-width: 799px) {
-   div.column { width: 100%; }
+   body.column { width: 100%; }
 }

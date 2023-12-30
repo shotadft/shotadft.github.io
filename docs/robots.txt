@@ -2,6 +2,6 @@ User-Agent: *
 Disallow: /tools/tool/
 Disallow: /sitemap/
 Disallow: /my_script_js/
-Disallow: /rpgmaker_game/
+Disallow: /rpg_game/
 
 Sitemap: https://www.shotadft.com/sitemap/sitemap.xml

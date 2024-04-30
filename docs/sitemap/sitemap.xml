@@ -28,8 +28,4 @@
 <loc>https://www.shotadft.com/app/OpenBrowser/</loc>
 <priority>0.7</priority>
 </url>
-<url>
-<loc>https://www.shotadft.com/my_script_js/script/app_prc.js</loc>
-<priority>0.7</priority>
-</url>
 </urlset>

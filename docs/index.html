@@ -103,42 +103,27 @@
 <p>警告: このページではJavaScriptを使用しています。</p>
 </noscript>
 <div class="main"><h1>Shotadftのホームページ<br /> ツールとかソフトがあるサイト</h1></div>
-	<h2>メインコンテンツ</h2>
-	<p>Twitter: <br />
-	<div id="twitter-timeline_gets"></div><script async src="https://platform.twitter.com/widgets.js" charset="UTF-8"></script>
-	<script>
-const TwitterTimelineGets = document.getElementById('twitter-timeline_gets');
-var anchor_twitterPlace = document.createElement('a');
-anchor_twitterPlace.className = 'twitter-timeline';
-anchor_twitterPlace.href = 'https://twitter.com/Shotadft0780?ref_src=twsrc%5Etfw';
-anchor_twitterPlace.textContent = 'Tweets by Shotadft0780';
-anchor_twitterPlace.setAttribute('data-height', '600');
-if(window.matchMedia('(prefers-color-scheme: dark)').matches == true)
-{
-anchor_twitterPlace.setAttribute('data-theme', 'dark');
-}
-else
-{
-anchor_twitterPlace.setAttribute('data-theme', 'light');
-}
-
-TwitterTimelineGets.appendChild(anchor_twitterPlace);
-	</script>
-	</p>
-	<h2>その他いろいろ</h2>
-	<p><a href="https://www.shotadft.com/my_script_js/">My Javascript Library</a></p>
-	<p><a href="https://www.amazon.jp/hz/wishlist/ls/3RO7TCJ42WD0K?ref_=wl_share">Amazonの欲しい物リスト</a></p>
-	<hr>
-	<p>このサイトのバナー: </p>
-	<a href="#">
-    	<img src="https://www.shotadft.com/img/banner.webp" alt="Shotadftのホームページ" width="300" height="100"></img>
-	</a>
-	<p>ソース: </p>
-	<textarea name="banner" id="banner_txt" cols="40" rows="8" readonly>
+<h2>メインコンテンツ</h2>
+<p>Twitter: <br />
+<div id="twitter-timeline-div"></div><script async src="https://platform.twitter.com/widgets.js" charset="UTF-8"></script>
+<script async>
+const TwitterTimelineGets=document.getElementById("twitter-timeline-div");var anchor_twitterPlace=document.createElement("a");anchor_twitterPlace.className="twitter-timeline",anchor_twitterPlace.href="https://twitter.com/Shotadft0780?ref_src=twsrc%5Etfw",anchor_twitterPlace.textContent="Tweets by Shotadft0780",anchor_twitterPlace.setAttribute("data-width","1024"),anchor_twitterPlace.setAttribute("data-height","800"),1==window.matchMedia("(prefers-color-scheme: dark)").matches?anchor_twitterPlace.setAttribute("data-theme","dark"):anchor_twitterPlace.setAttribute("data-theme","light"),TwitterTimelineGets.appendChild(anchor_twitterPlace);
+</script>
+</p>
+<h2>その他いろいろ</h2>
+<p><a href="https://www.shotadft.com/my_script_js/">My Javascript Library</a></p>
+<p><a href="https://www.amazon.jp/hz/wishlist/ls/3RO7TCJ42WD0K?ref_=wl_share">Amazonの欲しい物リスト</a></p>
+<hr>
+<p>このサイトのバナー: </p>
+<a href="#">
+<img src="https://www.shotadft.com/img/banner.webp" alt="Shotadftのホームページ" width="300" height="100" />
+</a>
+<p>ソース: </p>
+<textarea name="banner_txt" id="banner_txt" cols="40" rows="8" readonly>
 &lt;a href="https://www.shotadft.com/"&gt;
-&lt;img src="https://www.shotadft.com/img/banner.webp" alt="Shotadftのホームページ"&gt;&lt;/img&gt;
+&lt;img src="https://www.shotadft.com/img/banner.webp" alt="Shotadftのホームページ" width="300" height="100" /&gt;
 &lt;/a&gt;
-	</textarea>
+</textarea>
     <div class="footer">
         <div class="footer-nav">
             <ul class="footer-nav-group">

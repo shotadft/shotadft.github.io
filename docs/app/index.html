@@ -38,10 +38,10 @@
 <body>
 <script type="module" src="https://www.shotadft.com/my_script_js/script/app_prc.min.js"></script>
 <script type="module">
-import { Price } from 'https://www.shotadft.com/my_script_js/script/app_prc.min.js';
+import { SetPrice } from 'https://www.shotadft.com/my_script_js/script/app_prc.min.js';
 	
-Price('OpenBrowserPrice', 0);
-Price('EasyServersPrice', 0);
+SetPrice('OpenBrowserPrice', 0);
+SetPrice('EasyServersPrice', 0);
 </script>
     <div class="nav">
         <ul class="nav-group">
@@ -63,7 +63,7 @@ Price('EasyServersPrice', 0);
                 <p><b>OpenBrowser</b></p>
 		<p><small>シンプルなウェブブラウザです</small></p>
             </a>
-            <div class="app_price" id="OpenBrowserPrice"></div>
+            <p class="app_price" id="OpenBrowserPrice"></p>
 	</div>
 	</div>
 	<div class="app_index">
@@ -74,7 +74,7 @@ Price('EasyServersPrice', 0);
                 <p><b>EasyServers</b></p>
 		<p><small>Minecraftのサーバーを<br />半自動で建ててくれます。</small></p>
             </a>
-            <div class="app_price" id="EasyServersPrice"></div>
+            <p class="app_price" id="EasyServersPrice"></p>
 	</div>
 	</div>
 	<h3 class="heading_title" id="discordBotsMore">Discord Bot</h3>

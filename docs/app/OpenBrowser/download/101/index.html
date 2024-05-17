@@ -24,9 +24,12 @@
 </script>
 </head>
 <body>
-    <script>
-window.addEventListener("DOMContentLoaded",(function(){const n=document.getElementById("seconds");for(let i=5;i>=0;i--)!function(i){setTimeout((function(){n.textContent=`${i}`,0===i&&(n.innerHTML='<a href=\"https://github.com/shotadft/OpenBrowser/releases/download/v1.0.1/OpenBrowser_v1.0.1_Setup.zip\">こっちをクリック</a>')}),1e3*(5-i))}(i)}));
+  <noscript>
+    <p>警告: Javascriptを有効にしないとダウンロードが始まらん。始まらない時は<a href="https://github.com/shotadft/OpenBrowser/releases/download/v1.0.0/OpenBrowser_v1.0.0_Setup.zip">ここをクリック</a><br /><a href="about:settings/content/javascript" target="_blank">こっから設定に飛べるぞ</a></p>
+  </noscript>
+  <script>
+    window.addEventListener("DOMContentLoaded",(function(){const n=document.getElementById("seconds");for(let i=5;i>=0;i--)!function(i){setTimeout((function(){n.textContent=`ダウンロードまで...${i}`,0===i&&(n.innerHTML='<a href=\"https://github.com/shotadft/OpenBrowser/releases/download/v1.0.1/OpenBrowser_v1.0.1_Setup.zip\">始まらなかったらここをクリック(ミラー)</a>')}),1e3*(5-i))}(i)}));
     </script>
-<p>ダウンロードまで...<b id="seconds"></b></p>
+    <p id="seconds"></p>
 </body>
 </html>

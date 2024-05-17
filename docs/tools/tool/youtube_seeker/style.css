@@ -22,7 +22,7 @@
     display:inline-block;
     transform: rotate(180deg);
     }
-    #movie_frame {
+    #videoFrame {
     margin: 0 auto; 
     padding: 1em;
     }

@@ -23,12 +23,33 @@
 <h1>YouTube Seeker</h1>
 <input id="inputURL" spellcheck="false"></input><button id="go">Watch</button>
 <br />
-<div class="movie_frame"></div>
+<div class="videoFrame">
+    <div id="youtube" data-property="{
+        videoURL: 'X9MvC-FPkvo',
+        startAt: 0,
+        containment: '#videoFrame',
+        autoPlay: true,
+        loop: 1,
+        mute: true,
+        abundance : 0,
+        playsinline: 1,
+        optimizeDisplay: true,
+        opacity: 1,
+        showControls: true,
+        showYTLogo: true,
+        useOnMobile : false,
+        onReady: function() {
+        $('#loading').fadeOut();
+        }
+        }">
+    </div>
+    <div id="loading">Now Loading・・・</div>
+</div>
 <hr />
 <p>このサイトはYouTubeの動画を見れるだけのサイトです。</p>
 <p>使い方: <br />テキストボックスに観たい動画のリンクを貼ってボタンを押すだけ。</p>
 <p><span class="copyleft">&copy;</span> 2023-2024 Shotadft. All Rights reserved.</p>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js"></script>
 <script src="script/main.js"></script>
 </body>
 </html>

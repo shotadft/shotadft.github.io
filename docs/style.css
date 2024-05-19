@@ -12,7 +12,7 @@ body {
 }
 
 p, img, h2, h3, h4, h5 {
-    margin: 2.5px auto;
+    margin: 2.5px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -137,63 +137,6 @@ details[open] summary {
 .main h1 {
     margin: auto;
     text-align: center;
-}
-
-/* コンテンツ */
-
-.content {
-    padding: 48px 0 24px;
-}
-
-.toggle {
-    display: none;
-    visibility: hidden;
-}
-
-.Label {
-    padding: 1em;
-    display: block;
-    color: #fff;
-    background: #0f0f0f;
-    cursor: pointer;
-}
-
-.Label::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    -webkit-transform: rotate(45deg);
-    position: absolute;
-    top: calc(50% - 3px);
-    right: 20px;
-    transform: rotate(135deg);
-}
-
-.Label,
-.content {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: all 0.3s;
-}
-
-.content {
-    height: 0;
-    margin-bottom: 10px;
-    padding: 0 20px;
-    overflow: hidden;
-}
-
-.toggle:checked+.Label+.content {
-    height: auto;
-    padding: 20px;
-    transition: all .3s;
-}
-
-.toggle:checked+.Label::before {
-    transform: rotate(-45deg) !important;
 }
 
 /* フッター */

@@ -6,13 +6,11 @@ html {
 
 body {
     background: white;
-    color: #444444;
+    color: #444;
     font-size: 16px;
     font-family: 'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, sans-serif;
-    line-height: 1.42857;
     color: var(--main-text);
     background-color: var(--main-bg);
-    transition: 0.5s;
 }
 
 p {
@@ -45,29 +43,24 @@ textarea {
 }
 
 details {
-    font:
-        16px "Open Sans",
-        Calibri,
-        sans-serif;
-    width: 620px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
 }
 
-details > summary {
-    padding: 2px 6px;
-    width: 15em;
-    background-color: #ddd;
-    border: none;
-    box-shadow: 3px 3px 4px black;
-    cursor: pointer;
-    list-style: none;
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
 }
 
-details > p {
-    border-radius: 0 0 10px 10px;
-    background-color: #ddd;
-    padding: 2px 6px;
-    margin: 0;
-    box-shadow: 3px 3px 4px black;
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
 }
 
 .app_select_button {

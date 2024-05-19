@@ -9,13 +9,12 @@ body {
     color: #444;
     font-size: 16px;
     font-family: 'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, sans-serif;
-    text-align: left;
-    color: var(--main-text);
-    background-color: var(--main-bg);
 }
 
 p, img, h2, h3, h4, h5 {
     margin: 2.5px auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 textarea {

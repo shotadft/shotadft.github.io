@@ -8,10 +8,14 @@ body {
     background: white;
     color: #444;
     font-family: 'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, sans-serif;
+    line-height: 1.42857;
+    color: var(--main-text);
+    background-color: var(--main-bg);
+    transition: 0.5s;
 }
 
 p, img, h2, h3, h4, h5 {
-    margin: 2.5px;
+    margin: 8px;
     margin-right: auto;
     margin-left: auto;
 }

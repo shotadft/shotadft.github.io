@@ -14,40 +14,48 @@ body {
     transition: 0.5s;
 }
 
-p, img, h2, h3, h4, h5 {
-    margin: 6px auto;
+p,
+img,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
     width: 150px;
     text-align: left;
 }
 
 textarea {
-  padding: 10px;
-  max-width: 100%;
-  line-height: 1.5;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px #999;
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
 }
 
 details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 0.5em 0.5em 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
 }
 
 summary {
-  font-weight: bold;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
 }
 
 details[open] {
-  padding: 0.5em;
+    padding: 0.5em;
 }
 
 details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 0.5em;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
 }
 
 .app_select_button {

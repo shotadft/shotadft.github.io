@@ -1,22 +1,3 @@
 textarea {
   resize: none;
 }
-
-body {
-  color: var(--main-text);
-  background-color: var(--main-bg);
-  transition: .5s;
-}
-
-@media (min-width: 800px) {
-  body.column {
-    width: 240px;
-    float: left;
-  }
-}
-
-@media (max-width: 799px) {
-  body.column {
-    width: 100%;
-  }
-}

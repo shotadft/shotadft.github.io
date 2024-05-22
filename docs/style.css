@@ -40,10 +40,20 @@ details {
     padding: 0.5em 0.5em 0;
 }
 
-summary {
+details summary {
     font-weight: bold;
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
+}
+
+summary {
+    display: block;
+    list-style: none;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 details[open] {

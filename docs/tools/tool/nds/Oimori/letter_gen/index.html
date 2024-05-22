@@ -22,16 +22,17 @@
     </noscript>
     <p><a href="/tools/"><small>ツール一覧 トップに戻る</small></a></p>
     <h1>10通目のびんせん自動生成ツール</h1>
-    <h2>これって何なん？</h2>
+    <h3>これって何なん？</h3>
     <p>おいでよどうぶつの森用の手紙バグ用ツール君。それ以上でもそれ以下でも無い。</p>
+	<h2 id="tools">ツール</h2>
     <table>
         <tr>
             <td>
                 <form id="mainform">
-                    <div id="itemlist"></div><label for="money">所持金</label><input type="text" id="money"
+                    <div id="itemlist"></div><label for="money">所持金</label><input type="number" id="money"
                         value="1"><br />
-                    <input type="submit" value="生成"><input type="reset" value="クリア">
-                    <button type="button" id="copy">コピー</button><br />
+                    <input type="button" id="submit" value="生成"><input type="button" id="reset" value="クリア">
+                    <button id="copy">コピー</button>
                 </form>
             </td>
             <td>

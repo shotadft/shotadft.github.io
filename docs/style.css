@@ -34,35 +34,70 @@ textarea {
     box-shadow: 1px 1px 1px #999;
 }
 
-details {
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: 0.5em 0.5em 0;
-}
-
-details summary {
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
-}
-
 summary {
     display: block;
-    list-style: none;
-    cursor: pointer;
 }
 
 summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 
-details[open] {
-    padding: 0.5em;
+.summary_inner {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border: 1px solid #d2beff;
+    font-weight: bold;
+    color: #002255;
 }
 
-details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: 0.5em;
+.icon {
+    display: block;
+    position: relative;
+    width: 24px;
+    margin-left: 6px;
+    flex-shrink: 0;
+    transform-origin: center 43%;
+    transition: transform 0.4s;
+}
+
+details.is-opened .icon {
+    transform: rotate(180deg);
+}
+
+.icon::before,
+.icon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 3px;
+    background-color: #7050ff;
+}
+
+.icon::before {
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.icon::after {
+    right: 0;
+    transform: rotate(-45deg);
+}
+
+.content {
+    overflow: hidden;
+    background-color: #f0f2ff;
+}
+
+.content_inner {
+    padding: 24px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .app_select_button {

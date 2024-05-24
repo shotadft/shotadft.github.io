@@ -56,8 +56,9 @@ summary::-webkit-details-marker {
 
 .icon {
     display: block;
-    position: relative;
+    position: absoulte;
     width: 24px;
+    right:0px;
     margin-left: 6px;
     flex-shrink: 0;
     transform-origin: center 43%;

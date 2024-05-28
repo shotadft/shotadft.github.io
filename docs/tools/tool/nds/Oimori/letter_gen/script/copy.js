@@ -1,6 +1,6 @@
-$(function(){
+$(async function(){
     const b = document.getElementsByClassName('copy');
     if (typeof b.value !== 'undefined') {
-		navigator.clipboard.writeText(b.value);
+		 await navigator.clipboard.writeText(b.value);
     }
 });

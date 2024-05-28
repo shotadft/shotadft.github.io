@@ -1,8 +1,8 @@
-$(async function(){
+$(function(){
     const btn = document.getElementsByClassName('copy');
-    const txt = document.getElementById('text').textContent;
+    const txt = document.getElementById('text').value;
 
     btn.onclick = () => {
-      await navigator.clipboard.writeText(txt);
+      navigator.clipboard.writeText(txt);
     }
 });

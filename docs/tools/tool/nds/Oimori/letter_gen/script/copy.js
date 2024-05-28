@@ -1,1 +1,6 @@
-$(function(){$("#copy").on("click",function(){$("#result").select(),document.execCommand("copy")})});
+$(function(){
+    const b = document.getElementsByClassName('copy');
+    if (typeof b.value !== 'undefined') {
+		navigator.clipboard.writeText(b.value);
+    }
+});

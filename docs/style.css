@@ -36,6 +36,7 @@ textarea {
 
 summary {
     display: block;
+    cursor: pointer;
 }
 
 summary::-webkit-details-marker {
@@ -43,7 +44,6 @@ summary::-webkit-details-marker {
 }
 
 .summary_inner {
-    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,7 +54,7 @@ summary::-webkit-details-marker {
     color: #002255;
 }
 
-.icon {
+.detailsIcon {
     display: block;
     position: relative;
     width: 24px;
@@ -64,12 +64,12 @@ summary::-webkit-details-marker {
     transition: transform 0.4s;
 }
 
-details.is-opened .icon {
+details.is-opened .detailsIcon {
     transform: rotate(180deg);
 }
 
-.icon::before,
-.icon::after {
+.detailsIcon::before,
+.detailsIcon::after {
     content: "";
     position: absolute;
     display: block;
@@ -78,22 +78,22 @@ details.is-opened .icon {
     background-color: #7050ff;
 }
 
-.icon::before {
+.detailsIcon::before {
     left: 0;
     transform: rotate(45deg);
 }
 
-.icon::after {
+.detailsIcon::after {
     right: 0;
     transform: rotate(-45deg);
 }
 
-.content {
+.detailsContent {
     overflow: hidden;
     background-color: #f0f2ff;
 }
 
-.content_inner {
+.detailsContent_inner {
     padding: 24px 48px;
     display: flex;
     flex-direction: column;
@@ -190,62 +190,6 @@ details.is-opened .icon {
 .main h1 {
     margin: auto;
     text-align: center;
-}
-
-/* パネルコンテンツ */
-.content {
-    padding: 48px 0 24px;
-}
-
-.toggle {
-    display: none;
-    visibility: hidden;
-}
-
-.Label {
-    padding: 1em;
-    display: block;
-    color: #fff;
-    background: #0f0f0f;
-    cursor: pointer;
-}
-
-.Label::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    -webkit-transform: rotate(45deg);
-    position: absolute;
-    top: calc(50% - 3px);
-    right: 20px;
-    transform: rotate(135deg);
-}
-
-.Label,
-.content {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: all 0.3s;
-}
-
-.content {
-    height: 0;
-    margin-bottom: 10px;
-    padding: 0 20px;
-    overflow: hidden;
-}
-
-.toggle:checked+.Label+.content {
-    height: auto;
-    padding: 20px;
-    transition: all .3s;
-}
-
-.toggle:checked+.Label::before {
-    transform: rotate(-45deg) !important;
 }
 
 /* フッター */

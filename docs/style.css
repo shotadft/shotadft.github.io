@@ -32,6 +32,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
+    color: black;
 }
 
 summary {
@@ -424,15 +425,20 @@ details.is-opened .detailsIcon {
 
 /*ダークモード用*/
 @media (prefers-color-scheme: dark) {
-    body {
+   body {
         background-color: #15202B;
         background: #15202B;
         color: white;
-    }
+   }
 
-    .summary_inner {
-        color: #4169E1;
-    }
+   .summary_inner {
+       color: #4169E1;
+   }
+
+   .detailsContent {
+       overflow: hidden;
+       background-color: #1B2631;
+   }
 
     .header {
         background-color: #15202B;
@@ -461,16 +467,16 @@ details.is-opened .detailsIcon {
     .nav-group>li a {
     	display: block;
     	padding: 6px 12px;
-    	color: #BBB;
+    	color: #999;
     	text-decoration: none;
-	}
+    }
 
-	.nav-group>li a:hover {
+    .nav-group>li a:hover {
     	color: #DDD;
-	}
+    }
 
-	.nav-group>li a.active {
-    	border-bottom: #BBB solid 2px;
+    .nav-group>li a.active {
+    	border-bottom: #999 solid 2px;
     	color: #DDD;
     }
 

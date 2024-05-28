@@ -430,6 +430,10 @@ details.is-opened .detailsIcon {
         color: white;
     }
 
+    .summary_inner {
+        color: #4169E1;
+    }
+
     .header {
         background-color: #15202B;
         color: white;
@@ -452,11 +456,22 @@ details.is-opened .detailsIcon {
 
     .nav-group {
         background-color: #15202B;
-        color: white;
     }
 
-    .nav-group li {
-        color: #E8E8E8;
+    .nav-group>li a {
+    	display: block;
+    	padding: 6px 12px;
+    	color: #BBB;
+    	text-decoration: none;
+	}
+
+	.nav-group>li a:hover {
+    	color: #DDD;
+	}
+
+	.nav-group>li a.active {
+    	border-bottom: #BBB solid 2px;
+    	color: #DDD;
     }
 
     .footer-nav-group {

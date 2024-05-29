@@ -525,13 +525,7 @@ details.is-opened .detailsIcon {
     cursor: pointer;
 }
 
-/* パッと消える */
-.cc-hide1 {
-    display: none;
-}
-
-/* ゆっくり消える */
-.cc-hide2 {
+.cc-hide {
     animation: hide 1s linear 0s;
     animation-fill-mode: forwards;
 }

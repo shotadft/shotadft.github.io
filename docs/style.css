@@ -514,6 +514,7 @@ details.is-opened .detailsIcon {
 }
 
 .cookie-text {
+    color: black;
     width: 90%;
 }
 

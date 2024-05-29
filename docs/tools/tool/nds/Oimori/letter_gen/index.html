@@ -31,7 +31,7 @@
                     <div id="itemlist"></div><label for="money">所持金</label><input type="number" id="money"
                         value="1"><br />
                     <input type="submit" value="生成"><input type="reset" value="クリア">
-                    <button class="copy">コピー</button>
+                    <button id="copy">コピー</button>
                 </form>
             </td>
             <td>
@@ -44,7 +44,7 @@
             </td>
         </tr>
     </table>
-    <textarea id="result" class="copyText" rows="5" cols="80" style="resize:none;" readonly>内容を入力してから、生成ボタンを押して生成してください。</textarea>
+    <textarea id="result copyText" rows="5" cols="80" style="resize:none;" readonly>内容を入力してから、生成ボタンを押して生成してください。</textarea>
     <hr>
     <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br />
         <label><input type="radio" name="intype" value="10" checked>10進</label>

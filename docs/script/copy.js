@@ -1,8 +1,8 @@
-window.onload = () => {
-  const txt = document.getElementsByClassName('copyText');
-  const btn = document.getElementsByClassName('copy');
+document.addEventListener("DOMContentLoaded", () => {
+  const txt = document.getElementById('copyText');
+  const btn = document.getElementById('copy');
 
-  btn.addEventListener('click', () => {
+  btn.onclick = () => {
     if (!navigator.clipboard) { console.error("このブラウザは\"navigator.clipboard\"に対応していません\nEdge, Chrome, Firefox等対応ブラウザを使用して下さい"); return false; }
     if (!txt.value) {
       navigator.clipboard.writeText(txt.value).then(
@@ -10,5 +10,5 @@ window.onload = () => {
         () => { console.log("コピーに失敗しました") }
       );
     }
-  });
-}
+  }
+});

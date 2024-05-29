@@ -425,20 +425,20 @@ details.is-opened .detailsIcon {
 
 /*ダークモード用*/
 @media (prefers-color-scheme: dark) {
-   body {
+    body {
         background-color: #15202B;
         background: #15202B;
         color: white;
-   }
+    }
 
-   .summary_inner {
-       color: #4169E1;
-   }
+    .summary_inner {
+        color: #4169E1;
+    }
 
-   .detailsContent {
-       overflow: hidden;
-       background-color: #1B2631;
-   }
+    .detailsContent {
+        overflow: hidden;
+        background-color: #1B2631;
+    }
 
     .header {
         background-color: #15202B;
@@ -465,19 +465,19 @@ details.is-opened .detailsIcon {
     }
 
     .nav-group>li a {
-    	display: block;
-    	padding: 6px 12px;
-    	color: #999;
-    	text-decoration: none;
+        display: block;
+        padding: 6px 12px;
+        color: #999;
+        text-decoration: none;
     }
 
     .nav-group>li a:hover {
-    	color: #DDD;
+        color: #DDD;
     }
 
     .nav-group>li a.active {
-    	border-bottom: #999 solid 2px;
-    	color: #DDD;
+        border-bottom: #999 solid 2px;
+        color: #DDD;
     }
 
     .footer-nav-group {
@@ -491,6 +491,62 @@ details.is-opened .detailsIcon {
     }
 }
 
+.cookie-consent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    background: rgba(0, 0, 0, .7);
+    padding: 1.2em;
+    box-sizing: border-box;
+    z-index: 100;
+    visibility: hidden;
+}
+
+.cookie-consent.is-show {
+    visibility: visible;
+}
+
+.cookie-consent a {
+    color: #fff !important;
+}
+
+.cookie-agree {
+    color: #fff;
+    background: dodgerblue;
+    padding: .5em 1.5em;
+}
+
+.cookie-agree:hover {
+    cursor: pointer;
+}
+
+/* パッと消える */
+.cc-hide1 {
+    display: none;
+}
+
+/* ゆっくり消える */
+.cc-hide2 {
+    animation: hide 1s linear 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 @media (min-width: 800px) {
     body.column {
         width: 240px;
@@ -501,5 +557,13 @@ details.is-opened .detailsIcon {
 @media (max-width: 799px) {
     body.column {
         width: 100%;
+    }
+
+    .cookie-consent {
+        flex-direction: column;
+    }
+
+    .cookie-text {
+        margin-bottom: 1em;
     }
 }

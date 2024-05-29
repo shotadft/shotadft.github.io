@@ -1,1 +1,91 @@
-var CONST_ITEM_MAX=15;$(function(){for(var a=1;a<=CONST_ITEM_MAX;a++)CreateInputForm(a);$("#mainform").submit(function(){return $("#result").html(GetItemString()+GetMoneyString()),!1}),$("#searchform").submit(function(){return ExecuteSearch(),!1}),$("#insertlist").click(function(){var a=$("#search_result").val();a&&AddToList(a)}),$("#converter").submit(function(){var a=parseInt($("#input_cnv").val(),parseInt($("[name=intype]:checked").val(),10));return isNaN(a)&&$("#output_cnv").val("error"),$("#output_cnv").val(ConvertByteToString(a,4)),!1})});function CreateInputForm(a){$("#itemlist").append(`<label for=\"item${a}\">道具${a}</label><select id=\"item${a}\"></select><br>`),$("#item"+a).append("<option value=\"0\">\u306A\u3057</option>");for(var b,c=0;c<itemset.length;c++){b="list"+a+"group"+c,$("#item"+a).append(`<optgroup label=\"${itemset[c].groupname}\" id=\"${b}\"></optgroup>`);for(var d=0;d<itemset[c].items.length;d++)$("#"+b).append(`<option value=\"${itemset[c].items[d].id}\">${itemset[c].items[d].name}</option>`);console.log("\u751F\u6210\u5B8C\u4E86")}}function GetMoneyString(){var a=parseInt($("#money").val(),10);return isNaN(a)?"(\u6240\u6301\u91D1\u306E\u5909\u63DB\u306B\u5931\u6557)":ConvertByteToString(a,4)}function GetItemString(){for(var a,b="",c=1;c<=CONST_ITEM_MAX;c++)a=parseInt($("#item"+c).val(),10),b+=isNaN(a)?`\u9053\u5177${c}\u306E\u5909\u63DB\u306B\u5931\u6557`:ConvertByteToString(a,2),console.log(`\u9053\u5177${c}\u306E\u5909\u63DB\u306B\u5931\u6557`);return b}function ConvertByteToString(a,b){for(var c="",d=0;d<b;d++)c+=charsSet[255&a>>8*d];return c}function SearchNextUnselected(){for(var a=1;a<=CONST_ITEM_MAX;a++)if(0==$("#item"+a).val())return a;return-1}function ExecuteSearch(){$("#search_result").html("");for(var a=$("#search").val(),b=0;b<itemset.length;b++)for(var c=0;c<itemset[b].items.length;c++)-1!=itemset[b].items[c].name.indexOf(a)&&($("#search_result").append(`<option value=\"${itemset[b].items[c].id}\" id=\"sr${itemset[b].items[c].id}\">${itemset[b].items[c].name}</option>`),$("#sr"+itemset[b].items[c].id).dblclick(function(a){return function(){AddToList(a)}}(itemset[b].items[c].id)));return!1}function AddToList(a){var b=SearchNextUnselected();-1!=b&&$("#item"+b).val(a)}
+var CONST_ITEM_MAX = 15;
+$(function(){
+	for(var i = 1; i <= CONST_ITEM_MAX; i++){
+		CreateInputForm(i);
+	}
+
+	$("#mainform").submit(function(){
+		$("#result").html(GetItemString() + GetMoneyString());
+		return false;
+	});
+
+	$("#searchform").submit(function(){
+		ExecuteSearch();
+		return false;
+	});
+
+	$("#insertlist").click(function(){
+		var id = $("#search_result").val();
+		if(id) AddToList(id);
+	});
+	$("#converter").submit(function(){
+		var m = parseInt($("#input_cnv").val(), parseInt($("[name=intype]:checked").val(),10) );
+		if(isNaN(m)){ $("#output_cnv").val("error"); }
+		$("#output_cnv").val(ConvertByteToString(m,4));
+		return false;
+	});
+});
+function CreateInputForm(no){
+	$("#itemlist").append(`<label for=\"item${no}\">道具${no}</label><select id=\"item${no}\"></select><br>');
+	$("#item"+no).append('<option value="0">なし</option>');
+	for(var i = 0; i < itemset.length; i++){
+		var gname = 'list' + no + 'group' + i;
+		$("#item"+no).append(`<optgroup label=\"${itemset[i].groupname}\" id=\"${gname}\"></optgroup>');
+		for(var j = 0; j < itemset[i].items.length; j++){
+			$("#"+gname).append(`<option value=\"${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
+		}
+	}
+}
+function GetMoneyString(){
+	var m = parseInt($("#money").val(),10);
+	if(isNaN(m)){ return '(所持金の変換に失敗)'; }
+	return ConvertByteToString(m,4);
+}
+
+function GetItemString(){
+	var temp = "";
+	for(var i = 1; i <= CONST_ITEM_MAX; i++){
+		var m = parseInt($("#item"+i).val(),10);
+		if(isNaN(m)){ temp += `道具${i}の変換に失敗`; }
+		else{temp += ConvertByteToString(m,2);}
+	}
+	return temp;
+}
+
+function ConvertByteToString(input,size){
+	var temp = "";
+	for(var i = 0; i < size; i++){
+		temp = temp + charset[ (input >> (i * 8)) & 0xFF ];
+	}
+	return temp;
+}
+
+function SearchNextUnselected(){
+	for(var i = 1; i <= CONST_ITEM_MAX; i++){
+		if($("#item"+i).val() == 0){
+			return i;
+		}
+	}
+	return -1;
+}
+
+function ExecuteSearch(){
+	$("#search_result").html("");
+	var needle = $("#search").val();
+	for(var i = 0; i < itemset.length; i++){
+		for(var j = 0; j < itemset[i].items.length; j++){
+			if(itemset[i].items[j].name.indexOf(needle) != -1){
+				$("#search_result").append(`<option value=\"${itemset[i].items[j].id}\" id=\"sr${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
+				$("#sr" + itemset[i].items[j].id).dblclick( (function(id){ return function(){ AddToList(id); } })(itemset[i].items[j].id));
+			}
+		}
+	}
+	return false;
+}
+
+function AddToList(id){
+	var nextspace = SearchNextUnselected();
+	if(nextspace != -1){
+		$("#item" + nextspace).val(id);
+	}
+}

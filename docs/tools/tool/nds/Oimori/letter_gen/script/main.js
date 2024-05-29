@@ -26,11 +26,11 @@ $(function(){
 	});
 });
 function CreateInputForm(no){
-	$("#itemlist").append(`<label for=\"item${no}\">道具${no}</label><select id=\"item${no}\"></select><br>');
+	$("#itemlist").append(`<label for=\"item${no}\">道具${no}</label><select id=\"item${no}\"></select><br>`);
 	$("#item"+no).append('<option value="0">なし</option>');
 	for(var i = 0; i < itemset.length; i++){
 		var gname = 'list' + no + 'group' + i;
-		$("#item"+no).append(`<optgroup label=\"${itemset[i].groupname}\" id=\"${gname}\"></optgroup>');
+		$("#item"+no).append(`<optgroup label=\"${itemset[i].groupname}\" id=\"${gname}\"></optgroup>`);
 		for(var j = 0; j < itemset[i].items.length; j++){
 			$("#"+gname).append(`<option value=\"${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
 		}

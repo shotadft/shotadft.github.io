@@ -1,5 +1,5 @@
 window.onload = () => {
-  const txt = document.getElementsByClassName('copyText').value;
+  const txt = document.getElementsByClassName('copyText');
   const btn = document.getElementsByClassName('copy');
 
   btn.onclick = () => {

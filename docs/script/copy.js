@@ -1,17 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.addEventListener('load', () => {
-    const txt = document.getElementsByClassName('copyText'),
+  const txt = document.getElementsByClassName('copyText')[0],
     btn = document.getElementById('copyButton');
 
-    btn.onclick = () => {
-      if (!navigator.clipboard) { console.error("このブラウザは\"navigator.clipboard\"に対応していません\nEdge, Chrome, Firefox等対応ブラウザを使用して下さい"); return false; }
-      console.log(txt.value);
-      if (!txt.value) {
-        navigator.clipboard.writeText(txt.value).then(
-          () => { console.log("クリップボードにコピーしました") },
-          () => { console.log("コピーに失敗しました") }
-        );
-      }
+  btn.addEventListener('click', a);
+  function a(){
+    console.log(txt.value);
+    if (!txt.value) {
+      navigator.clipboard.writeText(txt.value).then(
+        () => { console.log("クリップボードにコピーしました"); },
+        () => { console.error("コピーに失敗しました"); }
+      );
     }
-  });
+  }
 });

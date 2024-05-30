@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +17,19 @@
     <meta property="og:site_name" content="Shotadft/承太劇場のホームページ" />
 </head>
 <body>
-<!--
+    <!--
 permalink: /404.html
 layout: billboard
 -->
     <h2><img alt="404 Page not found :("
             src="https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/404%20NotFound.png"
-            width=128 /></h2>
+            width=230 /></h2>
+    <p>There is no site page named “<b id="pageURL"></b>”.<br />Are you sure the URL is correct?</p>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script>
+        $(function(){const a = document.getElementById("pageURL"); a.innerText = window.location.href.toString();});
+    </script>
+    <script src="/script/main.js"></script>
 </body>
 </html>

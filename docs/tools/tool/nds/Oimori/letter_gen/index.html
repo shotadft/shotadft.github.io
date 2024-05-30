@@ -23,6 +23,7 @@
     <h1>10通目のびんせん自動生成ツール</h1>
     <h3>これって何？</h3>
     <p>おいでよどうぶつの森用の手紙バグ用ツール君。それ以上でもそれ以下でも無い。</p>
+    <p>なお、入力不可能文字の関係で入手できないアイテムもリストにあります。ご了承ください。</p>
     <h2 id="tools">ツール</h2>
     <table>
         <tr>
@@ -38,13 +39,14 @@
                 <form id="searchform">
                     <input type="text" id="search" value="">
                     <input type="submit" value="検索"><br />
-                    <select id="search_result" size="15" style="width: 200px;"></select>
+                    <select id="search_result" size="10" style="width: 200px;"></select>
                     <input type="button" id="insertlist" value="入力">
                 </form>
             </td>
         </tr>
     </table>
-    <textarea id="result" class="copyText" rows="5" cols="80" style="resize:none;" readonly>内容を入力してから、生成ボタンを押して生成してください。</textarea>
+    <textarea id="result" class="copyText" rows="5" cols="80" style="resize:none;"
+        placeholder="欲しいアイテムを選択してから、生成ボタンを押してください。" readonly></textarea>
     <hr>
     <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br />
         <label><input type="radio" name="intype" value="10" checked>10進</label>

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener('load', () => {
-    const txt = document.getElementById('copyText');
+    const txt = document.getElementById('result');
     const btn = document.getElementById('copy');
 
     btn.onclick = () => {

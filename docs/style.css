@@ -436,6 +436,7 @@ details.is-opened .detailsIcon {
 
     .heading_title {
         color: white;
+        border-bottom: solid 3px #a9a9a9;
     }
 
     .summary_inner {

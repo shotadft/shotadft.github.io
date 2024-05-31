@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const txt = document.getElementsByClassName('copyText')[0],
     btn = document.getElementById('copyButton');
 
-  btn.addEventListener('click', a);
-  function a(){
+  btn.onclick = () => {
     console.log(txt.value);
     if (!txt.value) {
       navigator.clipboard.writeText(txt.value).then(

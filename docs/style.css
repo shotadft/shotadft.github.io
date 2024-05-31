@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&family=Noto+Sans+JP:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -7,7 +7,9 @@ html {
 body {
     background: white;
     color: #444;
-    font-family: 'Noto Sans JP', 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans JP', 'メイリオ', Meiryo, Arial, sans-serif;
+    font-weight: 200;
+    font-style: normal;
     line-height: 1.42857;
     font-size: 16px;
     margin: 22px;

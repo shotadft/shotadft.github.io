@@ -34,6 +34,8 @@ div.app_index {
     padding: 0;
     text-align: left;
     font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .app_select_button img {

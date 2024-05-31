@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;700&family=Noto+Sans+JP:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700&family=Noto+Sans+JP:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -141,7 +141,7 @@ details.is-opened .detailsIcon {
     z-index: 100;
     padding: 12px 0;
     width: 100%;
-    background-color: #fff;
+    background-color: white;
     text-align: center;
 }
 
@@ -251,7 +251,7 @@ details.is-opened .detailsIcon {
     padding: 3px 6px;
     border: #656d78 solid 1px;
     background: #656d78;
-    color: #fff;
+    color: white;
     vertical-align: baseline;
     text-align: center;
     white-space: nowrap;
@@ -321,7 +321,7 @@ details.is-opened .detailsIcon {
     padding: 12px 24px;
     border: #656d78 solid 1px;
     background: #656d78;
-    color: #fff;
+    color: white;
     vertical-align: baseline;
     line-height: 1;
     -webkit-border-radius: 3px;
@@ -473,8 +473,6 @@ details.is-opened .detailsIcon {
     }
 
     .nav-group>li a {
-        display: block;
-        padding: 6px 12px;
         color: #999;
         text-decoration: none;
     }
@@ -508,7 +506,7 @@ details.is-opened .detailsIcon {
     left: calc(50% - 650px/2);
     width: 650px;
     font-size: 12px;
-    background: #fff;
+    background: white;
     padding: 1.2em;
     box-sizing: border-box;
     border: 1px solid #ddd;
@@ -526,7 +524,7 @@ details.is-opened .detailsIcon {
 }
 
 .cookie-agree {
-    color: #fff;
+    color: white;
     background: dodgerblue;
     padding: .5em 1.5em;
 }

@@ -381,13 +381,12 @@ details.is-opened .detailsIcon {
     border-radius: 50%;
 }
 
-/* Font Awesome */
 #page_top::before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     content: '\f106';
     font-size: 50px;
-    color: #ffffff;
+    color: white;
     position: absolute;
     width: 30px;
     height: 60px;
@@ -399,7 +398,6 @@ details.is-opened .detailsIcon {
     text-align: center;
 }
 
-/* マウスオーバー時 */
 #page_top:hover {
     background: rgb(255, 0, 0, 0.8);
     color: rgb(255, 255, 255, 0.8);

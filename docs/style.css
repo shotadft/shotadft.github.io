@@ -29,7 +29,7 @@ h5 {
 }
 
 .heading_title {
-    color: #000;
+    color: black;
     border-bottom: solid 3px #a9a9a9;
 }
 
@@ -431,6 +431,10 @@ details.is-opened .detailsIcon {
     body {
         background-color: #15202B;
         background: #15202B;
+        color: white;
+    }
+
+    .heading_title {
         color: white;
     }
 

@@ -102,11 +102,6 @@ details.is-opened .detailsIcon {
     gap: 16px;
 }
 
-.app_select_button {
-    margin: 2.5px;
-    text-align: left;
-}
-
 .button_dl a {
     text-decoration: none
 }

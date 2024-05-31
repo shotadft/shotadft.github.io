@@ -1,12 +1,12 @@
 h3.heading_title {
     color: #000;
-    border-bottom: solid 3px #a9a9a9
+    border-bottom: solid 3px #a9a9a9;
 }
 
 div.app_index {
-    display: inline-block;
     margin: 0;
-    padding: 0
+    padding: 0;
+    display: inline-block;
 }
 
 .app_index a {
@@ -30,15 +30,15 @@ div.app_index {
 }
 
 .app_select_button p {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
     text-align: left;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 .app_select_button img {
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
     width: 200px;
     height: 175px;
     object-fit: cover;

@@ -72,4 +72,8 @@ div.app_index a {
         text-align: left;
         color: white;
     }
+
+    .app_price {
+        color: #fc341c;
+    }
 }

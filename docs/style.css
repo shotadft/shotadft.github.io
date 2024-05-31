@@ -122,7 +122,7 @@ details.is-opened .detailsIcon {
     margin: 0;
     border-bottom: #ccd1d9 solid 1px;
     background-color: white;
-    color: #333333;
+    color: #333;
     text-align: center;
 }
 
@@ -132,7 +132,7 @@ details.is-opened .detailsIcon {
 }
 
 .header-description {
-    color: #999999;
+    color: #999;
 }
 
 /* ナビゲーション */
@@ -185,7 +185,7 @@ details.is-opened .detailsIcon {
     width: 100%;
     background: #ea5866;
     background-image: linear-gradient(135deg, #ffff00, #ffe200, #da4453);
-    color: #fff;
+    color: white;
     text-align: center;
     font-weight: bold;
     font-size: 17px;
@@ -201,7 +201,7 @@ details.is-opened .detailsIcon {
 .footer {
     padding: 12px 0;
     border-top: #ccd1d9 solid 1px;
-    background: #fff;
+    background: white;
     text-align: center;
 }
 
@@ -551,14 +551,14 @@ details.is-opened .detailsIcon {
     }
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
     body.column {
         width: 240px;
         float: left;
     }
 }
 
-@media (max-width: 799px) {
+@media screen and (max-width: 799px) {
     body.column {
         width: 100%;
     }

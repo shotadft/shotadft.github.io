@@ -28,6 +28,11 @@ h5 {
     text-align: left;
 }
 
+.heading_title {
+    color: #000;
+    border-bottom: solid 3px #a9a9a9;
+}
+
 textarea {
     padding: 10px;
     max-width: 100%;

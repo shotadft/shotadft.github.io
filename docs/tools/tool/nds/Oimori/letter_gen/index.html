@@ -52,7 +52,7 @@
         <label><input type="radio" name="intype" value="10" checked>10進</label>
         <label><input type="radio" name="intype" value="16">16進</label><br />
         <input type="text" value="0" id="input_cnv" pattern="^[a-f,A-F,0-9]+$" required> -&gt; <input type="text" value=""
-            id="output_cnv" pattern="^[a-f,A-F,0-9]+$" readonly>
+            id="output_cnv" pattern="^([a-f,A-F,0-9]|\[NUL [0-9]+\])+$" readonly>
         <button type="submit">変換</button>
     </form>
     <p>Connecting: <a href="/">shotadft.com</a></p>

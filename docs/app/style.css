@@ -7,6 +7,9 @@ div.app_index {
 div.app_index a {
     text-decoration: none;
     color: black;
+}
+
+div.app_index a.app_select_button {
     display: block;
 }
 
@@ -57,7 +60,6 @@ div.app_index a {
     div.app_index a {
         text-decoration: none;
         color: white;
-        display: block;
     }
 
     .app_select_button {
@@ -67,8 +69,6 @@ div.app_index a {
     }
 
     .app_select_button p {
-        margin: 0;
-        padding: 0;
         text-align: left;
         color: white;
     }

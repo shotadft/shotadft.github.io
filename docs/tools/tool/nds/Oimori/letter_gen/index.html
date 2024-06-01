@@ -30,7 +30,7 @@
             <td>
                 <form id="mainform">
                     <div id="itemlist"></div><label for="money">所持金</label><input type="number" id="money"
-                        max="999999" min="0" value="1"><br />
+                        max="99999999" min="0" value="1"><br />
                     <button type="submit">生成</button><button type="reset">クリア</button>
                     <button id="copyButton">コピー</button>
                 </form>
@@ -51,10 +51,11 @@
     <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br />
         <label><input type="radio" name="intype" value="10" checked>10進</label>
         <label><input type="radio" name="intype" value="16">16進</label><br />
-        <input type="text" value="0" id="input_cnv" pattern="^[a-f,A-F,0-9]+$"> -&gt; <input type="text" value="" id="output_cnv" pattern="^[a-f,A-F,0-9]+$" readonly>
+        <input type="text" value="0" id="input_cnv" pattern="^[a-f,A-F,0-9]+$"> -&gt; <input type="text" value=""
+            id="output_cnv" pattern="^[a-f,A-F,0-9]+$" readonly>
         <button type="submit">変換</button>
     </form>
-    <p>Connecting: <a href="https://www.shotadft.com/">shotadft.com</a></p>
+    <p>Connecting: <a href="/">shotadft.com</a></p>
     <div class="cookie-consent">
         <div class="cookie-text">当サイトではCookieを使用します。Cookieの使用に関する詳細は「<a href="#privacy-policy">プライバシーポリシー</a>」をご覧ください。
         </div>

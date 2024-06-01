@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const txt = document.getElementsByClassName('copyText')[0],
+  const txt = document.getElementsByClassName('copyText'),
     btn = document.getElementById('copyButton');
 
   btn.onclick = () => {
-    console.log(txt.value);
-    if (!txt.value) {
-      navigator.clipboard.writeText(txt.value).then(
-        () => { console.log("クリップボードにコピーしました"); },
-        () => { console.error("コピーに失敗しました"); }
-      );
+    for (let i = 0, len = txt.length | 0; i < len; i = (i + 1) | 0) {
+      if (!txt.value) {
+        navigator.clipboard.writeText(txt.value).then(
+          () => { console.log("クリップボードにコピーしました"); },
+          () => { console.error("コピーに失敗しました"); }
+        );
+      }
     }
   }
 });

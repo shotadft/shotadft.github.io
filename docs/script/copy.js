@@ -1,8 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const txt = document.getElementsByClassName('copyText'),
-    btn = document.getElementById('copyButton');
-
-  btn.onclick = () => {
+$(document).ready(function () {
+  $('#copyButton').click(function () {
+    const txt = document.getElementsByClassName('copyText');
     for (let i = 0, len = txt.length | 0; i < len; i = (i + 1) | 0) {
       console.log(`${txt[i].value}`);
       navigator.clipboard.writeText(`${txt[i].value}`).then(
@@ -10,5 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
         () => { console.error("コピーに失敗しました"); }
       );
     }
-  }
+  });
 });

@@ -30,7 +30,6 @@ h5 {
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 .heading_title {
@@ -437,11 +436,6 @@ details.is-opened .detailsIcon {
         background: #15202B;
         color: white;
     }
-
-    a {
-    	text-decoration: none;
-    	color: white;
-	}
 
     .heading_title {
         color: white;

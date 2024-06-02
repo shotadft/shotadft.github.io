@@ -15,6 +15,7 @@
     <meta property="og:url" content="https://*.shotadft.com/*" />
     <meta property="og:title" content="404 Page Not Found" />
     <meta property="og:site_name" content="Shotadft/承太劇場のホームページ" />
+    <style>a{color: black;}@media (prefers-color-scheme: dark){a{color: white;}}</style>
 </head>
 <body>
 <!--
@@ -47,7 +48,7 @@ layout: billboard
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script>
-        $(function () { const a = document.getElementById("pageURL"); a.innerText = (window.location.pathname.toString() === "/404.html") ? "this" : `\"${window.location.pathname.toString()}${window.location.search.toString()}${window.location.hash.toString()}\"` });
+        $(function(){const a = document.getElementById("pageURL"); a.innerText = (window.location.pathname.toString() === "/404.html") ? "this" : `\"${window.location.pathname.toString()}${window.location.search.toString()}${window.location.hash.toString()}\"`});
     </script>
     <script src="/script/main.js"></script>
 </body>

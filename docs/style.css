@@ -110,6 +110,7 @@ details.is-opened .detailsIcon {
 .detailsContent_inner {
     padding: 24px 48px;
     display: flex;
+    text-align: left;
     flex-direction: column;
     gap: 16px;
 }

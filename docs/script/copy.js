@@ -1,12 +1,1 @@
-$(document).ready(function() {
-  $('.copyButton').click(function() {
-    const txt = document.getElementsByClassName('copyText');
-    for (let i = 0, len = txt.length | 0; i < len; i = (i + 1) | 0) {
-      console.log(`${txt[i].value}`);
-      navigator.clipboard.writeText(`${txt[i].value}`).then(
-        () => { console.log("クリップボードにコピーしました"); },
-        () => { console.error("コピーに失敗しました"); }
-      );
-    }
-  });
-});
+$(document).ready(function(){$(".copyButton").click(function(){const a=document.getElementsByClassName("copyText");let b=$(".copyButton").txt();for(let c=0,d=0|a.length;c<d;c=0|c+1)console.log(`${a[c].value}`),navigator.clipboard.writeText(`${a[c].value}`).then(()=>{console.log("\u30AF\u30EA\u30C3\u30D7\u30DC\u30FC\u30C9\u306B\u30B3\u30D4\u30FC\u3057\u307E\u3057\u305F"),$(".copyButton").txt("Copied!"),setTimeout(function(){$(".copyButton").txt(b)},2e3)},()=>{console.error("\u30B3\u30D4\u30FC\u306B\u5931\u6557\u3057\u307E\u3057\u305F")})})});

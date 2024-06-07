@@ -19,6 +19,7 @@ body {
 
 p,
 a,
+label,
 img,
 h2,
 h3,
@@ -44,7 +45,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
-    color: black;
+    background-color: white;
 }
 
 summary {
@@ -434,6 +435,16 @@ details.is-opened .detailsIcon {
     body {
         background-color: #15202B;
         background: #15202B;
+        color: white;
+    }
+
+    textarea {
+        background-color: #15202B;
+        color: white;
+    }
+
+    select, button, input {
+        background-color: #1B2631;
         color: white;
     }
 

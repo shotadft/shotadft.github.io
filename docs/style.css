@@ -33,6 +33,18 @@ a {
     text-decoration: none;
 }
 
+img {
+    /* PC用 */
+    pointer-events: none;
+
+    /* スマホ用 */
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-touch-callout:none;
+    -moz-user-select:none;
+    user-select:none;
+}
+
 .heading_title {
     color: black;
     border-bottom: solid 3px #a9a9a9;

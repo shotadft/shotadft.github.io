@@ -9,11 +9,11 @@ div.app_index a {
     color: black;
 }
 
-div.app_index a.app_select_button {
+div.app_index a.app_banner {
     display: block;
 }
 
-.app_select_button {
+.app_banner {
     cursor: pointer;
     background: white;
     background-color: white;
@@ -27,7 +27,7 @@ div.app_index a.app_select_button {
     text-align: left;
 }
 
-.app_select_button p {
+.app_banner p {
     margin: 0;
     padding: 0;
     text-align: left;
@@ -36,7 +36,7 @@ div.app_index a.app_select_button {
     font-style: normal;
 }
 
-.app_select_button img {
+.app_banner img {
     margin: 0;
     padding: 0;
     width: 200px;
@@ -61,13 +61,13 @@ div.app_index a.app_select_button {
         color: white;
     }
 
-    .app_select_button {
+    .app_banner {
         background: black;
         background-color: black;
         border: 2px solid #f5f5f5;
     }
 
-    .app_select_button p {
+    .app_banner p {
         text-align: left;
         color: white;
     }

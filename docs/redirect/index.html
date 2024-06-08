@@ -13,11 +13,15 @@
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <p><a rel="noopener noreferrer" id="redirectURL"></a><br />にリダイレクトします。よろしければURLをクリックして移動してください。</p>
+    <noscript>
+        <p>警告: このページはJavaScriptで動作しているので、Javascriptを有効にしないと機能しません<br /><a href="about:settings/content/javascript"
+                target="_blank">ここから設定の許可、もしくは除外設定を解除してください。</a></p>
+        <p><a rel="noopener noreferrer" id="redirectURL"></a><br />にリダイレクトします。よろしければURLをクリックして移動してください。</p>
+    </noscript>
     <script>
         let url = new URL(`${window.location.href}`),
-         _url_value = `${url.searchParams.get('url')}`,
-         url_value = (!_url_value || !_url_value.match(/(https?)(\:\/\/[\w\/\:%#\$&\?\(\)~\.=\+\-]+)/gi))?'#':`${_url_value}`;
+            _url_value = `${url.searchParams.get('url')}`,
+            url_value = (!_url_value || !_url_value.match(/(https?)(\:\/\/[\w\/\:%#\$&\?\(\)~\.=\+\-]+)/gi)) ? '#' : `${_url_value}`;
         const a = document.getElementById('redirectURL');
 
         a.textContent = `${url_value}`;

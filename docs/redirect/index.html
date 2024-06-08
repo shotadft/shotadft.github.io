@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    
+    <script>
+        let url = new URL(`${window.location.href}`);let url_value = url.searchParams.get('url');window.location = (!url_value || !url_value.match(/(https?)(\:\/\/[\w\/\:%#\$&\?\(\)~\.=\+\-]+)/gi))?'#':`${url_value}`;
+    </script>
 </body>
 </html>

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 </head>
 <body>
     <noscript>
@@ -19,13 +21,15 @@
         <p><a rel="noopener noreferrer" id="redirectURL"></a><br />にリダイレクトします。よろしければURLをクリックして移動してください。</p>
     </noscript>
     <script>
-        let url = new URL(`${window.location.href}`),
-            _url_value = `${url.searchParams.get('url')}`,
-            url_value = (!_url_value || !_url_value.match(/(https?)(\:\/\/[\w\/\:%#\$&\?\(\)~\.=\+\-]+)/gi)) ? '#' : `${_url_value}`;
-        const a = document.getElementById('redirectURL');
+        $(document).ready(function() {
+            let url = new URL(`${window.location.href}`),
+                _url_value = `${url.searchParams.get('url')}`,
+                url_value = (!_url_value || !_url_value.match(/(https?)(\:\/\/[\w\/\:%#\$&\?\(\)~\.=\+\-]+)/gi)) ? '#' : `${_url_value}`;
+            const a = document.getElementById('redirectURL');
 
-        a.textContent = `${url_value}`;
-        a.setAttribute('href', url_value);
+            a.textContent = `${url_value}`;
+            a.setAttribute('href', url_value);
+        });
     </script>
 </body>
 </html>

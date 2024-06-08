@@ -33,17 +33,15 @@ a {
     text-decoration: none;
 }
 
-img {
-    /* PC用 */
+/*img {
     pointer-events: none;
 
-    /* スマホ用 */
     -webkit-touch-callout:none;
     -webkit-user-select:none;
     -moz-touch-callout:none;
     -moz-user-select:none;
     user-select:none;
-}
+}*/
 
 .heading_title {
     color: black;

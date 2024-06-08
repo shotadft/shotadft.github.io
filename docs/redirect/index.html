@@ -22,7 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="/script/main.js"></script>
     <script>
-        $(document).ready(function() {let url = window.location.href.split('?')[0] + '?' + new URLSearchParams(window.location.search).toString(),url_value = (!url || !url.match(/(https?)(\:\/\/[\w\/\:%#\$&\?\(\)~\.=\+\-]+)/gi)) ? '#' : `${encodeURI(url)}`;const a = document.getElementById('redirectURL');a.textContent = `${url_value}`;a.setAttribute('href', url_value);});
+        $(document).ready(function() {let url = window.location.href.split('?')[0] + '?' + new URLSearchParams(window.location.search).toString(),url_value = (!url || !url.match(/(https?)(\:\/\/[\w\/\:%#\$&\?\(\)~\.=\+\-]+)/gi)) ? '#' : `${encodeURI(url)}`;const a = document.getElementById('redirectURL');a.textContent = `${decodeURI(url_value).substring(0, 100)}`;a.setAttribute('href', url_value);});
     </script>
 </body>
 </html>

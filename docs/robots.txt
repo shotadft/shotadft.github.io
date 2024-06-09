@@ -4,7 +4,9 @@ Disallow: /sitemap/
 Disallow: /my_script_js/
 Disallow: /rpg_game/
 Disallow: /app/OpenBrowser/download/
-Sitemap: https://www.shotadft.com/sitemap/sitemap.xml
+Disallow: /redirect
+Sitemap: https://www.shotadft.com/sitemap/siretemap.xml
 
 User-agent: Googlebot-Image
-Disallow: /
+Disallow: /img/app/
+Disallow: /img/icon/

@@ -13,7 +13,7 @@ div.app_index a.app_banner {
     display: block;
 }
 
-.app_banner {
+a.app_banner {
     cursor: pointer;
     background: white;
     background-color: white;
@@ -27,7 +27,7 @@ div.app_index a.app_banner {
     text-align: left;
 }
 
-.app_banner p {
+a.app_banner p {
     margin: 0;
     padding: 0;
     color: #333;
@@ -35,7 +35,7 @@ div.app_index a.app_banner {
     font-style: normal;
 }
 
-.app_banner img {
+a.app_banner img {
     margin: 0;
     padding: 0;
     width: 200px;

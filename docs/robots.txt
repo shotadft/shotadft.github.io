@@ -1,6 +1,5 @@
 User-Agent: *
 Disallow: /tools/tool/
-Disallow: /sitemap/
 Disallow: /my_script_js/
 Disallow: /rpg_game/
 Disallow: /app/OpenBrowser/download/

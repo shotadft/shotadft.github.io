@@ -29,7 +29,7 @@
     <script>hljs.highlightAll();</script>
     <script src="/script/main.js"></script>
     <script>
-        $(document).ready(function() {function countGrapheme(string){const segmenter = new Intl.Segmenter("ja", { granularity: "grapheme" });return [...segmenter.segment(string)].length;} let url = `${window.location.search}`.replace(/^\?url=/gi, ''),url_value = (!url || !url.match(/(https?)(\:\/\/[\w\/\:%#\$&\?\(\)~\.=\+\-]+)/gi)) ? '#' : `${encodeURI(url)}`;const a = document.getElementById('redirectURL');a.textContent = `${decodeURI(url_value).substring(0, 100)}${(countGrapheme(decodeURI(url_value)) >= 100)?'...':''}`;a.setAttribute('href', url_value);});
+        $(function() {function countGrapheme(string){const segmenter = new Intl.Segmenter("ja", { granularity: "grapheme" });return [...segmenter.segment(string)].length;} let url = `${window.location.search}`.replace(/^\?url=/gi, ''),url_value = (!url || !url.match(/(https?)(\:\/\/[\w\/\:%#\$&\?\(\)~\.=\+\-]+)/gi)) ? '#' : `${encodeURI(url)}`;const a = document.getElementById('redirectURL');a.textContent = `${decodeURI(url_value).substring(0, 100)}${(countGrapheme(decodeURI(url_value)) >= 100)?'...':''}`;a.setAttribute('href', url_value);});
     </script>
 </body>
 </html>

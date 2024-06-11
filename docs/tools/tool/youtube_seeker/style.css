@@ -9,7 +9,6 @@ body {
 }
 
 #inputURL {
-    color: black;
     width: 50em;
     resize: none;
     outline: none;
@@ -17,7 +16,6 @@ body {
 }
 
 button#goURL {
-    color: black;
     width: 8em;
     height: 30px;
     vertical-align: top;

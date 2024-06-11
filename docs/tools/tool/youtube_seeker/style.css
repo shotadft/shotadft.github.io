@@ -1,32 +1,34 @@
-    body {
-        line-height: 1.42857;
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-        transition: .5s;
-    }
+@import url("/style.css");
 
-    #inputURL {
-        color: black;
-        width: 50em;
-        resize: none;
-        outline: none;
-        vertical-align: top;
-    }
+body {
+    line-height: 1.42857;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    transition: .5s;
+}
 
-    button#goURL {
-        color: black;
-        width: 8em;
-        height: 30px;
-        vertical-align: top;
-    }
+#inputURL {
+    color: black;
+    width: 50em;
+    resize: none;
+    outline: none;
+    vertical-align: top;
+}
 
-    .copyleft {
-        display: inline-block;
-        transform: rotate(180deg);
-    }
+button#goURL {
+    color: black;
+    width: 8em;
+    height: 30px;
+    vertical-align: top;
+}
 
-    #videoFrame {
-        margin: 0 auto;
-        padding: 1em;
-    }
+.copyleft {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+#videoFrame {
+    margin: 0 auto;
+    padding: 1em;
+}

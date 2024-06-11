@@ -4,6 +4,7 @@ Disallow: /my_script_js/
 Disallow: /rpg_game/
 Disallow: /app/OpenBrowser/download/
 Disallow: /redirect/
+Disallow: /audio/kirby_chestr.mp3
 Sitemap: https://www.shotadft.com/sitemap/sitemap.xml
 
 User-agent: Googlebot-Image

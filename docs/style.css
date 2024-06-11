@@ -34,6 +34,18 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    color: #0969DA;
+}
+
+a:visited {
+    color: #6f36a3;
+}
+
 /*img {
     pointer-events: none;
 
@@ -76,7 +88,7 @@ summary::-webkit-details-marker {
     padding: 16px 24px;
     border: 1px solid #d2beff;
     font-weight: bold;
-    color: #002255;
+    color: #0969DA;
 }
 
 .detailsIcon {
@@ -462,10 +474,6 @@ details.is-opened .detailsIcon {
     .heading_title {
         color: white;
         border-bottom: solid 3px #a9a9a9;
-    }
-
-    .summary_inner {
-        color: #4169E1;
     }
 
     .detailsContent {

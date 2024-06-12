@@ -458,6 +458,286 @@ pre.wp-block-code {
     transform: translate(5px, 5px);
 }
 
+/*Highlight.js*/
+.hljs-wrap {
+    position: relative;
+
+    pre {
+        overflow-wrap: break-word;
+        overflow-x: hidden;
+        padding: 0;
+    }
+
+    pre.pre-wrap {
+        white-space: pre-wrap;
+    }
+
+    pre.pre {
+        white-space: pre;
+    }
+
+    pre code {
+        padding-left: 3rem;
+        position: relative;
+        white-space: inherit;
+        overflow-y: hidden;
+    }
+
+    &.no-toolbar pre code,
+    body.no-toolbar & pre code {
+        padding-bottom: 1.5rem;
+        padding-top: 2.5rem;
+    }
+
+    &.no-toolbar pre code.show-no-lang,
+    body.no-toolbar & pre code.show-no-lang {
+        padding-top: 1rem;
+    }
+
+    &.no-toolbar.has-copy-btn pre code.show-no-lang,
+    body.no-toolbar.has-copy-btn & pre code.show-no-lang {
+        padding-top: 2rem;
+    }
+
+    &.no-toolbar pre.no-copy-btn code,
+    body.no-toolbar & pre.no-copy-btn code {
+        padding-bottom: 1rem;
+    }
+
+    .highlight-toolbar {
+        height: 2rem;
+        background-color: #3a3e4a;
+        padding-right: 5px;
+        color: #999;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    &.no-lang .highlight-toolbar {
+        justify-content: flex-end;
+    }
+
+    .highlight-toolbar+pre {
+        margin-top: 0;
+    }
+
+    .highlight-toolbar label {
+        color: #888;
+        cursor: pointer;
+        margin: 0 10px 0 0;
+        transition: color 0.3s;
+    }
+
+    .highlight-toolbar input[type="checkbox"] {
+        background-color: #262b37;
+        transition: background-color 0.3s;
+        display: none;
+    }
+
+    @media screen and (min-width: 640px) {
+        .highlight-toolbar label {
+            margin: 0 10px 0 3px;
+        }
+
+        .highlight-toolbar input[type="checkbox"] {
+            display: block;
+        }
+    }
+
+    .highlight-toolbar input[type="checkbox"]:hover {
+        background-color: #0d37a9;
+    }
+
+    .highlight-toolbar input[type="checkbox"] {
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .highlight-toolbar input[type="checkbox"] {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #333;
+        cursor: pointer;
+    }
+
+    .highlight-toolbar input[type="checkbox"]:checked:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 4px;
+        transform: rotate(45deg);
+        width: 4px;
+        height: 8px;
+        border-right: 2px solid #bbb;
+        border-bottom: 3px solid #bbb;
+    }
+
+    .highlight-toolbar input[type="checkbox"]:checked+label {
+        color: #b9bfd0;
+    }
+
+    code[data-language]::before {
+        content: attr(data-language);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #ccc;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #40547d;
+        z-index: 5;
+    }
+
+    code[data-language].hide-line-num::before {
+        left: 2.5rem;
+    }
+
+    .highlight-toolbar .lng-span {
+        margin-right: auto;
+        margin-left: 10px;
+        font-size: 13px;
+        color: #ccc;
+    }
+
+    .hljs-copy-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #262b37;
+        border: none;
+        padding: 8px;
+        color: #999;
+        cursor: pointer;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+    .hljs-copy-btn:hover {
+        color: #eee;
+        background-color: #162858;
+    }
+
+    .highlight-toolbar .hljs-copy-btn {
+        position: relative;
+        margin: 0 10px;
+        padding: 2px 4px;
+    }
+
+    .hljs-label,
+    .hljs-label-url {
+        position: absolute;
+        top: -2rem;
+        right: 10px;
+        color: #999;
+        display: inline-block;
+        padding: 0.5rem 0;
+    }
+
+    .hljs-label-url {
+        color: #3987c7;
+        text-decoration: none;
+    }
+
+    .hljs-label-url:hover {
+        color: #55924f;
+    }
+
+    &.has-label {
+        margin-top: 4rem;
+    }
+
+    pre {
+        counter-reset: lineNumber;
+    }
+
+    pre span.line-num::before {
+        counter-increment: lineNumber;
+        content: counter(lineNumber);
+        min-width: 2.5rem;
+        display: inline-block;
+        color: #777;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        background: #282c34;
+        border-right: 1px solid #595a60;
+    }
+
+    pre code.hide-line-num span.line-num::before {
+        left: -2.5rem;
+    }
+
+    pre code.hide-line-num {
+        margin-left: -2.5rem;
+    }
+
+    pre span.line-num.line-num-highlight::before {
+        color: #c2c21a;
+    }
+
+    .line-highlight {
+        position: absolute;
+        left: 2.5rem;
+        width: calc(100% - 2.5rem);
+        margin-left: -2.5rem;
+        width: 100%;
+        height: 1.1rem;
+        background: linear-gradient(to right,
+                hsla(254, 15%, 51%, 0.2) 50%,
+                hsla(254, 15%, 51%, 0.01));
+        pointer-events: none;
+    }
+
+    & .hljs-comment {
+        color: #6b788f;
+    }
+}
+
+details.toggle-code-animation {
+    border: none;
+    margin: 2rem 0;
+
+    .details-content-wrapper {
+        padding: 1rem 0;
+    }
+
+    .details-content {
+        overflow: hidden;
+    }
+
+    summary {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding: 0.5rem 0.5rem 0.5rem 36px;
+        border: 1px solid #aaa;
+        font-size: 13px;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        margin: auto 0;
+        width: 8px;
+        height: 8px;
+        border-top: 3px solid #097b27;
+        border-right: 3px solid #097b27;
+        transform: rotate(45deg);
+    }
+}
+
 /* media */
 @media (prefers-color-scheme: dark) {
     body {

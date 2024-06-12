@@ -458,64 +458,6 @@ pre.wp-block-code {
     transform: translate(5px, 5px);
 }
 
-/*highlight.js*/
-.hljs-wrap {
-    position: relative;
-
-    pre {
-        counter-reset: lineNumber;
-        padding: 0;
-    }
-
-    pre span.line-num::before {
-        counter-increment: lineNumber;
-        content: counter(lineNumber);
-        display: inline-block;
-        min-width: 1.5rem;
-        color: #5f9168;
-        margin-right: 5px;
-        padding-right: 5px;
-        text-align: center;
-    }
-
-    .wp-block-code code {
-        white-space: pre;
-    }
-
-    pre.pre-wrap code {
-        white-space: pre-wrap;
-    }
-
-    .hljs-copy-btn {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: 1px solid #474646;
-        padding: 5px 10px;
-        background-color: #201e1e;
-        color: #999;
-        cursor: pointer;
-    }
-
-    code.copy-btn-added {
-        padding-top: 2rem;
-    }
-
-    pre code[data-language]::before {
-        content: attr(data-language);
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: #aaa;
-        display: inline-block;
-        padding: 0.5rem;
-    }
-
-    pre code[data-language] {
-        padding-top: 2.5rem;
-    }
-}
-
 /* media */
 @media (prefers-color-scheme: dark) {
     body {

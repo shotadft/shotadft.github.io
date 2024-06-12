@@ -15,7 +15,7 @@ function mySetupHighlightJS() {
   });
 
   function showLanguage(el, result, pre) {
-    if(result.language && pre.classList.contains("show-lang")) {
+    if(result.language && !pre.classList.contains('show-no-lang')) {
       el.dataset.language = result.language;
     }
   }

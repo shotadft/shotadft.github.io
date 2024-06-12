@@ -142,6 +142,10 @@ details.is-opened .detailsIcon {
     text-decoration: none
 }
 
+pre.wp-block-code {
+    padding: 0;
+}
+
 /* ヘッダー */
 
 .header {

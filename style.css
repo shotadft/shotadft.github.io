@@ -127,7 +127,7 @@ details summary::-webkit-details-marker {
 }
 
 details {
-    padding: 16px;
+    padding: 8px 0;
 }
 
 .detailsIcon {

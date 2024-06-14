@@ -507,6 +507,83 @@ main {
     line-height: 1.75em;
 }
 
+/*お知らせ欄*/
+.news {
+    padding: 18px 12px;
+}
+
+.newsInner {
+    width: 80%;
+    background-color: #fff;
+    margin: 6px 0;
+    padding: 65px 0 100px;
+}
+
+.sub_ttl {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* ここからがニュース記事のCSS */
+.news_list {
+    margin: 0 5%;
+}
+
+.news_list_item {
+    padding: 25px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.news_list_item:first-child {
+    border-top: 1px solid #E6E6E6;
+}
+
+.news_list_item a {
+    position: relative;
+    display: flex;
+    padding-right: 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+.news_list_date {
+    font-size: 15px;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.news_item {
+    background: #F6C6A2;
+    border-radius: 14px;
+    width: 6em;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.arrow {
+    width: 25px;
+    height: 1px;
+    background: #707070;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.arrow::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 1px;
+    background: #707070;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0px;
+    bottom: 2px;
+}
+
 /*追従するトップへ戻るボタン*/
 #page_top {
     width: 100px;
@@ -582,6 +659,8 @@ details.toggle-code-animation {
     }
 }
 
+/* media */
+/*PCサイト*/
 @media screen and (min-width: 800px) {
     body.column {
         width: 240px;
@@ -644,13 +723,28 @@ details.toggle-code-animation {
     }
 }
 
+/*スマホ表示*/
 @media screen and (max-width: 799px) {
     body.column {
         width: 100%;
     }
+
+    .news_list_item a {
+        font-size: 14px;
+        display: block;
+    }
 }
 
-/* media */
+@media screen and (max-width: 480px) {
+    .arrow {
+        display: none;
+    }
+
+    .news_list_item a {
+        padding-right: 0;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     body,
     textarea,
@@ -688,11 +782,11 @@ details.toggle-code-animation {
         color: #666;
         text-decoration: none;
     }
-    
+
     .nav-items__item a:hover {
         color: #999;
     }
-    
+
     .nav-items__item a.active {
         color: #999;
     }

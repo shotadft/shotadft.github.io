@@ -57,13 +57,22 @@
                     <h1>Shotadftのホームページ<br />自作ソフトとかの保管庫なサイト</h1>
                 </div>
                 <h2 class="heading_title">ソフトウェア・アプリケーション</h2>
-                <div class="appIndex">
-                    <a href="#">
-                        <img src="https://www.shotadft.com/img/app/OpenBrowser.webp" alt="OpenBrowserアイコン">
+                <div class="appIndex" id="OpenBrowser">
+                    <a href="OpenBrowser/index.html">
+                        <img src="../img/appIcon/OpenBrowser.webp" alt="OpenBrowserアイコン">
                         <small>ソフトウェア</small>
                         <h2 style="margin:2px;">OpenBrowser</h2>
-                        <p class="description">シンプルなWebView2で動く<br />C#製ブラウザ。</p>
+                        <p class="description">シンプルなWebView2で動く<br />C#製ブラウザ</p>
                         <p class="appPrice" id="OpenBrowserPrice"></p>
+                    </a>
+                </div>
+                <div class="appIndex" id="EasyServers">
+                    <a href="javascript:void(0)">
+                        <img src="../img/appIcon/EasyServers.webp" alt="EasyServersアイコン">
+                        <small>ソフトウェア:開発中</small>
+                        <h2 style="margin:2px;">EasyServers</h2>
+                        <p class="description">半自動でMinecraftサーバーを立てる/操作するソフト</p>
+                        <p class="appPrice" id="EasyServersPrice"></p>
                     </a>
                 </div>
             </div>
@@ -95,6 +104,7 @@
         $(function () {
             let use_language = window.navigator.language; var language_money = "", freePrice_text = "", setFreePriceText = !1; "ja-JP" === use_language || "ja" === use_language ? (language_money = "JP\xA5", freePrice_text = "\u7121\u6599") : "zh" === use_language || "zh-Hans" === use_language || "zh-SG" === use_language || "zh-CN" === use_language || "zh-Hant" === use_language || "zh-HK" === use_language || "zh-TW" === use_language || "zh-MO" === use_language ? (language_money = "CN\xA5", freePrice_text = "\u514D\u8D39") : (language_money = "$", freePrice_text = "Free"); function SetPrice(a, b) { this.PriceValue = b, this.Divided = a; const c = document.getElementById(this.Divided); c.innerText = 0 === this.PriceValue ? `${language_money}${b}(${freePrice_text})` : `${language_money}${b}` }
             SetPrice('OpenBrowserPrice', 0);
+            SetPrice('EasyServersPrice', 0);
         });
     </script>
 </body>

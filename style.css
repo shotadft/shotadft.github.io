@@ -743,7 +743,6 @@ details.toggle-code-animation {
 }
 
 @media (prefers-color-scheme: dark) {
-
     body,
     textarea,
     .footer,
@@ -752,7 +751,7 @@ details.toggle-code-animation {
     .footer-copyright {
         background-color: #15202B;
         background: #15202B;
-        color: white;
+        color: #ededed;
     }
 
     .header {
@@ -761,14 +760,19 @@ details.toggle-code-animation {
 
     .main {
         background-color: #1e2631;
-        color: white;
+        color: #ededed;
     }
 
     select,
     button,
     input {
         background-color: #1B2631;
-        color: white;
+        color: #ededed;
+    }
+
+    .heading_title {
+        color: #ededed;
+        border-bottom: solid 3px #a9a9a9;
     }
 
     .detailsContent {

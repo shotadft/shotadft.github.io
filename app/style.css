@@ -37,6 +37,22 @@
 }
 
 .appPrice {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin: 12px 0;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     color: #fc341c;
+    width: fit-content;
+}
+
+@media (prefers-color-scheme: dark) {
+    .appIndex {
+        background-color: #15202B;
+        border: 2.5px solid #5e5e5e;
+    }
+
+    .appIndex a {
+        color: #ededed;
+        text-decoration: none;
+    }
 }

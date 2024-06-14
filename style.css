@@ -372,14 +372,13 @@ main {
     position: relative;
     height: 100%;
     display: flex;
-    width: fit-content;
     align-items: center;
 }
 
 /* ナビのリンク */
 .nav-items__item a {
     color: #333;
-    width: 100%;
+    width: fit-content;
     display: block;
     text-align: center;
     font-size: 24px;
@@ -748,14 +747,20 @@ details.toggle-code-animation {
     .footer,
     .footer-nav,
     .footer-nav-group,
-    .footer-copyright {
+    .footer-copyright,
+    .newsInner {
         background-color: #15202B;
         background: #15202B;
         color: #ededed;
     }
 
-    .header {
+    .header,
+    .header__nav {
         background-color: rgba(21, 32, 41, 0.95);
+    }
+
+    .hamburger span {
+        background-color: white;
     }
 
     .main {

@@ -299,6 +299,13 @@ main {
     display: flex;
 }
 
+.heading_title {
+    color: #333;
+    width: 80%;
+    line-height: 2em;
+    border-bottom: solid 3px #a9a9a9;
+}
+
 /* メインイメージ */
 .mainImg {
     padding: 144px 0;

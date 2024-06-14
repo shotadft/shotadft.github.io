@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 .appIndex {
-    margin: 2.5px;
+    margin: 6px 8px;
     padding: 0;
-    display: flexbox;
+    display: inline-block;
     text-decoration: none;
     /*Index*/
     cursor: pointer;

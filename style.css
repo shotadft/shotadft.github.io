@@ -120,6 +120,7 @@ details summary::-webkit-details-marker {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    user-select: none;
     padding: 16px 24px;
     border: 1px solid #d2beff;
     font-weight: bold;

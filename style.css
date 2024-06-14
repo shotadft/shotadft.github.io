@@ -748,10 +748,20 @@ details.toggle-code-animation {
     .footer-nav,
     .footer-nav-group,
     .footer-copyright,
-    .newsInner {
+    .newsInner,
+    .news_list_item a {
         background-color: #15202B;
         background: #15202B;
         color: #ededed;
+    }
+
+    .news_item {
+        color: #333;
+    }
+
+    details summary {
+        background-color: #15202B;
+        background: #15202B;
     }
 
     .header,

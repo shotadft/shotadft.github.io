@@ -295,6 +295,10 @@ main {
     margin: 12.75px auto;
 }
 
+.main .mainContents {
+    display: flex;
+}
+
 /* メインイメージ */
 .mainImg {
     padding: 144px 0;
@@ -432,7 +436,6 @@ main {
     margin: 8px 0;
 }
 
-
 .hamburger span:nth-child(3) {
     top: 0;
 }
@@ -447,7 +450,6 @@ main {
     top: 5px;
     transform: rotate(45deg);
 }
-
 
 .hamburger.active span:nth-child(2) {
     opacity: 0;
@@ -513,7 +515,7 @@ main {
 }
 
 .newsInner {
-    width: 80%;
+    width: 97.5%;
     background-color: #fff;
     margin: 6px 0;
     padding: 65px 0 100px;
@@ -746,6 +748,7 @@ details.toggle-code-animation {
 }
 
 @media (prefers-color-scheme: dark) {
+
     body,
     textarea,
     .footer,

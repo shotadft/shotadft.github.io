@@ -27,7 +27,9 @@
     width: 200px;
     height: 175px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 7.5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .appIndex p.description {

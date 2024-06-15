@@ -658,7 +658,7 @@ details.toggle-code-animation {
 
 /* media */
 /*PC表示*/
-@media screen and (1024px < width) {
+@media screen and (min-width: 820px) {
     body.column {
         width: 240px;
         float: left;
@@ -721,7 +721,7 @@ details.toggle-code-animation {
 }
 
 /*スマホ表示*/
-@media screen and (1024px <= width <= 480px) {
+@media screen and (max-width: 819px) {
     body.column {
         width: 100%;
     }

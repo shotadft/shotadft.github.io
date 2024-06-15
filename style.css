@@ -104,7 +104,6 @@ pre code.hljs {
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-weight: 300;
-    width: fit-content;
 }
 
 textarea {
@@ -729,11 +728,6 @@ details.toggle-code-animation {
 
     .hamburger {
         display: none;
-    }
-
-    .twitter-timeline #twitter-widget-0 {
-        display: flex;
-        justify-content: flex-end;
     }
 }
 

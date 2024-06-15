@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Shotadftのホームページ</title>
+    <meta name="description" content="Page Not Found">
+    <link rel="icon" href="../img/icon/favicon.ico" />
+    <link rel="apple-touch-icon" href="../img/shotadft_icon_a.png" />
+    <link rel="shortcut icon" href="../img/icon/favicon.ico" />
+    <meta name="application-name" content="Shotadftのホームページ">
+    <meta name="msapplication-square150x150logo" content="img/icon/s150x150.png">
+    <meta name="msapplication-TileColor" content="#fcfc00">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Shotadft0780">
+    <meta property="og:title" content="404 - Page not Found">
+    <meta property="og:url" content="https://www.shotadft.com/tools">
+    <meta property="og:image" content="https://www.shotadft.com/img/ogp.webp">
+    <meta property="og:site_name" content="Shotadft/承太劇場のホームページ">
+    <meta property="og:locale" content="ja_JP">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__inner">
+                <h1 class="header__title header-title"><a href="../"><img src="../img/shotadft_icon_a.png"
+                            oncontextmenu="return false;" width="48" alt="Shotadft's ロゴ" /></a></h1>
+                <nav class="header__nav nav" id="js-nav">
+                    <ul class="nav__items nav-items">
+                        <li class="nav-items__item"><a href="index.html"><i class="fas fa-home"></i>&nbsp;ホーム</a>
+                        </li>
+                        <li class="nav-items__item"><a href="tools/"><i class="fas fa-toolbox"></i>&nbsp;自作ツール</a>
+                        </li>
+                        <li class="nav-items__item"><a href="app/">
+                                <i class="far fa-window-maximize"></i>&nbsp;自作アプリ</a></li>
+                        <li class="nav-items__item"><a href="https://www.shotadft.com/tools"><i
+                                    class="fas fa-sign-out-alt"></i>&nbsp;現行のサイトに戻る</a></li>
+                    </ul>
+                </nav>
+                <button class="header__hamburger hamburger" id="js-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <h1><img alt="404 Page not found :("
+                        src="https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/404%20NotFound.png"
+                        width="230" onselectstart="return false;" onmousedown="return false;"></h1>
+                <p>There is no site page named <b id="pageURL"></b>.<br />Are you sure the URL is correct?</p><br />
+                <p><a href="https://github.com/SAWARATSUKI/KawaiiLogos" target="_blank" rel="noopener noreferrer"
+                        style="text-decoration:none;">kawaiiLogo</a> by <a href="https://x.com/sawaratsuki1004"
+                        target="_blank" rel="noopener noreferrer" style="text-decoration:none;">さわらつき</a></p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-nav">
+                <ul class="footer-nav-group">
+                    <li><a href="https://x.com/Shotadft0780" target="_blank"
+                            rel="noopener noreferrer">𝕏&nbsp;Twitter</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/@shota_dft" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-youtube"></i>&nbsp;YouTube</a></li>
+                </ul>
+            </div>
+            <span class="footer-copyright">&copy;2022-2024 Shotadft. All Rights reserved.<br />
+                - このサイトの画像は <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://licensebuttons.net/l/by-nd/4.0/88x31.png" alt="CC-BY-ND 4.0" height="16" width:
+                        auto;></a> で保護されています。</span>
+        </footer>
+    </div>
+    <a href="#" id="page_top"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="/script/main.js" charset="utf-8"></script>
+    <script>
+        $(function(){const a = document.getElementById("pageURL"); a.innerText = (window.location.pathname.toString() === "/404.html"||window.location.pathname.toString() === "/404") ? "this" : `\"${window.location.pathname.toString()}${window.location.search.toString()}${window.location.hash.toString()}\"`});
+    </script>
+</body>
+</html>

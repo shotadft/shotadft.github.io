@@ -282,6 +282,7 @@ main {
 
 .main .mainContents {
     display: flex;
+    flex-direction: row;
 }
 
 .heading_title {
@@ -658,7 +659,7 @@ details.toggle-code-animation {
 
 /* media */
 /*PC表示*/
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 1024px) {
     body.column {
         width: 240px;
         float: left;
@@ -721,7 +722,7 @@ details.toggle-code-animation {
 }
 
 /*スマホ表示*/
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 1023px) {
     body.column {
         width: 100%;
     }
@@ -732,7 +733,7 @@ details.toggle-code-animation {
     }
 
     .main .mainContents {
-        display: inline-block;
+        flex-direction: column;
     }
 }
 

@@ -729,6 +729,10 @@ details.toggle-code-animation {
         font-size: 14px;
         display: block;
     }
+
+    .main .mainContents {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 480px) {

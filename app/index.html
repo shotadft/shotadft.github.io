@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shotadftのホームページ</title>
     <meta name="description" content="ただの個人ホームページ。ツールとかソフトの置き場。">
-    <link rel="icon" href="../img/icon/favicon.ico" />
-    <link rel="apple-touch-icon" href="../img/shotadft_icon_a.png" />
-    <link rel="shortcut icon" href="../img/icon/favicon.ico" />
+    <link rel="icon" href="/img/icon/favicon.ico" />
+    <link rel="apple-touch-icon" href="/img/shotadft_icon_a.png" />
+    <link rel="shortcut icon" href="/img/icon/favicon.ico" />
     <meta name="application-name" content="Shotadftのホームページ">
     <meta name="msapplication-square150x150logo" content="img/icon/s150x150.png">
     <meta name="msapplication-TileColor" content="#fcfc00">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="style.css">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Shotadft0780">
@@ -31,13 +31,13 @@
     <div class="container">
         <header class="header">
             <div class="header__inner">
-                <h1 class="header__title header-title"><a href="#"><img src="../img/shotadft_icon_a.png"
+                <h1 class="header__title header-title"><a href="#"><img src="/img/shotadft_icon_a.png"
                             oncontextmenu="return false;" width="48" alt="Shotadft's ロゴ" /></a></h1>
                 <nav class="header__nav nav" id="js-nav">
                     <ul class="nav__items nav-items">
-                        <li class="nav-items__item"><a href="../index.html"><i class="fas fa-home"></i>&nbsp;ホーム</a>
+                        <li class="nav-items__item"><a href="/index.html"><i class="fas fa-home"></i>&nbsp;ホーム</a>
                         </li>
-                        <li class="nav-items__item"><a href="../tools/index.html"><i
+                        <li class="nav-items__item"><a href="/tools/index.html"><i
                                     class="fas fa-toolbox"></i>&nbsp;自作ツール</a>
                         </li>
                         <li class="nav-items__item"><a href="#" class="active">
@@ -59,7 +59,7 @@
                 <h2 class="heading_title">ソフトウェア・アプリケーション</h2>
                 <div class="appIndex" id="OpenBrowser">
                     <a href="OpenBrowser/index.html">
-                        <img src="../img/appIcon/OpenBrowser.webp" alt="OpenBrowserアイコン" oncontextmenu="return false;">
+                        <img src="/img/appIcon/OpenBrowser.webp" alt="OpenBrowserアイコン" oncontextmenu="return false;">
                         <small>ソフトウェア</small>
                         <h2 style="margin:2px;">OpenBrowser</h2>
                         <p class="description">シンプルなWebView2で動く<br />C#製ブラウザ</p>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="appIndex" id="EasyServers">
                     <a href="javascript:void(0)">
-                        <img src="../img/appIcon/EasyServers.webp" alt="EasyServersアイコン" oncontextmenu="return false;">
+                        <img src="/img/appIcon/EasyServers.webp" alt="EasyServersアイコン" oncontextmenu="return false;">
                         <small>ソフトウェア:開発中</small>
                         <h2 style="margin:2px;">EasyServers</h2>
                         <p class="description">半自動でMinecraftサーバーを立てる/操作するソフト</p>
@@ -99,7 +99,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
-    <script src="../script/main.js" charset="utf-8"></script>
+    <script src="/script/main.js" charset="utf-8"></script>
     <script>
         $(function () {
             let use_language = window.navigator.language; var language_money = "", freePrice_text = "", setFreePriceText = !1; "ja-JP" === use_language || "ja" === use_language ? (language_money = "JP\xA5", freePrice_text = "\u7121\u6599") : "zh" === use_language || "zh-Hans" === use_language || "zh-SG" === use_language || "zh-CN" === use_language || "zh-Hant" === use_language || "zh-HK" === use_language || "zh-TW" === use_language || "zh-MO" === use_language ? (language_money = "CN\xA5", freePrice_text = "\u514D\u8D39") : (language_money = "$", freePrice_text = "Free"); function SetPrice(a, b) { this.PriceValue = b, this.Divided = a; const c = document.getElementById(this.Divided); c.innerText = 0 === this.PriceValue ? `${language_money}${b}(${freePrice_text})` : `${language_money}${b}` }

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shotadftのホームページ</title>
     <meta name="description" content="ただの個人ホームページ。ツールとかソフトの置き場。">
-    <link rel="icon" href="/img/icon/favicon.ico" />
-    <link rel="apple-touch-icon" href="/img/shotadft_icon_a.png" />
-    <link rel="shortcut icon" href="/img/icon/favicon.ico" />
+    <link rel="icon" href="img/icon/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/shotadft_icon_a.png" />
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
     <meta name="application-name" content="Shotadftのホームページ">
     <meta name="msapplication-square150x150logo" content="img/icon/s150x150.png">
     <meta name="msapplication-TileColor" content="#fcfc00">
@@ -17,11 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Shotadft0780">
     <meta property="og:title" content="Shotadftのホームページ">
-    <meta property="og:url" content="https://www.shotadft.com/tools">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shotadft.com/">
     <meta property="og:image" content="https://www.shotadft.com/img/ogp.webp">
     <meta property="og:site_name" content="Shotadft/承太劇場のホームページ">
     <meta property="og:locale" content="ja_JP">
@@ -30,13 +31,13 @@
     <div class="container">
         <header class="header">
             <div class="header__inner">
-                <h1 class="header__title header-title"><a href="#"><img src="/img/shotadft_icon_a.png"
+                <h1 class="header__title header-title"><a href="#"><img src="img/shotadft_icon_a.png"
                             oncontextmenu="return false;" width="48" alt="Shotadft's ロゴ" /></a></h1>
                 <nav class="header__nav nav" id="js-nav">
                     <ul class="nav__items nav-items">
-                        <li class="nav-items__item"><a href="/index.html"><i class="fas fa-home"></i>&nbsp;ホーム</a>
+                        <li class="nav-items__item"><a href="/" class="active"><i class="fas fa-home"></i>&nbsp;ホーム</a>
                         </li>
-                        <li class="nav-items__item"><a href="#" class="active"><i
+                        <li class="nav-items__item"><a href="/tools/index.html"><i
                                     class="fas fa-toolbox"></i>&nbsp;自作ツール</a>
                         </li>
                         <li class="nav-items__item"><a href="/app/index.html">
@@ -53,17 +54,48 @@
         <main>
             <div class="main">
                 <div class="mainImg">
-                    <h1>Shotadftのホームページ<br />ツールとかの保管庫なサイト</h1>
+                    <h1>Shotadftのホームページ<br />色々あるサイト</h1>
                 </div>
+                <h2 class="heading_title">メインコンテンツ</h2>
+                <div class="mainContents">
+                    <section class="news">
+                        <div class="newsInner">
+                            <h2 class="sub_ttl">NEWS</h2>
+                            <ul class="news_list">
+                                <li class="news_list_item">
+                                    <a href="#">
+                                        <div class="news_list_date">
+                                            <time>2024.06.14</time>
+                                            <p class="news_item">お知らせ</p>
+                                        </div>
+                                        <p>サイトリニューアルしました。</p>
+                                        <span class="arrow"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <a class="twitter-timeline" data-width="504" data-height="896"
+                        href="https://twitter.com/Shotadft0780?ref_src=twsrc%5Etfw">Tweets by Shotadft0780</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <h2 class="heading_title">その他色々</h2>
+                <p><!--<a href="//www.shotadft.com/my_script_js/" target="_blank" rel="noopener noreferrer">My Javascript Library</a><br />-->
+                    <a href="https://www.amazon.jp/hz/wishlist/ls/3RO7TCJ42WD0K?ref_=wl_share" target="_blank"
+                        rel="noopener noreferrer">Amazon 欲しいものリスト</a>
+                </p>
+                <h3>サイトバナー</h3>
+                <a href="#"><img src="img/banner.webp" alt="Shotadftのホームページ" width="300" height="50"
+                        oncontextmenu="return false;" /></a>
                 <details class="js-details">
                     <summary class="js-summary">
-                        <span class="summary_inner">Nintendo DS・DSi<span class="detailsIcon"></span></span>
+                        <span class="summary_inner">バナーのコード<span class="detailsIcon"></span></span>
                     </summary>
                     <div class="detailsContent js-content">
-                        <ul class="detailsContent_inner">
-                            <li><a href="https://www.shotadft.com/tools/tool/nds/Oimori/letter_gen"
-                                    rel="noopener noreferrer"><small>おいでよ&nbsp;どうぶつの森</small>手紙バグ文字ジェネレータ</a></li>
-                        </ul>
+                        <pre><code class="copyTXT language-xml">
+&lt;a href="https://www.shotadft.com/" target="_blank" rel="noopener noreferrer"&gt;&lt;img src="https://www.shotadft.com/img/banner.webp" alt="Shotadftのホームページ" oncontextmenu="return false;" /&gt;
+                    </code></pre>
+                        <button class="copyBtn" onclick="navigator.clipboard.writeText($('.copyTXT').text());">コピー</button>
                     </div>
                 </details>
             </div>
@@ -90,6 +122,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
-    <script src="/script/main.js" charset="utf-8"></script>
+    <script src="script/main.js" charset="utf-8"></script>
 </body>
 </html>

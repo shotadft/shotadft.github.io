@@ -730,6 +730,11 @@ details.toggle-code-animation {
     .hamburger {
         display: none;
     }
+
+    .twitter-timeline {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 /*スマホ表示*/
@@ -759,6 +764,7 @@ details.toggle-code-animation {
 }
 
 @media (prefers-color-scheme: dark) {
+
     body,
     textarea,
     .footer,

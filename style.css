@@ -293,6 +293,7 @@ main {
 
 /* メインイメージ */
 .mainImg {
+    margin: 84px 0 0 0;
     padding: 144px 0;
     width: 100%;
     background: #dfe200;
@@ -657,7 +658,7 @@ details.toggle-code-animation {
 
 /* media */
 /*PCサイト*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
     body.column {
         width: 240px;
         float: left;
@@ -720,7 +721,7 @@ details.toggle-code-animation {
 }
 
 /*スマホ表示*/
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 1023px) {
     body.column {
         width: 100%;
     }

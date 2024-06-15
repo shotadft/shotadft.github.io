@@ -93,6 +93,7 @@ pre code.hljs {
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
     font-weight: 300;
+    width: fit-content;
 }
 
 textarea {
@@ -103,6 +104,10 @@ textarea {
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
     background-color: white;
+}
+
+details {
+    padding: 8px 0;
 }
 
 details summary {
@@ -125,10 +130,6 @@ details summary::-webkit-details-marker {
     border: 1px solid #d2beff;
     font-weight: bold;
     color: #0969DA;
-}
-
-details {
-    padding: 8px 0;
 }
 
 .detailsIcon {
@@ -520,7 +521,7 @@ main {
     font-size: 30px;
     text-align: center;
     margin-bottom: 40px;
-    width: 100%;
+    width: auto;
 }
 
 /* ここからがニュース記事のCSS */
@@ -530,7 +531,6 @@ main {
 
 .news_list_item {
     padding: 25px 0;
-    width: fit-content;
     border-bottom: 1px solid #E6E6E6;
 }
 

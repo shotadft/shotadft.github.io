@@ -630,7 +630,7 @@ main {
 }
 
 /* ダウンロードボタン */
-.button_dl a {
+a.button_dl {
     background: #eeeeee;
     border-radius: 3px;
     position: relative;
@@ -644,7 +644,7 @@ main {
     box-shadow: 5px 5px 0 #6bb6ff;
 }
 
-.button_dl a:hover {
+a.button_dl:hover {
     background-color: #b3d9ff;
     box-shadow: 0 0 0;
     transform: translate(5px, 5px);

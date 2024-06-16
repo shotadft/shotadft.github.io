@@ -7,16 +7,18 @@
     <title>Shotadftのホームページ</title>
     <meta name="description" content="ただの個人ホームページ。ツールとかソフトの置き場。">
     <link rel="icon" href="img/icon/favicon.ico" />
-    <link rel="apple-touch-icon" href="img/shotadft_icon_a.png" />
+    <link rel="apple-touch-icon" href="img/shotadft_icon_a.webp" />
     <link rel="shortcut icon" href="img/icon/favicon.ico" />
     <meta name="application-name" content="Shotadftのホームページ">
     <meta name="msapplication-square150x150logo" content="img/icon/s150x150.png">
     <meta name="msapplication-TileColor" content="#fcfc00">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
+        onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="preload" as="style"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+        onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="style.css">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Shotadft0780">
@@ -31,7 +33,7 @@
     <div class="container">
         <header class="header">
             <div class="header__inner">
-                <h1 class="header__title header-title"><a href="#"><img src="img/shotadft_icon_a.png"
+                <h1 class="header__title header-title"><a href="#"><img src="img/shotadft_icon_a.webp"
                             oncontextmenu="return false;" width="48" alt="Shotadft's ロゴ" /></a></h1>
                 <nav class="header__nav nav" id="js-nav">
                     <ul class="nav__items nav-items">
@@ -112,6 +114,8 @@
                     </li>
                     <li><a href="https://www.youtube.com/@shota_dft" target="_blank" rel="noopener noreferrer"><i
                                 class="fab fa-youtube"></i>&nbsp;YouTube</a></li>
+                    <li><a href="https://github.com/shotadft" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i>&nbsp;GitHub</a></li>
                 </ul>
             </div>
             <span class="footer-copyright">&copy;2022-2024 Shotadft. All Rights reserved.<br />

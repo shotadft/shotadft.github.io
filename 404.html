@@ -7,13 +7,14 @@
     <title>404 - Shotadftのホームページ</title>
     <meta name="description" content="Page Not Found">
     <link rel="icon" href="../img/icon/favicon.ico" />
-    <link rel="apple-touch-icon" href="../img/shotadft_icon_a.png" />
+    <link rel="apple-touch-icon" href="../img/shotadft_icon_a.webp" />
     <link rel="shortcut icon" href="../img/icon/favicon.ico" />
     <meta name="application-name" content="Shotadftのホームページ">
     <meta name="msapplication-square150x150logo" content="img/icon/s150x150.png">
     <meta name="msapplication-TileColor" content="#fcfc00">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
+        onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="style.css">
     <meta name="twitter:card" content="summary_large_image">
@@ -28,7 +29,7 @@
     <div class="container">
         <header class="header">
             <div class="header__inner">
-                <h1 class="header__title header-title"><a href="index.html"><img src="img/shotadft_icon_a.png"
+                <h1 class="header__title header-title"><a href="index.html"><img src="img/shotadft_icon_a.webp"
                             oncontextmenu="return false;" width="48" alt="Shotadft's ロゴ" /></a></h1>
                 <nav class="header__nav nav" id="js-nav">
                     <ul class="nav__items nav-items">
@@ -51,7 +52,7 @@
         </header>
         <main>
             <div class="main">
-                <h1 style="margin: 82px 0 0 0;"><img alt="404 Page not found :("
+                <h1><img alt="404 Page not found :("
                         src="https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/404%20NotFound.png"
                         width="230" onselectstart="return false;" onmousedown="return false;"></h1>
                 <p>There is no site page named <b id="pageURL"></b>.<br />Are you sure the URL is correct?</p><br />
@@ -68,6 +69,8 @@
                     </li>
                     <li><a href="https://www.youtube.com/@shota_dft" target="_blank" rel="noopener noreferrer"><i
                                 class="fab fa-youtube"></i>&nbsp;YouTube</a></li>
+                    <li><a href="https://github.com/shotadft" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i>&nbsp;GitHub</a></li>
                 </ul>
             </div>
             <span class="footer-copyright">&copy;2022-2024 Shotadft. All Rights reserved.<br />
@@ -82,7 +85,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="script/main.js" charset="utf-8"></script>
     <script>
-        $(function(){const a = document.getElementById("pageURL"); a.innerText = (window.location.pathname.toString() === "/404.html"||window.location.pathname.toString() === "/404") ? "this" : `\"${window.location.pathname.toString().replace('test.shotadft.github.io/', '')}${window.location.search.toString()}${window.location.hash.toString()}\"`});
+        $(function () { const a = document.getElementById("pageURL"); a.innerText = (window.location.pathname.toString() === "/404.html" || window.location.pathname.toString() === "/404") ? "this" : `\"${window.location.pathname.toString().replace('test.shotadft.github.io/', '')}${window.location.search.toString()}${window.location.hash.toString()}\"` });
     </script>
 </body>
 </html>

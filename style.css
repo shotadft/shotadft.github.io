@@ -291,6 +291,10 @@ main {
     margin: 12.75px auto;
 }
 
+.main {
+    margin: 80px 0 0 0;
+}
+
 .main .mainContents {
     display: flex;
     flex-direction: row;
@@ -305,7 +309,6 @@ main {
 
 /* メインイメージ */
 .mainImg {
-    margin: 80px 0 0 0;
     padding: 144px 0;
     width: 100%;
     background: #dfe200;
@@ -798,7 +801,7 @@ details.toggle-code-animation {
         background-color: white;
     }
 
-    .main {
+    main {
         background-color: #1e2631;
         color: #ededed;
     }

@@ -900,7 +900,7 @@ details.toggle-code-animation {
 
     thead,
     tfoot {
-        background-color: rgb(80, 83, 85);
+        background-color: rgb(98, 110, 117);
     }
 
     tbody>tr:nth-of-type(even) {

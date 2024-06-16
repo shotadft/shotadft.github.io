@@ -647,6 +647,7 @@ main {
 .button_dl a:hover {
     background-color: #b3d9ff;
     box-shadow: 0 0 0;
+    text-decoration: none;
     transform: translate(5px, 5px);
 }
 

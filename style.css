@@ -898,6 +898,11 @@ details.toggle-code-animation {
         color: #999;
     }
 
+    thead,
+    tfoot {
+        background-color: rgb(80, 83, 85);
+    }
+
     tbody>tr:nth-of-type(even) {
         background-color: rgb(69, 70, 71);
     }
@@ -906,16 +911,16 @@ details.toggle-code-animation {
         color: #B0B0B0;
         text-decoration: none;
     }
-    
+
     .footer-nav-group>li a:hover {
         color: #AAA;
     }
-    
+
     .footer-copyright {
         color: #AAA;
         font-size: 0.8em;
         line-height: 1.75em;
-    }    
+    }
 }
 
 @media print {

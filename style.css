@@ -266,7 +266,6 @@ hr {
 }
 
 table {
-    color: #333;
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
     font-family: sans-serif;
@@ -898,6 +897,25 @@ details.toggle-code-animation {
     .nav-items__item a.active {
         color: #999;
     }
+
+    tbody>tr:nth-of-type(even) {
+        background-color: rgb(69, 70, 71);
+    }
+
+    .footer-nav-group>li a {
+        color: #B0B0B0;
+        text-decoration: none;
+    }
+    
+    .footer-nav-group>li a:hover {
+        color: #AAA;
+    }
+    
+    .footer-copyright {
+        color: #AAA;
+        font-size: 0.8em;
+        line-height: 1.75em;
+    }    
 }
 
 @media print {

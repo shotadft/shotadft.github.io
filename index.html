@@ -152,8 +152,6 @@
                             <pre><code class="copyTXT language-xml">
 &lt;a href=&quot;https://test.shotadft.com/&quot; target=&quot;_blank&quot; rel&quot;noopener noreferrer&quot;&gt;&lt;img src=&quot;https://test.shotadft.com/img/banner.webp&quot; alt=&quot;Shotadftのホームページ&quot; oncontextmenu=&quot;return false;&quot; /&gt;
                     </code></pre>
-                            <button class="copyBtn"
-                                onclick="navigator.clipboard.writeText($('.copyTXT').text());">コピー</button>
                         </div>
                     </div>
                 </details>
@@ -182,7 +180,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
+    <script>hljs.highlightAll();hljs.addPlugin(new CopyButtonPlugin());</script>
     <script defer src="script/main.js" charset="utf-8"></script>
 </body>
 </html>

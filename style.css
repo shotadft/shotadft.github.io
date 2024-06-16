@@ -629,6 +629,27 @@ main {
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* ダウンロードボタン */
+.button_dl a {
+    background: #eeeeee;
+    border-radius: 3px;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    max-width: 220px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 0 #6bb6ff;
+}
+
+.button_dl a:hover {
+    background-color: #b3d9ff;
+    box-shadow: 0 0 0;
+    transform: translate(5px, 5px);
+}
+
 /*Other*/
 details.toggle-code-animation {
     border: none;

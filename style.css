@@ -476,8 +476,6 @@ main {
     border-top: #ccd1d9 solid 1px;
     background: #fafafa;
     text-align: center;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
 }
 
 .footer-nav {

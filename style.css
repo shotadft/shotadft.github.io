@@ -83,7 +83,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     color: #333;
-    line-height: 1;
+    line-height: 1em;
 }
 
 h1,
@@ -100,7 +100,6 @@ a,
 p {
     width: fit-content;
     text-align: justify;
-    line-height: 1;
 }
 
 code,
@@ -349,11 +348,10 @@ a:visited {
 
 main {
     background-color: #f8f8f8;
-    margin: 12.75px 0;
 }
 
 .main {
-    margin: 55px 0 0 0;
+    margin: 80px 16px 4px 16px;
 }
 
 .main .mainContents {
@@ -540,7 +538,7 @@ main {
 }
 
 .footer-nav {
-    margin-bottom: 12px;
+    margin: 8px;
     width: 100%;
     list-style: none;
     text-align: center;
@@ -578,13 +576,14 @@ main {
     color: #545454;
     font-size: 0.8em;
     line-height: 1.75em;
+    margin-top: 4px;
 }
 
 /*コンテナ*/
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 800px;
+    min-height: 100vh;
 }
 
 /*お知らせ欄*/

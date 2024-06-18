@@ -1,13 +1,24 @@
 var CONST_ITEM_MAX = 15;
 $(function(){
+	function asyncTask(item) {
+		return new Promise((resolve) => {
+			setTimeout(() => {
+				CreateInputForm(item);
+				resolve();
+			}, 1000);
+		});
+	}
+	
 	const items = [1, 2, 3, 4, 5];
-	async function processItems(items) {
-		for (const item of items) {
-			CreateInputForm(i);
+	
+	async function processItems() {
+		let index = 0;
+		for (let i = 1; i <= CONST_ITEM_MAX; i++) {
+			await asyncTask(i);
 		}
 		console.log('Form Create Completed.');
 	}
-	processItems(items);
+	processItems();
 
 	$("#mainform").submit(function(){
 		$("#result").html(GetItemString() + GetMoneyString());

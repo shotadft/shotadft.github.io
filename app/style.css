@@ -3,7 +3,6 @@
 .appIndex {
     margin: 6px 8px;
     padding: 0;
-    display: inline-block;
     /*Index*/
     cursor: pointer;
     background-color: white;
@@ -16,8 +15,19 @@
     text-align: left;
 }
 
+.appIndexMark {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
 .appIndex a {
     color: #333;
+    text-decoration: none;
+}
+
+.appIndex a:hover {
+    color: #666;
     text-decoration: none;
 }
 
@@ -55,6 +65,11 @@
 
     .appIndex a {
         color: #ededed;
+        text-decoration: none;
+    }
+    
+    .appIndex a:hover {
+        color: #cecece;
         text-decoration: none;
     }
 }

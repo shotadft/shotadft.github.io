@@ -1,5 +1,6 @@
 var CONST_ITEM_MAX = 15;
 $(function(){
+	/*CreateInputForm Async*/
 	function asyncTask(item) {
 		return new Promise((resolve) => {
 			setTimeout(() => {
@@ -10,7 +11,6 @@ $(function(){
 	}
 	
 	const items = [1, 2, 3, 4, 5];
-	
 	async function processItems() {
 		let index = 0;
 		for (let i = 1; i <= CONST_ITEM_MAX; i++) {
@@ -20,6 +20,7 @@ $(function(){
 	}
 	processItems();
 
+	/*Events*/
 	$("#mainform").submit(function(){
 		$("#result").html(GetItemString() + GetMoneyString());
 		return false;

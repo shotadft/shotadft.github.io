@@ -139,7 +139,7 @@
     <script defer src="/script/main.js" charset="utf-8"></script>
     <script defer charset="utf-8">
         $(function () {
-            let use_language=window.navigator.language;var language_money="",freePrice_text="",setFreePriceText=!1;"ja-JP"===use_language||"ja"===use_language?(language_money="JP\xA5",freePrice_text="\u7121\u6599"):"zh"===use_language||"zh-Hans"===use_language||"zh-SG"===use_language||"zh-CN"===use_language||"zh-Hant"===use_language||"zh-HK"===use_language||"zh-TW"===use_language||"zh-MO"===use_language?(language_money="CN\xA5",freePrice_text="\u514D\u8D39"):(language_money="$",freePrice_text="Free");function SetPrice(d='',a=0){this.a=a,this.d=d;const b=document.getElementById(this.d);b.innerText=0===this.a?`${language_money}${a}(${freePrice_text})`:`${language_money}${a}`}
+            let use_language=window.navigator.language;var language_money="",freePrice_text="",setFreePriceText=!1;"ja-JP"===use_language||"ja"===use_language?(language_money="JP\xA5",freePrice_text="\u7121\u6599"):"zh"===use_language||"zh-Hans"===use_language||"zh-SG"===use_language||"zh-CN"===use_language||"zh-Hant"===use_language||"zh-HK"===use_language||"zh-TW"===use_language||"zh-MO"===use_language?(language_money="CN\xA5",freePrice_text="\u514D\u8D39"):(language_money="$",freePrice_text="Free");function SetPrice(d='',a=0){this.a=a,this.d=d;const b=document.getElementById(this.d);b.innerText=0===this.a?`${language_money} ${a}(${freePrice_text})`:`${language_money} ${a}`}
             SetPrice('OpenBrowserPrice', 0);
             SetPrice('EasyServersPrice', 0);
         });

@@ -51,9 +51,9 @@
 .appPrice {
     margin: 12px 0;
     font-family: "M PLUS Rounded 1c", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
-    color: #b02;
+    color: #bf2732;
     width: fit-content;
 }
 

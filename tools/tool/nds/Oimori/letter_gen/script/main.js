@@ -1,33 +1,49 @@
 var CONST_ITEM_MAX = 15;
 $(function(){
 	/*CreateInputForm Async*/
-	function asyncTask(item) {
-		return new Promise((resolve) => {
-			setTimeout(() => {
-				CreateInputForm(item);
-				resolve();
-			}, 50);
-		});
+	function CreateInputFormAsyncTask(item, f) {
+		let a;
+		if (f==='cifTask') {
+			a = new Promise((resolve) => {
+				setTimeout(() => {
+					CreateInputForm(item);
+					resolve();
+				}, 75);
+			});
+		} else if (f==='searchItemTask') {
+			a = new Promise((resolve) => {
+				setTimeout(() => {
+					ExecuteSearch();
+					resolve();
+				}, 200);
+			});
+		}
+
+		return a;
 	}
 	
 	const items = [1, 2, 3, 4, 5];
-	async function processItems() {
-		let index = 0;
-		for (let i = 1; i <= CONST_ITEM_MAX; i++) {
-			await asyncTask(i);
+	async function processItems(f='') {
+		if (f==='cifTask') {
+			let index = 0;
+			for (let i = 1; i <= CONST_ITEM_MAX; i++) {
+				await CreateInputFormAsyncTask(i, f);
+			}
+			console.log('Form Create Completed.');
+		} else if (f==='searchItemTask') {
+			await CreateInputFormAsyncTask(0, f);
 		}
-		console.log('Form Create Completed.');
 	}
-	processItems();
+	processItems('cifTask');
 
 	/*Events*/
 	$("#mainform").submit(function(){
-		$("#result").html(GetItemString() + GetMoneyString());
+		$("#result").html(`${GetItemString()}${GetMoneyString()}\n`);
 		return false;
 	});
 
 	$("#searchform").submit(function(){
-		ExecuteSearch();
+		processItems('searchItemTask');
 		return false;
 	});
 

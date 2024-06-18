@@ -112,6 +112,15 @@ pre code.hljs {
     font-weight: 300;
 }
 
+ol,
+ul,
+li {
+    width: fit-content;
+    list-style-type: none;
+    margin-left: 24px;
+	text-align: left;
+}
+
 textarea {
     padding: 10px;
     max-width: 100%;
@@ -345,12 +354,6 @@ main {
     width: 90%;
     line-height: 2em;
     border-bottom: solid 3px #a9a9a9;
-}
-
-ol,
-ul,
-li {
-    width: fit-content;
 }
 
 /* メインイメージ */

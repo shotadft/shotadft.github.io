@@ -118,6 +118,7 @@ li {
     width: fit-content;
     margin-left: 10px;
     list-style-type: none;
+    line-height: 22.5px;
 }
 
 ul li {

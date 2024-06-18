@@ -801,7 +801,7 @@ details.toggle-code-animation {
     }
 
     .news {
-        width: 570px;
+        width: 75%;
     }
 
     .news_list_item a {
@@ -825,7 +825,6 @@ details.toggle-code-animation {
 }
 
 @media (prefers-color-scheme: dark) {
-
     body,
     textarea,
     .footer,

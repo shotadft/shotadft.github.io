@@ -742,8 +742,8 @@ details.toggle-code-animation {
 /* media */
 /*PC表示*/
 @media screen and (min-width: 1024px) {
-    body.column {
-        width: 240px;
+    body {
+        width: 100%;
         float: left;
     }
 
@@ -809,7 +809,7 @@ details.toggle-code-animation {
 
 /*スマホ表示*/
 @media screen and (max-width: 1023px) {
-    body.column {
+    body {
         width: 100%;
     }
 

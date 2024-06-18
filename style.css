@@ -512,6 +512,7 @@ main {
 /* フッター */
 .footer {
     padding: 14px 0;
+    margin-top: auto;
     border-top: #ccd1d9 solid 1px;
     background: #fafafa;
     text-align: center;
@@ -556,6 +557,13 @@ main {
     color: #545454;
     font-size: 0.8em;
     line-height: 1.75em;
+}
+
+/*コンテナ*/
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
 }
 
 /*お知らせ欄*/

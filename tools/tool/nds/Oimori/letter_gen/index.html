@@ -11,9 +11,6 @@
   <link rel="shortcut icon" href="/img/icon/favicon.ico" />
   <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous"
     onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="preload" as="style" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"
-    onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="/style.css">
   <!--<meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Shotadft0780">
@@ -57,10 +54,11 @@
   <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br />
     <label><input type="radio" name="intype" value="10" checked>10進</label>
     <label><input type="radio" name="intype" value="16">16進</label><br />
-    <input type="text" value="0" id="input_cnv" pattern="^[a-f,A-F,0-9]+$" required> -&gt; <input type="text" value=""
+    <input type="text" value="0" id="input_cnv" pattern="^[a-f,A-F,0-9]+$" required> -&gt; <input type="text" value="[NUL 00]"
       id="output_cnv" pattern="^([a-f,A-F,0-9]|\[NUL [0-9]+\])+$" readonly>
     <button type="submit">変換</button>
   </form>
+  <hr>
   <p>Connecting: <a href="/">shotadft.com</a></p>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

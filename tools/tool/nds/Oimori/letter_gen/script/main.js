@@ -26,19 +26,20 @@ $(function(){
 	});
 });
 function CreateInputForm(no){
-	$("#itemlist").append('<label for="item'+no+'">道具'+no+'</label><select id="item'+no+'"></select><br>');
-	$("#item"+no).append('<option value="0">なし</option>');
+	let ret = ( '00' + no ).slice(-2);
+	$("#itemlist").append(`<label for=\"item${ret}\">道具${ret}<select id=\"item${ret}\"></select></label><br>`);
+	$("#item"+ret).append('<option value=\"0\">なし</option>');
 	for(var i = 0; i < itemset.length; i++){
-		var gname = 'list' + no + 'group' + i;
-		$("#item"+no).append('<optgroup label="' + itemset[i].groupname + '" id="' + gname + '"></optgroup>');
+		var gname = 'list' + ret + 'group' + i;
+		$("#item"+ret).append(`<optgroup label=\"${itemset[i].groupname}\" id=\"${gname}\"></optgroup>`);
 		for(var j = 0; j < itemset[i].items.length; j++){
-			$("#"+gname).append('<option value="' + itemset[i].items[j].id + '">' + itemset[i].items[j].name + '</option>');
+			$("#"+gname).append(`<option value=\"${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
 		}
 	}
 }
 function GetMoneyString(){
 	var m = parseInt($("#money").val(),10);
-	if(isNaN(m)){ return "(所持金の変換に失敗)"; }
+	if(isNaN(m)){ return "所持金の変換に失敗"; }
 	return ConvertByteToString(m,4);
 }
 
@@ -46,7 +47,7 @@ function GetItemString(){
 	var temp = "";
 	for(var i = 1; i <= CONST_ITEM_MAX; i++){
 		var m = parseInt($("#item"+i).val(),10);
-		if(isNaN(m)){ temp += "道具"+i+"の変換に失敗"; }
+		if(isNaN(m)){ temp += `道具${i}の変換に失敗`; }
 		else{temp += ConvertByteToString(m,2);}
 	}
 	return temp;
@@ -75,7 +76,7 @@ function ExecuteSearch(){
 	for(var i = 0; i < itemset.length; i++){
 		for(var j = 0; j < itemset[i].items.length; j++){
 			if(itemset[i].items[j].name.indexOf(needle) != -1){
-				$("#search_result").append( '<option value="' + itemset[i].items[j].id + '" id="sr'+ itemset[i].items[j].id +'">' + itemset[i].items[j].name + '</option>');
+				$("#search_result").append(`<option value=\"${itemset[i].items[j].id}\" id=\"sr${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
 				$("#sr" + itemset[i].items[j].id).dblclick( (function(id){ return function(){ AddToList(id); } })(itemset[i].items[j].id));
 			}
 		}

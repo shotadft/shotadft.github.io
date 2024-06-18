@@ -355,7 +355,7 @@ main {
 }
 
 .main {
-    margin: 30px 0 0 0;
+    margin: 55px 0 0 0;
 }
 
 .main .mainContents {
@@ -844,6 +844,10 @@ details.toggle-code-animation {
     .news_list_item a {
         font-size: 14px;
         display: block;
+    }
+
+    .main {
+        margin: 30px 0 0 0;
     }
 
     .main .mainContents {

@@ -208,7 +208,7 @@ details.is-opened .detailsIcon {
 }
 
 .detailsContent_inner {
-    padding: 24px 48px;
+    padding: 18px 30px;
     display: flex;
     text-align: left;
     flex-direction: column;
@@ -370,11 +370,11 @@ main {
 .mainImg {
     padding: 115px 0;
     width: 100%;
-    background: #dfe200;
+    background: #f6d123;
     background-image: linear-gradient(135deg, #fafa14, #f6d123, #eda233);
     color: white;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .mainImg h1 {
@@ -538,7 +538,7 @@ main {
 }
 
 .footer-nav {
-    margin: 8px;
+    margin: 0 0 8px 0;
     width: 100%;
     list-style: none;
     text-align: center;

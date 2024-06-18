@@ -116,15 +116,20 @@ ol,
 ul,
 li {
     width: fit-content;
-    display: block;
     margin-left: 4px;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
+    list-style-type: none;
+}
+
+li {
+    list-style: disc;
+}
+
+li li {
+    list-style: circle;
+}
+
+li li li {
+    list-style: square;
 }
 
 textarea {

@@ -11,7 +11,12 @@
   <link rel="shortcut icon" href="/img/icon/favicon.ico" />
   <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous"
     onload="this.onload=null;this.rel='stylesheet'">
-  <!--<link rel="stylesheet" href="/style.css">-->
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    table {
+      border: 0px solid transparent;
+    }
+  </style>
   <!--<meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Shotadft0780">
     <meta property="og:title" content="Shotadftのホームページ">
@@ -50,7 +55,7 @@
     </tr>
   </table>
   <textarea id="result" rows="5" cols="80" style="resize:none;"
-    placeholder="欲しいアイテムを選択してから、生成ボタンを押してください。"></textarea>
+    placeholder="欲しいアイテムを選択してから、生成ボタンを押してください。" readonly></textarea>
   <hr>
   <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br />
     <label><input type="radio" name="intype" value="10" checked>10進</label>

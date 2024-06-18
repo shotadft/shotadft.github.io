@@ -1,8 +1,13 @@
 var CONST_ITEM_MAX = 15;
 $(function(){
-	for(var i = 1; i <= CONST_ITEM_MAX; i++){
-		CreateInputForm(i);
+	const items = [1, 2, 3, 4, 5];
+	async function processItems(items) {
+		for (const item of items) {
+			CreateInputForm(i);
+		}
+		console.log('Form Create Completed.');
 	}
+	processItems(items);
 
 	$("#mainform").submit(function(){
 		$("#result").html(GetItemString() + GetMoneyString());
@@ -18,6 +23,7 @@ $(function(){
 		var id = $("#search_result").val();
 		if(id) AddToList(id);
 	});
+
 	$("#converter").submit(function(){
 		var m = parseInt($("#input_cnv").val(), parseInt($("[name=intype]:checked").val(),10) );
 		if(isNaN(m)){ $("#output_cnv").val("error"); }
@@ -25,6 +31,7 @@ $(function(){
 		return false;
 	});
 });
+
 function CreateInputForm(no){
 	let ret = ( '00' + no ).slice(-2);
 	$("#itemlist").append(`<label for=\"item${ret}\">道具${ret}<select id=\"item${ret}\"></select></label><br>`);

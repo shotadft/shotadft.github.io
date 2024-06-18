@@ -289,6 +289,7 @@ table {
     table-layout: fixed;
     font-family: "Noto Sans", "Noto Sans JP", sans-serif;
     font-size: 0.8rem;
+    white-space: nowrap;
     letter-spacing: 1px;
 }
 

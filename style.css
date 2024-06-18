@@ -94,8 +94,14 @@ h3,
 h4,
 h5,
 h6,
+b,
+i,
+s,
+small,
+a,
 p {
     width: fit-content;
+    text-align: justify;
     line-height: 1;
 }
 

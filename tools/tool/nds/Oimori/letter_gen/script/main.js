@@ -2,7 +2,7 @@ var CONST_ITEM_MAX = 15;
 $(function(){
 	/*CreateInputForm Async*/
 	function CreateInputFormAsyncTask(item, f) {
-		let a;
+		let a = null;
 		if (f==='cifTask') {
 			a = new Promise((resolve) => {
 				setTimeout(() => {

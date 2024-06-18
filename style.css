@@ -685,7 +685,7 @@ main {
     position: absolute;
     width: 30px;
     height: 60px;
-    top: 2.5px;
+    /*top: 2.5px;*/
     bottom: 0;
     right: 0;
     left: 0;

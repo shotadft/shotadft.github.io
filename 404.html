@@ -101,7 +101,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script defer src="/script/main.js" charset="utf-8"></script>
     <script defer charset="utf-8">
-        $(function(){($("#pageURL").text().match(/(https?)\:\/\/(?:.+\.|)shotadft\.com\/404(?:|'.htm'|'.html')/gi))? $("#pageURL").text("is this") : $("#pageURL").text(`${window.location.pathname.toString()}${window.location.search.toString()}${window.location.hash.toString()}`)});
+        $(function(){($("#pageURL").text().match(/(https?)\:\/\/(?:.+\.|)shotadft\.com\/404(?:|'.htm'|'.html')/gi))? $("#pageURL").text("is this") : $("#pageURL").text(`\"${window.location.pathname.toString()}${window.location.search.toString()}${window.location.hash.toString()}\"`)});
     </script>
 </body>
 </html>

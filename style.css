@@ -449,6 +449,7 @@ main {
 .nav-items__item {
     cursor: pointer;
     position: relative;
+    margin-left: 0;
     height: 100%;
     display: flex;
     align-items: center;

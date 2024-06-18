@@ -16,9 +16,11 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
         onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
+    <link rel="preload" as="style"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="style.css">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Shotadft0780">
@@ -171,7 +173,8 @@
             <span class="footer-copyright">&copy;2022-2024 Shotadft. All Rights reserved.<br>
                 - このサイトの画像は <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank"
                     rel="noopener noreferrer">
-                    <img src="img/cc/by-nd/4.0/88x31.png" alt="CC-BY-ND 4.0" height="16" width="42" loading="lazy" /></a>
+                    <img src="img/cc/by-nd/4.0/88x31.png" alt="CC-BY-ND 4.0" height="16" width="42"
+                        loading="lazy" /></a>
                 で保護されています。</span>
         </footer>
     </div>
@@ -181,8 +184,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
     <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
-    <script>hljs.highlightAll();hljs.addPlugin(new CopyButtonPlugin());hljs.initLineNumbersOnLoad();</script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+    <script>hljs.highlightAll(); hljs.addPlugin(new CopyButtonPlugin()); hljs.initLineNumbersOnLoad();</script>
     <script defer src="script/main.js" charset="utf-8"></script>
 </body>
 </html>

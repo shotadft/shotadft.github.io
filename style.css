@@ -489,7 +489,6 @@ main {
     top: 0;
 }
 
-
 /* ハンバーガーメニュークリック後のスタイル */
 .header__nav.active {
     transform: translateX(0);

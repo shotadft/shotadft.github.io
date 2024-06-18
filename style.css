@@ -38,6 +38,9 @@ i,
 dl,
 dt,
 dd,
+ol,
+ul,
+li,
 fieldset,
 form,
 label,
@@ -339,9 +342,15 @@ main {
 
 .heading_title {
     color: #333;
-    width: 80%;
+    width: 90%;
     line-height: 2em;
     border-bottom: solid 3px #a9a9a9;
+}
+
+ol,
+ul,
+li {
+    width: fit-content;
 }
 
 /* メインイメージ */

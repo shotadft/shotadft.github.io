@@ -116,20 +116,22 @@ ol,
 ul,
 li {
     width: fit-content;
-    margin-left: 4px;
+    margin-left: 10px;
     list-style-type: none;
 }
 
-li {
+ul li {
     list-style: disc;
 }
 
-li li {
+ul ul li {
     list-style: circle;
+    margin-left: 14px;
 }
 
-li li li {
+ul ul ul li {
     list-style: square;
+    margin-left: 18px;
 }
 
 textarea {

@@ -6,7 +6,7 @@ $(function(){
 			setTimeout(() => {
 				CreateInputForm(item);
 				resolve();
-			}, 250);
+			}, 100);
 		});
 	}
 	

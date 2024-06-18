@@ -786,7 +786,7 @@ details.toggle-code-animation {
         height: inherit;
         display: flex;
         justify-content: end;
-        width: 54%;
+        width: 48%;
     }
 
     .nav__items {

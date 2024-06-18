@@ -117,7 +117,7 @@ ul,
 li {
     width: fit-content;
     list-style-type: none;
-    margin-left: 24px;
+    list-style-type: circle;
 	text-align: left;
 }
 

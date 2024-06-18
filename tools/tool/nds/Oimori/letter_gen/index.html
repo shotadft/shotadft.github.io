@@ -49,7 +49,8 @@
       </td>
     </tr>
   </table>
-  <textarea id="result" rows="5" cols="80" placeholder="欲しいアイテムを選択してから、生成ボタンを押してください。"></textarea>
+  <textarea id="result" rows="5" cols="80" style="resize:none;"
+    placeholder="欲しいアイテムを選択してから、生成ボタンを押してください。"></textarea>
   <hr>
   <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br />
     <label><input type="radio" name="intype" value="10" checked>10進</label>
@@ -60,10 +61,11 @@
   </form>
   <hr>
   <p>Connecting: <a href="/">shotadft.com</a></p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="/script/main.js" charset="utf-8"></script>
-  <script defer src="script/dataset.js" charset="utf-8"></script>
-  <script defer src="script/main.js" charset="utf-8"></script>
+  <script src="script/dataset.js" charset="utf-8"></script>
+  <script src="script/main.js" charset="utf-8"></script>
 </body>
 </html>

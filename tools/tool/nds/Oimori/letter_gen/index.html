@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手紙バグ用文字列ジェネレーター</title>
+    <meta name="description" content="おいでよ どうぶつの森の手紙バグ用文字列ジェネレータ">
+    <link rel="icon" href="/img/icon/favicon.ico" />
+    <link rel="apple-touch-icon" href="/img/shotadft_icon_a.webp" />
+    <link rel="shortcut icon" href="/img/icon/favicon.ico" />
+    <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"
+        crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preload" as="style" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/style.css">
+    <!--<meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Shotadft0780">
+    <meta property="og:title" content="Shotadftのホームページ">
+    <meta property="og:url" content="https://test.shotadft.com/">
+    <meta property="og:site_name" content="Shotadft/承太劇場のホームページ">
+    <meta property="og:locale" content="ja_JP">-->
+</head>
+<body>
+    <p><small><a href="/tools/">ツール一覧 トップに戻る</a></small></p>
+    <h1>手紙バグ用文字列ジェネレーター</h1>
+    <h2>これって何？</h2>
+    <p>「おいでよ どうぶつの森」の手紙バグ用ツール君。それ以上でもそれ以下でも無い。</p>
+    <p>なお、入力不可能文字の関係で入手できないアイテムもリストにあります。ご了承ください。</p>
+    <h2 id="tools">ツール</h2>
+    <table>
+      <tr>
+        <td>
+          <form id="mainform">
+            <div id="itemlist"></div><label for="money">所持金<input type="number" id="money" min="0" value="1"
+                required></label><br />
+            <button type="submit">生成</button><button type="reset">クリア</button>
+            <button class="copyBtn" onclick="navigator.clipboard.writeText($('#result').text().toString());">コピー</button>
+          </form>
+        </td>
+        <td>
+          <form id="searchform">
+            <input type="text" id="search" value="">
+            <button type="submit">検索</button><br />
+            <select id="search_result" size="10" style="width: 200px;"></select>
+            <button id="insertlist">入力</button>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <textarea id="result" rows="5" cols="80" style="resize:none;"
+      placeholder="欲しいアイテムを選択してから、生成ボタンを押してください。" readonly></textarea>
+    <hr>
+    <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br />
+      <label><input type="radio" name="intype" value="10" checked>10進</label>
+      <label><input type="radio" name="intype" value="16">16進</label><br />
+      <input type="text" value="0" id="input_cnv" pattern="^[a-f,A-F,0-9]+$" required> -&gt; <input type="text" value=""
+        id="output_cnv" pattern="^([a-f,A-F,0-9]|\[NUL [0-9]+\])+$" readonly>
+      <button type="submit">変換</button>
+    </form>
+    <p>Connecting: <a href="/">shotadft.com</a></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="/script/main.js" charset="utf-8"></script>
+    <script defer src="script/dataset.js" charset="utf-8"></script>
+    <script defer src="script/main.js" charset="utf-8"></script>
+</body>
+</html>

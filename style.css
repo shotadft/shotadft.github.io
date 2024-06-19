@@ -133,6 +133,7 @@ ul ul ul li {
 }
 
 textarea {
+    font-family: sans-serif;
     padding: 10px;
     max-width: 100%;
     line-height: 1.5;
@@ -140,6 +141,10 @@ textarea {
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
     background-color: white;
+}
+
+textarea:read-only {
+    background-color: #aaa;
 }
 
 details {

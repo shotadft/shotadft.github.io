@@ -71,7 +71,7 @@ function GetItemString() {
 }
 
 function GetMoneyString() {
-	var m = parseInt($("#money").val(), 10);
+	var m = parseInt(`${$("#money").val()}`, 10);
 	if (isNaN(m)) { return "所持金の変換に失敗"; }
 	return ConvertByteToString(m, 4);
 }

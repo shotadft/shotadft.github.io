@@ -24,10 +24,12 @@ $(function () {
 
 	$("#mainForm").submit(function() {
 		$("#result").html(`${GetItemString()}${GetMoneyString()}\n`);
+		return false;
 	});
 
 	$("#searchForm").submit(function() {
 		processItems('searchItemTask');
+		return false;
 	});
 
 	$("#insertlist").click(function() {

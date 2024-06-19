@@ -23,7 +23,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script>
-        $(function() { const n = document.getElementById("seconds"); for (let i = 5; i >= 0; i--)!function (i) { setTimeout((function () { n.textContent = `ダウンロードまで...${i}`, 0 === i && (n.innerHTML = '<a download href=\"https://github.com/shotadft/OpenBrowser/releases/download/v1.0.1/OpenBrowser_v1.0.1_Setup.zip\">始まらなかったらここをクリック(ミラー)</a>') }), 1e3 * (5 - i)) }(i) });
+        $(function() { const n = document.getElementById("seconds"); for (let i = 5; i >= 0; i--)!function (i) { setTimeout((function() { n.textContent = `ダウンロードまで...${i}`, 0 === i && (n.innerHTML = '<a download href=\"https://github.com/shotadft/OpenBrowser/releases/download/v1.0.1/OpenBrowser_v1.0.1_Setup.zip\">始まらなかったらここをクリック(ミラー)</a>') }), 1e3 * (5 - i)) }(i) });
     </script>
     <p id="seconds"></p>
 </body>

@@ -1,7 +1,8 @@
 var CONST_ITEM_MAX = 15;
-$(function () {
+$(function() {
 	/*ExecuteSearch Async*/
-	function ExecuteSearchAsyncTask() {
+	function ExecuteSearchAsyncTask(f) {
+		if (f==='searchItemTask') {return false;}
 		return new Promise((resolve) => {
 			setTimeout(() => {
 				ExecuteSearch();
@@ -10,10 +11,11 @@ $(function () {
 		});
 	}
 
-	const items = [1, 2, 3, 4, 5];
 	async function processItems(f = '') {
 		if (f === 'searchItemTask') {
-			await ExecuteSearchAsyncTask();
+			for (const flag of f) {
+				await ExecuteSearchAsyncTask(f);
+			}
 		}
 	}
 
@@ -93,12 +95,12 @@ function SearchNextUnselected() {
 
 function ExecuteSearch() {
 	$("#search_result").html("");
-	var needle = $("#search").val();
+	let needle = $("#search").val();
 	for (let i = 0; i < itemset.length; i++) {
 		for (let j = 0; j < itemset[i].items.length; j++) {
 			if (itemset[i].items[j].name.indexOf(needle) != -1) {
 				$("#search_result").append(`<option value=\"${itemset[i].items[j].id}\" id=\"sr${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
-				$("#sr" + itemset[i].items[j].id).dblclick((function (id) { return function () { AddToList(id); } })(itemset[i].items[j].id));
+				$(`#sr${itemset[i].items[j].id}`).dblclick((function (id) { return function() { AddToList(id); } })(itemset[i].items[j].id));
 			}
 		}
 	}
@@ -106,7 +108,7 @@ function ExecuteSearch() {
 }
 
 function AddToList(id) {
-	var nextspace = SearchNextUnselected();
+	let nextspace = SearchNextUnselected();
 	if (nextspace != -1) {
 		$("#item" + nextspace).val(id);
 	}

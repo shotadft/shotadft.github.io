@@ -1,17 +1,11 @@
 var CONST_ITEM_MAX = 15;
 $(function() {
 	/*ExecuteSearch Async*/
-	function ExecuteSearchAsyncTask(f) {
-		if (f==='searchItemTask') {return false;}
-		return new Promise((resolve) => {
-			setTimeout(() => {
-				ExecuteSearch();
-				resolve();
-			}, 200);
-		});
+	function ExecuteSearchAsyncTask(f='') {
+		return'searchItemTask'!==f&&new Promise((a)=>{setTimeout(()=>{ExecuteSearch(),a()},200)})
 	}
 
-	async function processItems(f = '') {
+	async function processItems(f='') {
 		if (f === 'searchItemTask') {
 			for (const flag of f) {
 				await ExecuteSearchAsyncTask(f);

@@ -23,8 +23,7 @@ $(function () {
 	}
 
 	$("#mainForm").submit(function() {
-		//$("#result").html(`${GetItemString()}${GetMoneyString()}\n`);
-		alert('AAa');
+		$("#result").html(`${GetItemString()}${GetMoneyString()}\n`);
 	});
 
 	$("#searchForm").submit(function() {

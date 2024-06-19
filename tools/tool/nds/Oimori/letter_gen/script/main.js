@@ -19,7 +19,7 @@ $(function () {
 
 	/*Events*/
 	for (let i = 1; i <= CONST_ITEM_MAX; i++) {
-		CreateInputForm(item);
+		CreateInputForm(i);
 	}
 
 	$("#mainform").submit(function () {

@@ -49,40 +49,41 @@ function CreateInputForm(no) {
 	let ret = ('00' + no).slice(-2);
 	$("#itemlist").append(`<label for=\"item${ret}\">道具${ret}<select id=\"item${ret}\"></select></label><br>`);
 	$("#item" + ret).append('<option value=\"0\">なし</option>');
-	for (var i = 0; i < itemset.length; i++) {
+	for (let i = 0; i < itemset.length; i++) {
 		var gname = 'list' + ret + 'group' + i;
 		$("#item" + ret).append(`<optgroup label=\"${itemset[i].groupname}\" id=\"${gname}\"></optgroup>`);
-		for (var j = 0; j < itemset[i].items.length; j++) {
+		for (let j = 0; j < itemset[i].items.length; j++) {
 			$("#" + gname).append(`<option value=\"${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
 		}
 	}
 }
-function GetMoneyString() {
-	var m = parseInt($("#money").val(), 10);
-	if (isNaN(m)) { return "所持金の変換に失敗"; }
-	return ConvertByteToString(m, 4);
-}
 
 function GetItemString() {
-	var temp = "";
-	for (var i = 1; i <= CONST_ITEM_MAX; i++) {
-		var m = parseInt($("#item" + i).val(), 10);
+	let temp = "";
+	for (let i = 1; i <= CONST_ITEM_MAX; i++) {
+		let m = parseInt($("#item" + i).val(), 10);
 		if (isNaN(m)) { temp += `道具${i}の変換に失敗`; }
 		else { temp += ConvertByteToString(m, 2); }
 	}
 	return temp;
 }
 
+function GetMoneyString() {
+	var m = parseInt($("#money").val(), 10);
+	if (isNaN(m)) { return "所持金の変換に失敗"; }
+	return ConvertByteToString(m, 4);
+}
+
 function ConvertByteToString(input, size) {
-	var temp = "";
-	for (var i = 0; i < size; i++) {
+	let temp = "";
+	for (let i = 0; i < size; i++) {
 		temp = temp + charset[(input >> (i * 8)) & 0xFF];
 	}
 	return temp;
 }
 
 function SearchNextUnselected() {
-	for (var i = 1; i <= CONST_ITEM_MAX; i++) {
+	for (let i = 1; i <= CONST_ITEM_MAX; i++) {
 		if ($("#item" + i).val() == 0) {
 			return i;
 		}
@@ -93,8 +94,8 @@ function SearchNextUnselected() {
 function ExecuteSearch() {
 	$("#search_result").html("");
 	var needle = $("#search").val();
-	for (var i = 0; i < itemset.length; i++) {
-		for (var j = 0; j < itemset[i].items.length; j++) {
+	for (let i = 0; i < itemset.length; i++) {
+		for (let j = 0; j < itemset[i].items.length; j++) {
 			if (itemset[i].items[j].name.indexOf(needle) != -1) {
 				$("#search_result").append(`<option value=\"${itemset[i].items[j].id}\" id=\"sr${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
 				$("#sr" + itemset[i].items[j].id).dblclick((function (id) { return function () { AddToList(id); } })(itemset[i].items[j].id));

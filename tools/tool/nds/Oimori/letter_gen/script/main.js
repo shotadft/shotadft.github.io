@@ -23,7 +23,7 @@ $(function () {
 	}
 
 	$("#mainForm").submit(function() {
-		$("#result").val(`${GetItemString()}${GetMoneyString()}`);
+		$("#result").val(GetItemString()+GetMoneyString());
 		return false;
 	});
 

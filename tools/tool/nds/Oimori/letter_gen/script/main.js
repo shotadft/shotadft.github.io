@@ -22,22 +22,21 @@ $(function () {
 		CreateInputForm(i);
 	}
 
-	$("#mainform").submit(function () {
-		$("#result").html(`${GetItemString()}${GetMoneyString()}\n`);
-		return false;
+	$("#mainForm").submit(function() {
+		//$("#result").html(`${GetItemString()}${GetMoneyString()}\n`);
+		alert('AAa');
 	});
 
-	$("#searchform").submit(function () {
+	$("#searchForm").submit(function() {
 		processItems('searchItemTask');
-		return false;
 	});
 
-	$("#insertlist").click(function () {
+	$("#insertlist").click(function() {
 		var id = $("#search_result").val();
 		if (id) AddToList(id);
 	});
 
-	$("#converter").submit(function () {
+	$("#converter").submit(function() {
 		var m = parseInt($("#input_cnv").val(), parseInt($("[name=intype]:checked").val(), 10));
 		if (isNaN(m)) { $("#output_cnv").val("error"); }
 		$("#output_cnv").val(ConvertByteToString(m, 4));

@@ -141,38 +141,7 @@
     <script>hljs.highlightAll();hljs.initLineNumbersOnLoad();hljs.addPlugin(new CopyButtonPlugin());</script>
     <script src="/script/main.js" charset="utf-8"></script>
     <script defer charset="utf-8">
-        $(function() {
-            let language = $('html').attr('lang'),
-            language_money = '',
-            freePrice_text = '';
-            const setFreePriceText = $('.appPrice').prop('data-fPText') ? true : false,
-            setPrice = parseInt($('.appPrice').attr('data-price'), 10);
-
-            if (language === 'ja') {
-                language_money = setPrice.toLocaleString('ja-JP', {style:'currency', currency: 'JPY'});
-                freePrice_text = '無料';
-            } else if (language === 'zh') {
-                language_money = setPrice.toLocaleString('zh-CN', {style:'currency', currency: 'CNY'});
-                freePrice_text = '免费';
-            } else if (language === 'en' || language === 'en-US') {
-                language_money = setPrice.toLocaleString('en-US', {style:'currency', currency: 'USD'});
-                freePrice_text = 'Free';
-            } else if (language === 'ko') {
-                language_money = setPrice.toLocaleString('ko', {style:'currency', currency: 'KRW'});
-                freePrice_text = '무료';
-            } else if (language === 'de') {
-                language_money = setPrice.toLocaleString('DE', {style:'currency', currency: 'EUR'});
-                freePrice_text = 'kostenlos';
-            } else if (language === 'zen-GB') {
-                language_money = setPrice.toLocaleString('GB', {style:'currency', currency: 'GBP'});
-                freePrice_text = 'Free';
-            } else {
-                language_money = setPrice.toLocaleString('en-US', {style:'currency', currency: 'USD'});
-                freePrice_text = 'Free';
-            }
-
-            $('.appPrice').text(`${language_money}(${freePrice_text})`);
-        });
+$(function(){let a=$("html").attr("lang"),b="",c="";const d=!!$(".appPrice").prop("data-fPText"),e=parseInt($(".appPrice").attr("data-price"),10);"ja"===a?(b=e.toLocaleString("ja-JP",{style:"currency",currency:"JPY"}),c="\u7121\u6599"):"zh"===a?(b=e.toLocaleString("zh-CN",{style:"currency",currency:"CNY"}),c="\u514D\u8D39"):"en"===a||"en-US"===a?(b=e.toLocaleString("en-US",{style:"currency",currency:"USD"}),c="Free"):"ko"===a?(b=e.toLocaleString("ko",{style:"currency",currency:"KRW"}),c="\uBB34\uB8CC"):"de"===a?(b=e.toLocaleString("DE",{style:"currency",currency:"EUR"}),c="kostenlos"):"zen-GB"===a?(b=e.toLocaleString("GB",{style:"currency",currency:"GBP"}),c="Free"):(b=e.toLocaleString("en-US",{style:"currency",currency:"USD"}),c="Free"),$(".appPrice").text(`${b}(${c})`)});
     </script>
 </body>
 </html>

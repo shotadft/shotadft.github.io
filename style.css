@@ -893,7 +893,7 @@ details.toggle-code-animation {
     }
 
     .header,
-    .header__nav {
+    .header__inner {
         background-color: rgba(21, 32, 41, 0.95);
     }
 

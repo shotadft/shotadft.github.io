@@ -44,7 +44,7 @@ function CreateInputForm(no){
 function GetItemString() {
 	var temp = "";
 	for (let i = 1; i <= ITEM_MAX; i++) {
-		var m = parseInt($("#item" + i).val(), 10);
+		let m = parseInt($("#item" + i).val(), 10);
 		if (isNaN(m)) { temp += `[道具${i}の変換に失敗]`;console.error(`道具${i}の変換に失敗`); }
 		else { temp += ConvertByteToString(m, 2); }
 	}
@@ -52,7 +52,7 @@ function GetItemString() {
 }
 
 function GetMoneyString() {
-	var m = parseInt(`${$("#money").val()}`, 10);
+	let m = parseInt(`${$("#money").val()}`, 10);
 	if (isNaN(m)) { return "[所持金の変換に失敗]"; }
 	return ConvertByteToString(m, 4);
 }

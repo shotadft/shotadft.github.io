@@ -1,18 +1,5 @@
 var CONST_ITEM_MAX = 15;
 $(function() {
-	/*ExecuteSearch Async*/
-	function ExecuteSearchAsyncTask(f='') {
-		return new Promise((a)=>{setTimeout(()=>{ExecuteSearch(),a()},200)})
-	}
-
-	async function processItems(f='') {
-		if (f === 'searchItemTask') {
-			for (const flag of f) {
-				await ExecuteSearchAsyncTask(f);
-			}
-		}
-	}
-
 	/*Events*/
 	for (let i = 1; i <= CONST_ITEM_MAX; i++) {
 		CreateInputForm(i);
@@ -24,13 +11,13 @@ $(function() {
 	});
 
 	$("#searchForm").submit(function() {
-		processItems('searchItemTask');
+		ExecuteSearch();
 		return false;
 	});
 
 	$("#insertlist").click(function() {
 		var id = $("#search_result").val();
-		if (id) AddToList(id);
+		(id)&&AddToList(id);
 	});
 
 	$("#converter").submit(function() {
@@ -41,15 +28,14 @@ $(function() {
 	});
 });
 
-function CreateInputForm(no) {
-	let ret = ('00' + no).slice(-2);
-	$("#itemlist").append(`<label for=\"item${ret}\">道具${ret}<select id=\"item${ret}\"></select></label><br>`);
-	$("#item" + ret).append('<option value=\"0\">なし</option>');
-	for (let i = 0; i < itemset.length; i++) {
-		var gname = 'list' + ret + 'group' + i;
-		$("#item" + ret).append(`<optgroup label=\"${itemset[i].groupname}\" id=\"${gname}\"></optgroup>`);
-		for (let j = 0; j < itemset[i].items.length; j++) {
-			$("#" + gname).append(`<option value=\"${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
+function CreateInputForm(no){
+	$("#itemlist").append(`<label for=\"item${no}\">道具${no}</label><select id=\"item${no}\"></select><br>`);
+	$(`#item${no}`).append('<option value="0">なし</option>');
+	for(var i = 0; i < itemset.length; i++){
+		var gname = `${list}${no}group${i}`;
+		$(`#item${no}`).append(`<optgroup label=\"${itemset[i].groupname}\" id=\"${gname}\"></optgroup>`);
+		for(var j = 0; j < itemset[i].items.length; j++){
+			$(`#${gname}`).append(`<option value=\"${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
 		}
 	}
 }
@@ -80,7 +66,7 @@ function ConvertByteToString(input, size) {
 
 function SearchNextUnselected() {
 	for (let i = 1; i <= CONST_ITEM_MAX; i++) {
-		if ($("#item" + i).val() == 0) {
+		if ($(`#item${i}`).val() == 0) {
 			return i;
 		}
 	}
@@ -104,6 +90,6 @@ function ExecuteSearch() {
 function AddToList(id) {
 	let nextspace = SearchNextUnselected();
 	if (nextspace != -1) {
-		$("#item" + nextspace).val(id);
+		$(`#item${nextspace}`).val(id);
 	}
 }

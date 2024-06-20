@@ -871,7 +871,6 @@ details.toggle-code-animation {
 }
 
 @media (prefers-color-scheme: dark) {
-
     body,
     textarea,
     .footer,

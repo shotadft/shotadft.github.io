@@ -14,7 +14,7 @@
         crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <style>
-body{font-family:"Noto Sans","Noto Sans JP",sans-serif;font-optical-sizing:auto;font-weight:400;font-size:14px;margin:0 16px 4px 16px;color:#333;line-height:1em}textarea{font-family:sans-serif;padding:10px;max-width:100%;line-height:1.5;border-radius:5px;border:1px solid #ccc;box-shadow:1px 1px 1px #999;background-color:#fff}textarea:read-only{background-color:#eee}a{text-decoration:none}a:hover{text-decoration:underline}a:link{color:#0969DA}a:visited{color:#8652b8}
+body{font-family:"Noto Sans","Noto Sans JP",sans-serif;font-optical-sizing:auto;font-weight:400;font-size:14px;margin:0 16px 4px 16px;color:#333;line-height:1em}textarea{font-family:sans-serif;padding:10px;max-width:100%;line-height:1.5;border-radius:5px;border:1px solid #ccc;box-shadow:1px 1px 1px #999;background-color:#fff}textarea:read-only{background: color#f3f3f3;}a{text-decoration:none}a:hover{text-decoration:underline}a:link{color:#0969DA}a:visited{color:#8652b8}
     </style>
     <!--<meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@Shotadft0780">
@@ -38,9 +38,8 @@ body{font-family:"Noto Sans","Noto Sans JP",sans-serif;font-optical-sizing:auto;
         <tbody>
             <tr>
                 <td>
-                    <form id="mainForm">
-                        <div id="itemlist">
-                        </div>
+                    <form id="mainform">
+                        <div id="itemlist"></div>
                         <label for="money">所持金</label><input type="number" id="money" min="0" value="1"><br>
                         <button type="submit">生成</button><button type="reset">クリア</button>
                         <button type="button"
@@ -48,7 +47,7 @@ body{font-family:"Noto Sans","Noto Sans JP",sans-serif;font-optical-sizing:auto;
                     </form>
                 </td>
                 <td>
-                    <form id="searchForm">
+                    <form id="searchform">
                         <input type="text" id="search" value=""><button type="submit">検索</button><br>
                         <select id="search_result" size="15" style="width: 200px;">
 

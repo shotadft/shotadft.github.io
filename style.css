@@ -145,7 +145,7 @@ textarea {
 }
 
 textarea:read-only {
-    background-color: #eee;
+    background-color: #f3f3f3;
 }
 
 details {

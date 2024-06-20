@@ -5,12 +5,12 @@ $(function() {
 		CreateInputForm(i);
 	}
 
-    $("#mainForm").submit(function() {
+    $("#mainform").submit(function() {
 		$("#result").val(`${GetItemString()}${GetMoneyString()}`);
 		return false;
 	});
 
-	$("#searchForm").submit(function() {
+	$("#searchform").submit(function() {
 		ExecuteSearch();
 		return false;
 	});
@@ -29,8 +29,7 @@ $(function() {
 });
 
 function CreateInputForm(no){
-	no = ('00'+no).slice(-2);
-	$("#itemlist").append(`<label for=\"item${no}\">道具${no}</label><select id=\"item${no}\"></select><br>`);
+	$("#itemlist").append(`<label for=\"item${no}\">道具${ ('00'+no).slice(-2) }</label><select id=\"item${no}\"></select><br>`);
 	$(`#item${no}`).append('<option value="0">なし</option>');
 	for (let i = 0; i < itemset.length; i++){
 		let gname = 'list' + no + 'group' + i;
@@ -42,7 +41,7 @@ function CreateInputForm(no){
 }
 
 function GetItemString() {
-	var temp = "";
+	let temp = "";
 	for (let i = 1; i <= ITEM_MAX; i++) {
 		let m = parseInt($("#item" + i).val(), 10);
 		if (isNaN(m)) { temp += `[道具${i}の変換に失敗]`;console.error(`道具${i}の変換に失敗`); }
@@ -58,7 +57,7 @@ function GetMoneyString() {
 }
 
 function ConvertByteToString(input, size) {
-	var temp = "";
+	let temp = "";
 	for (let i = 0; i < size; i++) {
 		temp += charset[(input >> (i * 8)) & 0xFF];
 	}

@@ -1,3 +1,4 @@
+"use struct"
 var CONST_ITEM_MAX = 15;
 $(function() {
 	/*ExecuteSearch Async*/

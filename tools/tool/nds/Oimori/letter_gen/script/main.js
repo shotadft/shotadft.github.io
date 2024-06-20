@@ -32,19 +32,19 @@ function CreateInputForm(no){
 	no = ('00'+no).slice(-2);
 	$("#itemlist").append(`<label for=\"item${no}\">道具${no}</label><select id=\"item${no}\"></select><br>`);
 	$(`#item${no}`).append('<option value="0">なし</option>');
-	for(let i = 0; i < itemset.length; i++){
+	for (let i = 0; i < itemset.length; i++){
 		let gname = 'list' + no + 'group' + i;
 		$(`#item${no}`).append(`<optgroup label=\"${itemset[i].groupname}\" id=\"${gname}\"></optgroup>`);
-		for(let j = 0; j < itemset[i].items.length; j++){
+		for (let j = 0; j < itemset[i].items.length; j++){
 			$(`#${gname}`).append(`<option value=\"${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
 		}
 	}
 }
 
 function GetItemString() {
-	let temp = "";
+	var temp = "";
 	for (let i = 1; i <= ITEM_MAX; i++) {
-		let m = parseInt($("#item" + i).val(), 10);
+		var m = parseInt($("#item" + i).val(), 10);
 		if (isNaN(m)) { temp += `[道具${i}の変換に失敗]`;console.error(`道具${i}の変換に失敗`); }
 		else { temp += ConvertByteToString(m, 2); }
 	}
@@ -52,13 +52,13 @@ function GetItemString() {
 }
 
 function GetMoneyString() {
-	let m = parseInt(`${$("#money").val()}`, 10);
+	var m = parseInt(`${$("#money").val()}`, 10);
 	if (isNaN(m)) { return "[所持金の変換に失敗]"; }
 	return ConvertByteToString(m, 4);
 }
 
 function ConvertByteToString(input, size) {
-	let temp = "";
+	var temp = "";
 	for (let i = 0; i < size; i++) {
 		temp += charset[(input >> (i * 8)) & 0xFF];
 	}
@@ -66,12 +66,16 @@ function ConvertByteToString(input, size) {
 }
 
 function SearchNextUnselected() {
-	for (let i = 1; i <= ITEM_MAX; i++) {
-		if ($(`#item${i}`).val() == 0) {
-			return i;
+	try {
+		for (let i = 1; i <= ITEM_MAX; i++) {
+			if ($(`#item${i}`).val() == 0) {
+				return i;
+			}
 		}
+	} catch (error) {
+		console.error(`${error}`);
+		return -1;
 	}
-	return -1;
 }
 
 function ExecuteSearch() {

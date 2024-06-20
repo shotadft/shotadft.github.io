@@ -2,7 +2,7 @@ var CONST_ITEM_MAX = 15;
 $(function() {
 	/*ExecuteSearch Async*/
 	function ExecuteSearchAsyncTask(f='') {
-		return'searchItemTask'!==f&&new Promise((a)=>{setTimeout(()=>{ExecuteSearch(),a()},200)})
+		return new Promise((a)=>{setTimeout(()=>{ExecuteSearch(),a()},200)})
 	}
 
 	async function processItems(f='') {
@@ -73,7 +73,7 @@ function GetMoneyString() {
 function ConvertByteToString(input, size) {
 	let temp = "";
 	for (let i = 0; i < size; i++) {
-		temp = temp + charset[(input >> (i * 8)) & 0xFF];
+		temp += charset[(input >> (i * 8)) & 0xFF];
 	}
 	return temp;
 }

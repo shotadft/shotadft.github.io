@@ -1,7 +1,7 @@
-const CONST_ITEM_MAX = 15;
+const ITEM_MAX = 15;
 $(function() {
 	/*Events*/
-	for (let i = 1; i <= CONST_ITEM_MAX; i++) {
+	for (let i = 1; i <= ITEM_MAX; i++) {
 		CreateInputForm(i);
 	}
 
@@ -17,7 +17,7 @@ $(function() {
 
 	$("#insertlist").click(function() {
 		let id = $("#search_result").val();
-		(id)&&AddToList(id);
+		if (id) {AddToList(id);}
 	});
 
 	$("#converter").submit(function() {
@@ -42,7 +42,7 @@ function CreateInputForm(no){
 
 function GetItemString() {
 	let temp = "";
-	for (let i = 1; i <= CONST_ITEM_MAX; i++) {
+	for (let i = 1; i <= ITEM_MAX; i++) {
 		let m = parseInt($("#item" + i).val(), 10);
 		if (isNaN(m)) { temp += `道具${i}の変換に失敗`; }
 		else { temp += ConvertByteToString(m, 2); }
@@ -65,7 +65,7 @@ function ConvertByteToString(input, size) {
 }
 
 function SearchNextUnselected() {
-	for (let i = 1; i <= CONST_ITEM_MAX; i++) {
+	for (let i = 1; i <= ITEM_MAX; i++) {
 		if ($(`#item${i}`).val() == 0) {
 			return i;
 		}

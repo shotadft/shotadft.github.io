@@ -18,8 +18,8 @@ $(function() {
 		CreateInputForm(i);
 	}
 
-	$("#mainForm").submit(function() {
-		$("#result").val(GetItemString()+GetMoneyString());
+    $("#mainForm").submit(function() {
+		$("#result").val(`${GetItemString()}${GetMoneyString()}`);
 		return false;
 	});
 

@@ -44,7 +44,7 @@ body{font-family:"Noto Sans","Noto Sans JP",sans-serif;font-optical-sizing:auto;
                         <label for="money">所持金</label><input type="number" id="money" min="0" value="1"><br>
                         <button type="submit">生成</button><button type="reset">クリア</button>
                         <button type="button"
-                            onclick="navigator.clipboard.writeText($('#result').text().toString());">コピー</button><br>
+                            onclick="navigator.clipboard.writeText($('#result').val());">コピー</button><br>
                     </form>
                 </td>
                 <td>

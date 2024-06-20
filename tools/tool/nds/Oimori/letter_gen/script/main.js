@@ -45,7 +45,7 @@ function GetItemString() {
 	let temp = "";
 	for (let i = 1; i <= ITEM_MAX; i++) {
 		let m = parseInt($("#item" + i).val(), 10);
-		if (isNaN(m)) { temp += `道具${i}の変換に失敗`; }
+		if (isNaN(m)) { temp += `[道具${i}の変換に失敗]`;console.error(`道具${i}の変換に失敗`); }
 		else { temp += ConvertByteToString(m, 2); }
 	}
 	return temp;
@@ -53,7 +53,7 @@ function GetItemString() {
 
 function GetMoneyString() {
 	let m = parseInt(`${$("#money").val()}`, 10);
-	if (isNaN(m)) { return "所持金の変換に失敗"; }
+	if (isNaN(m)) { return "[所持金の変換に失敗]"; }
 	return ConvertByteToString(m, 4);
 }
 

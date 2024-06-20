@@ -73,7 +73,7 @@
                             <h2 style="margin:2px;">OpenBrowser</h2>
                             <p class="description">シンプルなWebView2で動く<br>C#製ブラウザ<br>
                                 <b>対応OS:&nbsp;</b><i class="fa-brands fa-windows" style="color:#0079d7;"></i></p>
-                            <p class="appPrice"></p>
+                            <p class="appPrice" data-price="0" data-fPText></p>
                         </a>
                     </div>
                     <div class="appIndex" id="EasyServers">
@@ -84,7 +84,7 @@
                             <h2 style="margin:2px;">EasyServers</h2>
                             <p class="description">半自動でMinecraftサーバーを立てる/操作するソフト<br>
                                 <b>対応OS:&nbsp;</b><i class="fa-brands fa-windows" style="color:#0079d7;"></i></p>
-                            <p class="appPrice"></p>
+                            <p class="appPrice" data-price="0" data-fPText></p>
                         </a>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
             language_money = '',
             freePrice_text = '';
             const setFreePriceText = $('.appPrice').prop('data-fPText') ? true : false,
-            setPrice = $('.appPrice').attr('data-price');
+            setPrice = parseInt($('.appPrice').attr('data-price'), 10);
 
             if (language === 'ja') {
                 language_money = setPrice.toLocaleString('ja-JP', {style:'currency', currency: 'JPY'});

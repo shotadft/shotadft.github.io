@@ -27,19 +27,17 @@ $(function() {
 		return false;
 	});
 
-	if ($('[name=intype]#dec').prop('checked')) {
-		m = parseInt($("#input_cnv").val(), 10);
-		$("#input_cnv").attr('type', 'number');
-		$("#input_cnv").attr('min', '0');
-		if ($("#input_cnv").attr('pattern')) {$("#input_cnv").removeAttr('pattern')}
-	} else if ($('[name=intype]#hex').prop('checked')) {
-		m = parseInt($("#input_cnv").val(), 16);
-		$("#input_cnv").attr('type', 'text');
-		$("#input_cnv").attr('pattern', '^([a-f,A-F,0-9]|\[NUL [0-9]+\])+$');
-		if ($("#input_cnv").attr('min')) {$("#input_cnv").removeAttr('min')}
-	} else {
-		return false;
-	}
+	$('input[name=intype]').change(function() {
+		if ($(`${this}#dec`).prop('checked')) {
+			$("#input_cnv").attr('type', 'number');
+			$("#input_cnv").attr('min', '0');
+			if ($("#input_cnv").attr('pattern')) {$("#input_cnv").removeAttr('pattern')}
+		} else if ($(`${this}#hex`).prop('checked')) {
+			$("#input_cnv").attr('type', 'text');
+			$("#input_cnv").attr('pattern', '^([a-f,A-F,0-9]|\[NUL [0-9]+\])+$');
+			if ($("#input_cnv").attr('min')) {$("#input_cnv").removeAttr('min')}
+		}
+	});
 });
 
 function CreateInputForm(no){

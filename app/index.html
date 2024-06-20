@@ -73,7 +73,7 @@
                             <h2 style="margin:2px;">OpenBrowser</h2>
                             <p class="description">シンプルなWebView2で動く<br>C#製ブラウザ<br>
                                 <b>対応OS:&nbsp;</b><i class="fa-brands fa-windows" style="color:#0079d7;"></i></p>
-                            <p class="appPrice" id="OpenBrowserPrice"></p>
+                            <p class="appPrice"></p>
                         </a>
                     </div>
                     <div class="appIndex" id="EasyServers">
@@ -84,7 +84,7 @@
                             <h2 style="margin:2px;">EasyServers</h2>
                             <p class="description">半自動でMinecraftサーバーを立てる/操作するソフト<br>
                                 <b>対応OS:&nbsp;</b><i class="fa-brands fa-windows" style="color:#0079d7;"></i></p>
-                            <p class="appPrice" id="EasyServersPrice"></p>
+                            <p class="appPrice"></p>
                         </a>
                     </div>
                 </div>
@@ -139,12 +139,39 @@
     <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
     <script>hljs.highlightAll();hljs.initLineNumbersOnLoad();hljs.addPlugin(new CopyButtonPlugin());</script>
-    <script defer src="/script/main.js" charset="utf-8"></script>
+    <script src="/script/main.js" charset="utf-8"></script>
     <script defer charset="utf-8">
         $(function() {
-            let use_language=window.navigator.language;var language_money="",freePrice_text="",setFreePriceText=!1;"ja-JP"===use_language||"ja"===use_language?(language_money="JP\xA5",freePrice_text="\u7121\u6599"):"zh"===use_language||"zh-Hans"===use_language||"zh-SG"===use_language||"zh-CN"===use_language||"zh-Hant"===use_language||"zh-HK"===use_language||"zh-TW"===use_language||"zh-MO"===use_language?(language_money="CN\xA5",freePrice_text="\u514D\u8D39"):(language_money="$",freePrice_text="Free");function SetPrice(d='',a=0){this.a=a,this.d=d;const b=document.getElementById(this.d);b.innerText=0===this.a?`${language_money} ${a}(${freePrice_text})`:`${language_money} ${a}`}
-            SetPrice('OpenBrowserPrice', 0);
-            SetPrice('EasyServersPrice', 0);
+            let language = $('html').attr('lang'),
+            language_money = '',
+            freePrice_text = '';
+            const setFreePriceText = $('.appPrice').prop('data-fPText') ? true : false,
+            setPrice = $('.appPrice').attr('data-price');
+
+            if (language === 'ja') {
+                language_money = setPrice.toLocaleString('ja-JP', {style:'currency', currency: 'JPY'});
+                freePrice_text = '無料';
+            } else if (language === 'zh') {
+                language_money = setPrice.toLocaleString('zh-CN', {style:'currency', currency: 'CNY'});
+                freePrice_text = '免费';
+            } else if (language === 'en' || language === 'en-US') {
+                language_money = setPrice.toLocaleString('en-US', {style:'currency', currency: 'USD'});
+                freePrice_text = 'Free';
+            } else if (language === 'ko') {
+                language_money = setPrice.toLocaleString('ko', {style:'currency', currency: 'KRW'});
+                freePrice_text = '무료';
+            } else if (language === 'de') {
+                language_money = setPrice.toLocaleString('DE', {style:'currency', currency: 'EUR'});
+                freePrice_text = 'kostenlos';
+            } else if (language === 'zen-GB') {
+                language_money = setPrice.toLocaleString('GB', {style:'currency', currency: 'GBP'});
+                freePrice_text = 'Free';
+            } else {
+                language_money = setPrice.toLocaleString('en-US', {style:'currency', currency: 'USD'});
+                freePrice_text = 'Free';
+            }
+
+            $('.appPrice').text(`${language_money}(${freePrice_text})`);
         });
     </script>
 </body>

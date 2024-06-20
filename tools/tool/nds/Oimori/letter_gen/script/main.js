@@ -1,4 +1,4 @@
-var CONST_ITEM_MAX = 15;
+const CONST_ITEM_MAX = 15;
 $(function() {
 	/*Events*/
 	for (let i = 1; i <= CONST_ITEM_MAX; i++) {
@@ -16,12 +16,12 @@ $(function() {
 	});
 
 	$("#insertlist").click(function() {
-		var id = $("#search_result").val();
+		let id = $("#search_result").val();
 		(id)&&AddToList(id);
 	});
 
 	$("#converter").submit(function() {
-		var m = parseInt($("#input_cnv").val(), parseInt($("[name=intype]:checked").val(), 10));
+		let m = parseInt($("#input_cnv").val(), parseInt($("[name=intype]:checked").val(), 10));
 		if (isNaN(m)) { $("#output_cnv").val("error"); }
 		$("#output_cnv").val(ConvertByteToString(m, 4));
 		return false;
@@ -31,10 +31,10 @@ $(function() {
 function CreateInputForm(no){
 	$("#itemlist").append(`<label for=\"item${no}\">道具${no}</label><select id=\"item${no}\"></select><br>`);
 	$(`#item${no}`).append('<option value="0">なし</option>');
-	for(var i = 0; i < itemset.length; i++){
-		var gname = `${list}${no}group${i}`;
+	for(let i = 0; i < itemset.length; i++){
+		let gname = 'list' + no + 'group' + i;
 		$(`#item${no}`).append(`<optgroup label=\"${itemset[i].groupname}\" id=\"${gname}\"></optgroup>`);
-		for(var j = 0; j < itemset[i].items.length; j++){
+		for(let j = 0; j < itemset[i].items.length; j++){
 			$(`#${gname}`).append(`<option value=\"${itemset[i].items[j].id}\">${itemset[i].items[j].name}</option>`);
 		}
 	}
@@ -51,7 +51,7 @@ function GetItemString() {
 }
 
 function GetMoneyString() {
-	var m = parseInt(`${$("#money").val()}`, 10);
+	let m = parseInt(`${$("#money").val()}`, 10);
 	if (isNaN(m)) { return "所持金の変換に失敗"; }
 	return ConvertByteToString(m, 4);
 }

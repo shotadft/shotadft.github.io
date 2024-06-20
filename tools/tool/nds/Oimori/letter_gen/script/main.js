@@ -29,7 +29,7 @@ $(function() {
 });
 
 function CreateInputForm(no){
-	no = ('000'+no).slice(-3);
+	no = ('00'+no).slice(-2);
 	$("#itemlist").append(`<label for=\"item${no}\">道具${no}</label><select id=\"item${no}\"></select><br>`);
 	$(`#item${no}`).append('<option value="0">なし</option>');
 	for(let i = 0; i < itemset.length; i++){

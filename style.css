@@ -857,13 +857,6 @@ details.toggle-code-animation {
     .main .mainContents {
         flex-direction: column;
     }
-
-    @media (prefers-color-scheme: dark) {
-        .header,
-        .header__nav {
-            background-color: rgba(21, 32, 41, 0.95);
-        }
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -964,6 +957,13 @@ details.toggle-code-animation {
         color: #AAA;
         font-size: 0.8em;
         line-height: 1.75em;
+    }
+}
+
+@media screen and (max-width: 1023px) and (prefers-color-scheme: dark) {
+    .header,
+    .header__nav {
+        background-color: rgba(21, 32, 41, 0.95);
     }
 }
 

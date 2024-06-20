@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>手紙バグ用文字列ジェネレーター</title>
-    <meta name="description" content="おいでよどうぶつの森の手紙バグ用文字列ジェネレータ">
+    <title>おい森手紙バグ用文字列ジェネレーター</title>
+    <meta name="description" content="おいでよ どうぶつの森の手紙バグ用文字列ジェネレーター">
     <link rel="icon" href="/img/icon/favicon.ico" />
     <link rel="apple-touch-icon" href="/img/shotadft_icon_a.webp" />
     <link rel="shortcut icon" href="/img/icon/favicon.ico" />
@@ -29,7 +29,7 @@ body{font-family:"Noto Sans","Noto Sans JP",sans-serif;font-optical-sizing:auto;
                 target="_blank">こっから設定に飛べるぞ</a></p>
     </noscript>
     <p><small><a href="/tools/">ツール一覧 トップに戻る</a></small></p>
-    <h1>手紙バグ用文字列ジェネレーター(作成中)</h1>
+    <h1>手紙バグ用文字列ジェネレーター</h1>
     <h2>これって何？</h2>
     <p>「おいでよ どうぶつの森」の手紙バグ用ツール君。それ以上でもそれ以下でも無い。</p>
     <p>なお、入力不可能文字の関係で入手できないアイテムもリストにあります。ご了承ください。</p>
@@ -40,7 +40,7 @@ body{font-family:"Noto Sans","Noto Sans JP",sans-serif;font-optical-sizing:auto;
                 <td>
                     <form id="mainform">
                         <div id="itemlist"></div>
-                        <label for="money">所持金</label><input type="number" id="money" min="0" value="1"><br>
+                        <label for="money">所持金</label><input type="number" id="money" min="0" value="1" required><br>
                         <button type="submit">生成</button><button type="reset">クリア</button>
                         <button type="button"
                             onclick="navigator.clipboard.writeText($('#result').val());">コピー</button><br>
@@ -62,15 +62,13 @@ body{font-family:"Noto Sans","Noto Sans JP",sans-serif;font-optical-sizing:auto;
         readonly></textarea>
     <hr>
     <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br />
-        <label><input type="radio" name="intype" value="10" checked>10進</label>
-        <label><input type="radio" name="intype" value="16">16進</label><br />
-        <input type="text" value="0" id="input_cnv" pattern="^[a-f,A-F,0-9]+$" required> -&gt; <input type="text"
-            value="[NUL 00]" id="output_cnv" pattern="^([a-f,A-F,0-9]|\[NUL [0-9]+\])+$" readonly>
+        <label><input type="radio" name="intype" id="dec" value="10" checked>10進</label>
+        <label><input type="radio" name="intype" id="hex" value="16">16進</label><br />
+        <input type="text" value="0" id="input_cnv" maxlength="8" required> -&gt; <input type="text" value="[NUL 00]" id="output_cnv" readonly>
         <button type="submit">変換</button>
     </form>
     <hr>
     <p>Connecting: <a href="/">shotadft.com</a></p>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="script/dataset.js" charset="utf-8"></script>

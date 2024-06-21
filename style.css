@@ -882,6 +882,10 @@ details.toggle-code-animation {
         background: #15202B;
         color: #ededed;
     }
+    
+    textarea:read-only {
+        background-color: #353b42;
+    }
 
     .news_item {
         color: #333;

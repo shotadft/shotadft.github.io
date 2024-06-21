@@ -702,6 +702,7 @@ main {
 #page_top:hover {
     background: rgba(255, 0, 0, 0.8);
     color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
 }
 
 /* ダウンロードボタン */

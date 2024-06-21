@@ -5,10 +5,10 @@
     padding: 0;
     /*Index*/
     cursor: pointer;
-    background-color: white;
+    background-color: whitesmoke;
     width: 200px;
     height: 292.5px;
-    border: 2.5px solid #ededed;
+    border: 2.5px solid #797979;
     border-radius: 10px;
     box-shadow: 8px 8px 13px -8px;
     position: relative;
@@ -60,7 +60,9 @@
 @media (prefers-color-scheme: dark) {
     .appIndex {
         background-color: #15202B;
-        border: 2.5px solid #5e5e5e;
+        border: 2.5px solid #a8a8a8;
+        border-radius: 10px;
+        box-shadow: 8px 8px 13px -8px;
     }
 
     .appIndex a {

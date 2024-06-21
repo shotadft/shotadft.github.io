@@ -917,8 +917,8 @@ details.toggle-code-animation {
     }
 
     button,
-    select {
-        border-color: gray white white gray;
+    input {
+        border-color: gray darkgray darkgray gray;
     }
 
     button:hover {

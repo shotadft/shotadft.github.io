@@ -916,6 +916,15 @@ details.toggle-code-animation {
         color: #ededed;
     }
 
+    button,
+    select {
+        border-color: gray white white gray;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
     .heading_title {
         color: #ededed;
         border-bottom: solid 3px #a9a9a9;

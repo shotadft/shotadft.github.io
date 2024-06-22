@@ -98,9 +98,12 @@ i,
 s,
 small,
 a,
-p {
+p,
+pre,
+code {
     width: fit-content;
     text-align: justify;
+    cursor: text;
 }
 
 code,
@@ -355,7 +358,6 @@ a:visited {
 
 main {
     background-color: #f8f8f8;
-    cursor: auto;
 }
 
 .main {

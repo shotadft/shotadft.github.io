@@ -747,7 +747,7 @@ main {
     transform: translate(5px, 5px);
 }
 
-.grecaptcha-badge { visibility: hidden; }
+/*.grecaptcha-badge { visibility: hidden; }*/
 
 /*Other*/
 details.toggle-code-animation {

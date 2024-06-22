@@ -97,12 +97,11 @@ b,
 i,
 s,
 small,
-a,
+a:not(#page_top),
 p,
 span,
 pre,
-code,
-:not(a#page_top) {
+code {
     width: fit-content;
     text-align: justify;
 }

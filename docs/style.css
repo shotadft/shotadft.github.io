@@ -193,15 +193,24 @@ details.is-opened .detailsIcon {
     transform: rotate(180deg);
 }
 
-.detailsIcon::before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f077";
+.detailsIcon::before,
+.detailsIcon::after {
+    content: "";
     position: absolute;
     display: block;
     width: 15px;
     height: 3px;
-    color: #7050ff;
+    background-color: #7050ff;
+}
+
+.detailsIcon::before {
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.detailsIcon::after {
+    right: 0;
+    transform: rotate(-45deg);
 }
 
 .detailsContent {

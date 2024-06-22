@@ -692,15 +692,15 @@ main {
 }
 
 #page_top::before {
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 6 Free';
     font-weight: 900;
-    content: '\f106';
+    content: "\f077";
     font-size: 50px;
     color: white;
     position: absolute;
     width: 30px;
     height: 60px;
-    /*top: 2.5px;*/
+    top: auto;
     bottom: 0;
     right: 0;
     left: 0;

@@ -795,6 +795,10 @@ details summary::before {
     transform: rotate(45deg);
 }
 
+.g-recaptcha {
+    visibility: hidden;
+}
+
 /* media */
 /*PC表示*/
 @media screen and (min-width: 1024px) {

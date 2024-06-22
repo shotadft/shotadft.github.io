@@ -98,6 +98,8 @@ i,
 s,
 small,
 a:not(#page_top),
+summary:not(.summary_inner),
+time,
 p,
 span,
 pre,
@@ -167,7 +169,6 @@ details summary::-webkit-details-marker {
 
 .summary_inner {
     display: flex;
-    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -716,15 +717,16 @@ main {
 
 /* ダウンロードボタン */
 .button_dl a {
-    background: #eeeeee;
+    background: #eee;
     border-radius: 3px;
     position: relative;
     display: inline-block;
+    text-align: justify;
     justify-content: center;
     align-items: center;
     max-width: 220px;
     padding: 10px 25px;
-    color: #313131;
+    color: #333;
     transition: 0.3s ease-in-out;
     box-shadow: 5px 5px 0 #6bb6ff;
 }

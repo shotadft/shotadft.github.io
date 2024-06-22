@@ -22,7 +22,7 @@
 </head>
 <body>
     <noscript>
-        <p>警告: このツールはJavaScriptで動いているから、JavaScriptを有効にしてから来てくれ。<br /><a href="about:settings/content/javascript"
+        <p>警告: このツールはJavaScriptで動いているから、JavaScriptを有効にしてから来てくれ。<br><a href="about:settings/content/javascript"
                 target="_blank">こっから設定に飛べるぞ</a></p>
     </noscript>
     <p><small><a href="/tools/">ツール一覧 トップに戻る</a></small></p>
@@ -58,9 +58,9 @@
     <textarea id="result" rows="5" cols="80" style="resize:none;" placeholder="欲しいアイテムを選択してから、生成ボタンを押してください。"
         readonly></textarea>
     <hr>
-    <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br />
+    <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br>
         <label><input type="radio" name="intype" value="10" checked>10進</label>
-        <label><input type="radio" name="intype" value="16">16進</label><br />
+        <label><input type="radio" name="intype" value="16">16進</label><br>
         <input type="number" value="0" id="input_cnv" maxlength="8" min="0" required> -&gt; <input type="text" value="[NUL 00]" id="output_cnv" readonly>
         <button type="submit">変換</button>
     </form>

@@ -99,6 +99,7 @@ s,
 small,
 a,
 p,
+span,
 pre,
 code {
     width: fit-content;
@@ -354,6 +355,11 @@ a:link {
 
 a:visited {
     color: #8652b8;
+}
+
+a img,
+a:hover img {
+    text-decoration: none;
 }
 
 main {

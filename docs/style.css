@@ -169,6 +169,7 @@ details summary::-webkit-details-marker {
 .summary_inner {
     display: flex;
     flex-direction: row;
+    text-align: justify;
     justify-content: space-between;
     align-items: center;
     user-select: none;
@@ -750,52 +751,6 @@ main {
 }
 
 .grecaptcha-badge {
-    /*z-index: 500;*/
-    visibility: hidden;
-}
-
-/*Other*/
-details.toggle-code-animation {
-    border: none;
-    margin: 2rem 0;
-}
-
-.details-content-wrapper {
-    padding: 1rem 0;
-}
-
-.details-content {
-    overflow: hidden;
-}
-
-details summary {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding: 0.5rem 0.5rem 0.5rem 36px;
-    border: 1px solid #aaa;
-    font-size: 13px;
-}
-
-details summary::-webkit-details-marker {
-    display: none;
-}
-
-details summary::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 10px;
-    margin: auto 0;
-    width: 8px;
-    height: 8px;
-    border-top: 3px solid #097b27;
-    border-right: 3px solid #097b27;
-    transform: rotate(45deg);
-}
-
-.g-recaptcha {
     visibility: hidden;
 }
 

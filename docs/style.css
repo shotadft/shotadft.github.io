@@ -687,7 +687,7 @@ main {
     position: fixed;
     right: 0;
     bottom: 0;
-    background: #e25407;
+    background: #e25407dd;
     opacity: 0.6;
     -webkit-opacity: 0.6;
     border-radius: 50%;
@@ -715,8 +715,13 @@ main {
     bottom: 0;
     right: 0;
     left: 0;
+    padding-right: 40.5px;
     margin: auto;
     text-align: center;
+}
+
+#page_top a::before:hover {
+    background: #db692bdd;
 }
 
 /* ダウンロードボタン */

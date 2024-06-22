@@ -715,7 +715,8 @@ main {
     bottom: 0;
     right: 0;
     left: 0;
-    box-sizing: unset;
+    box-sizing: content-box;
+    padding-right: 16px;
     margin: auto;
     text-align: center;
 }

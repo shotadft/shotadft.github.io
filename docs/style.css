@@ -395,6 +395,7 @@ main {
 }
 
 .mainImg h1 {
+    margin: auto;
     text-align: center;
     font-size: 175%;
     line-height: 1.25em;

@@ -100,9 +100,9 @@ small,
 a:not(#page_top),
 time,
 p,
-span:not(.summary_inner),
+span:not(.summary_inner,.detailsIcon),
 pre,
-code {
+code:not(.hljs) {
     width: fit-content;
     text-align: justify;
 }

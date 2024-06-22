@@ -367,7 +367,7 @@ main {
 }
 
 .main {
-    margin: 80px 16px 8px 16px;
+    margin: 82px 8px 8px 8px;
 }
 
 .main .mainContents {
@@ -384,6 +384,7 @@ main {
 
 /* メインイメージ */
 .mainImg {
+    margin: auto 0 auto 0;
     padding: 115px 0;
     width: 100%;
     background: #f6d123;
@@ -394,7 +395,6 @@ main {
 }
 
 .mainImg h1 {
-    margin: auto;
     text-align: center;
     font-size: 175%;
     line-height: 1.25em;
@@ -877,7 +877,7 @@ details summary::before {
     }
 
     .main {
-        margin: 80px 16px 4px 16px;
+        margin: 52px 8px 6px 8px;
     }
 
     .main .mainContents {

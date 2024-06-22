@@ -98,10 +98,9 @@ i,
 s,
 small,
 a:not(#page_top),
-summary:not(.summary_inner),
 time,
 p,
-span,
+span:not(.summary_inner),
 pre,
 code {
     width: fit-content;

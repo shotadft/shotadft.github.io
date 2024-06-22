@@ -68,7 +68,7 @@
                                     class="fa-solid fa-right-from-bracket"></i>&nbsp;現行のサイトに戻る</a></li>
                     </ul>
                 </nav>
-                <button type="button" class="header__hamburger hamburger" id="js-hamburger" aria-label="hamburgerMenu">
+                <button type="button" class="header__hamburger hamburger" id="js-hamburger" aria-label="HamburgerMenu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -110,7 +110,7 @@
                         </tr>
                         <tr>
                             <th scope="row">ZIP PASSWORD</th>
-                            <td id="zipPass" style="cursor:pointer;">･････････</td>
+                            <td id="zipPass" aria-label="secrecy" style="cursor:pointer;">･････････</td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -208,6 +208,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
     <script>hljs.highlightAll();hljs.initLineNumbersOnLoad();hljs.addPlugin(new CopyButtonPlugin());</script>
     <script src="/script/main.js" charset="utf-8"></script>
-    <script>$(function(){let a=!1;$('#zipPass').click(function(){a||(a=!0,$('#zipPass').text('WinSimple'),$('#zipPass').removeAttr('style'))})});</script>
+    <script>$(function(){let a=!1;$('#zipPass').click(function(){a||(a=!0,$('#zipPass').text('WinSimple'),$('#zipPass').removeAttr('style'),$('#zipPass').removeAttr('aria-label'))})});</script>
 </body>
 </html>

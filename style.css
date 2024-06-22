@@ -922,10 +922,6 @@ details.toggle-code-animation {
         border-color: gray darkgray darkgray gray;
     }
 
-    button:hover {
-        cursor: pointer;
-    }
-
     .heading_title {
         color: #ededed;
         border-bottom: solid 3px #a9a9a9;

@@ -101,7 +101,8 @@ a,
 p,
 span,
 pre,
-code {
+code,
+:not(a#page_top) {
     width: fit-content;
     text-align: justify;
 }

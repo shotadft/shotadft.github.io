@@ -195,12 +195,14 @@ details.is-opened .detailsIcon {
 
 .detailsIcon::before,
 .detailsIcon::after {
-    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f077";
     position: absolute;
     display: block;
     width: 15px;
     height: 3px;
-    background-color: #7050ff;
+    color: #7050ff;
 }
 
 .detailsIcon::before {
@@ -748,10 +750,6 @@ main {
     box-shadow: 0 0 0;
     text-decoration: none;
     transform: translate(5px, 5px);
-}
-
-.grecaptcha-badge {
-    visibility: hidden;
 }
 
 /* media */

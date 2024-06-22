@@ -749,7 +749,7 @@ main {
 }
 
 .grecaptcha-badge {
-    z-index: 500;
+    /*z-index: 500;*/
     visibility: hidden;
 }
 

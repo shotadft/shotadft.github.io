@@ -886,6 +886,10 @@ main {
     .news {
         width: 535px;
     }
+
+    .alert {
+        color: white;
+    }
 }
 
 /*スマホ表示*/

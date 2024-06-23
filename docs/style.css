@@ -1034,7 +1034,7 @@ main {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    #page_top {
+    #page_top, #page_top a {
         display: none;
     }
 }

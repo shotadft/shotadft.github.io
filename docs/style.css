@@ -797,11 +797,11 @@ main {
 }
 
 .fa-xmark {
-    color: #666;
+    color: #888;
 }
 
 .fa-xmark:hover {
-    color: #444;
+    color: #555;
 }
 
 .fa-check-circle {
@@ -959,14 +959,6 @@ main {
 
     .alert>a {
         color: #212a33;
-    }
-
-    .fa-xmark {
-        color: #444;
-    }
-    
-    .fa-xmark:hover {
-        color: #666;
     }
 
     main {

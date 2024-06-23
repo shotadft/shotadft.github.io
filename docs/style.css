@@ -957,10 +957,6 @@ main {
         background-color: white;
     }
 
-    .alert>a {
-        color: #212a33;
-    }
-
     main {
         background-color: #1e2631;
         color: #ededed;

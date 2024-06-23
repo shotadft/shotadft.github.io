@@ -796,6 +796,14 @@ main {
     border-left: 5px solid #3998DB;
 }
 
+.fa-xmark {
+    color: #666;
+}
+
+.fa-xmark:hover {
+    color: #444;
+}
+
 .fa-check-circle {
     color: #5CBD9D;
 }
@@ -915,7 +923,6 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
-
     body,
     textarea,
     .footer,
@@ -948,6 +955,18 @@ main {
 
     .hamburger span {
         background-color: white;
+    }
+
+    .alert>a {
+        color: #212a33;
+    }
+
+    .fa-xmark {
+        color: #444;
+    }
+    
+    .fa-xmark:hover {
+        color: #666;
     }
 
     main {

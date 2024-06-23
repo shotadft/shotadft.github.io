@@ -755,7 +755,7 @@ main {
     display: flex;
     align-items: center;
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 2px 1rem 2px;
     box-shadow: 0 0 5px #999;
     border: 1px solid transparent;
     border-radius: 0.25rem;

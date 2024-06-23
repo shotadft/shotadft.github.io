@@ -97,10 +97,10 @@ b,
 i,
 s,
 small,
-a:not(#page_top),
+a:not(#page_top, .button_dl, .hide-box),
 time,
 p,
-span:not(.summary_inner,.detailsIcon),
+span:not(.summary_inner, .detailsIcon),
 pre,
 code:not(.hljs) {
     width: fit-content;
@@ -750,6 +750,68 @@ main {
     transform: translate(5px, 5px);
 }
 
+/*アラート要素*/
+.alert {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 5px #999;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #333;
+    gap: 0.5rem;
+    line-height: 1.5;
+}
+
+.alert i {
+    font-size: 1.3rem;
+}
+
+.alert>a {
+    cursor: pointer;
+    color: #D4D4D4;
+    margin-left: auto;
+}
+
+.hide-box {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 1s;
+}
+
+.alert-success {
+    border-left: 5px solid #5CBD9D;
+}
+
+.alert-error {
+    border-left: 5px solid #E74C3C;
+}
+
+.alert-warning {
+    border-left: 5px solid #F29C33;
+}
+
+.alert-info {
+    border-left: 5px solid #3998DB;
+}
+
+.fa-check-circle {
+    color: #5CBD9D;
+}
+
+.fa-times-circle {
+    color: #E74C3C;
+}
+
+.fa-exclamation-triangle {
+    color: #F29C33;
+}
+
+.fa-exclamation-circle {
+    color: #3998DB;
+}
+
 /* media */
 /*PC表示*/
 @media screen and (min-width: 1024px) {
@@ -954,7 +1016,6 @@ main {
 }
 
 @media screen and (max-width: 1023px) and (prefers-color-scheme: dark) {
-
     .header,
     .header__nav {
         background-color: rgba(21, 32, 41, 0.95);

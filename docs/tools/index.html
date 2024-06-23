@@ -58,8 +58,12 @@
                     <h1>Shotadftのホームページ<br>ツールとかの保管庫なサイト</h1>
                 </div>
                 <noscript>
-                    <p>警告: このページは一部JavaScriptで動いているから、JavaScriptを有効にしてから来てくれ。<br><a href="about:settings/content/javascript"
-                        target="_blank" rel="noopener noreferrer">こっから設定に飛べるぞ</a></p>
+                    <div class="alert alert-error">
+                        <i class="fa-solid fa-times-circle"></i>
+                        <p>警告: このページは一部JavaScriptで動いているから、JavaScriptを有効にしてから来てくれ。<br><a href="about:settings/content/javascript"
+                            target="_blank" rel="noopener noreferrer">こっから設定に飛べるぞ</a></p>
+                            <a onclick="addClass(this,'hide-box');"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
                 </noscript>
                 <details class="js-details">
                     <summary class="js-details-summary">

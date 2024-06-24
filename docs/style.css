@@ -804,19 +804,19 @@ main {
     color: #555;
 }
 
-.fa-check-circle {
+.fa-circle-check {
     color: #5CBD9D;
 }
 
-.fa-times-circle {
+.fa-circle-xmark {
     color: #E74C3C;
 }
 
-.fa-exclamation-triangle {
+.fa-triangle-exclamation {
     color: #F29C33;
 }
 
-.fa-exclamation-circle {
+.fa-circle-exclamation {
     color: #3998DB;
 }
 
@@ -885,10 +885,6 @@ main {
 
     .news {
         width: 535px;
-    }
-
-    .alert {
-        color: white;
     }
 }
 
@@ -1023,6 +1019,10 @@ main {
         color: #AAA;
         font-size: 0.8em;
         line-height: 1.75em;
+    }
+
+    .alert {
+        color: white;
     }
 }
 

@@ -101,8 +101,7 @@ a:not(#page_top, .button_dl, .hide-box),
 time,
 p,
 span:not(.summary_inner, .detailsIcon),
-pre,
-code:not(.hljs) {
+pre:not(code.hljs) {
     width: fit-content;
     text-align: justify;
 }

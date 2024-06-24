@@ -97,11 +97,12 @@ b,
 i,
 s,
 small,
-a:not(#page_top, .button_dl, .hide-box),
+div:not(a#page_top),
+a:not(.button_dl):not(.hide-box),
 time,
 p,
-span:not(.summary_inner, .detailsIcon),
-pre:not(code.hljs) {
+span :not(.summary_inner):not(.detailsIcon),
+pre :not(code.hljs) {
     width: fit-content;
     text-align: justify;
 }

@@ -143,6 +143,7 @@ ul ul ul li {
 
 img {
     background-image: url("/img/spinner-loading.webp");
+    background-repeat: no-repeat;
 }
 
 textarea {
@@ -296,7 +297,7 @@ dfn[title] {
     cursor: help;
 }
 
-table :not(table#letter_gen) {
+table {
     border-collapse: collapse;
     border-spacing: 0;
 }
@@ -323,17 +324,17 @@ tfoot {
     background-color: rgb(228 240 245);
 }
 
-th :not(table#letter_gen tbody tr th),
-td :not(table#letter_gen tbody tr td) {
+th,
+td {
     border: 1px solid rgb(160 160 160);
     padding: 8px 10px;
 }
 
-td:last-of-type :not(table#letter_gen tbody tr td) {
+td:last-of-type {
     text-align: center;
 }
 
-tbody>tr:nth-of-type(even) :not(table#letter_gen tbody tr) {
+tbody>tr:nth-of-type(even) {
     background-color: rgb(237 238 242);
 }
 

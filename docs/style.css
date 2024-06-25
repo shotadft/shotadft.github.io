@@ -323,8 +323,8 @@ tfoot {
     background-color: rgb(228 240 245);
 }
 
-th,
-td {
+th :not(table#letter_gen),
+td :not(table#letter_gen) {
     border: 1px solid rgb(160 160 160);
     padding: 8px 10px;
 }

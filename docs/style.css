@@ -141,6 +141,10 @@ ul ul ul li {
     margin-left: 18px;
 }
 
+img {
+    background-image: url("/img/spinner-loading.webp");
+}
+
 textarea {
     font-family: sans-serif;
     padding: 10px;

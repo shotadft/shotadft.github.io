@@ -70,12 +70,16 @@ time,
 mark,
 audio,
 video {
-    scroll-behavior: smooth;
     padding: 0;
     border: 0;
     outline: 0;
     vertical-align: baseline;
     background: transparent;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -389,7 +393,11 @@ main {
     padding: 115px 0;
     width: 100%;
     background: #f6d123;
-    background-image: linear-gradient(135deg, #fafa14, #f6d123, #eda233);
+    background-image: -moz-linear-gradient(to right, 135deg, #fafa14, #f6d123, #eda233);
+    background-image: -webkit-linear-gradient(to right, 135deg, #fafa14, #f6d123, #eda233);
+    background-image: -o-linear-gradient(to right, 135deg, #fafa14, #f6d123, #eda233);
+    background-image: -ms-linear-gradient(to right, 135deg, #fafa14, #f6d123, #eda233);
+    background-image: linear-gradient(to right, 135deg, #fafa14, #f6d123, #eda233);
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -820,6 +828,78 @@ main {
     color: #3998DB;
 }
 
+/*Loader Anim*/
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #ffffff;
+    background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.loader:before {
+    width: 50%;
+    height: 50%;
+    background: #ffffff;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+}
+
+.loader:after {
+    background: #0dc5c1;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@-webkit-keyframes load3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
 /* media */
 /*PC表示*/
 @media screen and (min-width: 1024px) {
@@ -923,6 +1003,7 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
+
     body,
     textarea,
     .footer,
@@ -1027,14 +1108,18 @@ main {
 }
 
 @media screen and (max-width: 1023px) and (prefers-color-scheme: dark) {
+
     .header,
     .header__nav {
         background-color: rgba(21, 32, 41, 0.95);
     }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    #page_top, #page_top a {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+    #page_top,
+    #page_top a {
         display: none;
     }
 }

@@ -92,7 +92,7 @@ body {
 }
 
 body :not(.header):not(.hamburger) {
-    visibility: hidden;
+    display: none;
 }
 
 h1,
@@ -742,6 +742,7 @@ main {
     -webkit-opacity: 0.6;
     border-radius: 50%;
     -webkit-border-radius: 50%;
+    visibility: hidden;
 }
 
 #page_top a {

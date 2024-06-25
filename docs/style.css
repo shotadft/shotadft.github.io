@@ -296,12 +296,12 @@ dfn[title] {
     cursor: help;
 }
 
-table {
+table :not(table#letter_gen) {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-table :not(table#letter_gen) {
+table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
     display: table;
@@ -323,17 +323,17 @@ tfoot {
     background-color: rgb(228 240 245);
 }
 
-th :not(table#letter_gen),
-td :not(table#letter_gen) {
+th :not(table#letter_gen tbody tr th),
+td :not(table#letter_gen tbody tr td) {
     border: 1px solid rgb(160 160 160);
     padding: 8px 10px;
 }
 
-td:last-of-type :not(table#letter_gen) {
+td:last-of-type :not(table#letter_gen tbody tr td) {
     text-align: center;
 }
 
-tbody>tr:nth-of-type(even) :not(table#letter_gen) {
+tbody>tr:nth-of-type(even) :not(table#letter_gen tbody tr) {
     background-color: rgb(237 238 242);
 }
 

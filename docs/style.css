@@ -901,8 +901,8 @@ main {
 
 /*Other*/
 .twitter-area {
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 512px;
     position: relative;
     background-color: white;
     border-radius: 12px;
@@ -911,6 +911,14 @@ main {
     justify-content: center;
 }
 
+.twitter-area > iframe {
+    z-index: 2;
+}
+
+.twitter-timeline {
+    position: absolute;
+    z-index: 1;
+}
 
 /* media */
 /*PC表示*/

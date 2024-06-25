@@ -91,7 +91,7 @@ body {
     line-height: 1em;
 }
 
-body :not(.header):not(.hamburger) {
+body:not(.header):not(.hamburger) {
     display: none;
 }
 

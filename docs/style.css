@@ -141,10 +141,10 @@ ul ul ul li {
     margin-left: 18px;
 }
 
-img {
+/*img {
     background-image: url("/img/spinner-loading.webp");
     background-repeat: no-repeat;
-}
+}*/
 
 textarea {
     font-family: "Noto Sans", "Noto Sans JP", sans-serif;

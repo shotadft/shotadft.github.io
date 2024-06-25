@@ -91,6 +91,10 @@ body {
     line-height: 1em;
 }
 
+body :not(.header):not(.hamburger) {
+    visibility: hidden;
+}
+
 h1,
 h2,
 h3,

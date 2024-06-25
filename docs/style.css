@@ -91,10 +91,6 @@ body {
     line-height: 1em;
 }
 
-body:not(.header):not(.hamburger) {
-    display: none;
-}
-
 h1,
 h2,
 h3,
@@ -1164,15 +1160,6 @@ main {
     .header,
     .header__nav {
         background-color: rgba(21, 32, 41, 0.95);
-    }
-}
-
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-
-    #page_top,
-    #page_top a {
-        display: none;
     }
 }
 

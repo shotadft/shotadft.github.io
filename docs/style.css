@@ -149,7 +149,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
-    background-color: white;
+    background-color: #fff;
 }
 
 textarea:read-only {
@@ -163,7 +163,7 @@ details {
 details summary {
     display: block;
     cursor: pointer;
-    background-color: white;
+    background-color: #fff;
 }
 
 details summary::-webkit-details-marker {
@@ -398,7 +398,7 @@ main {
     background-image: -o-linear-gradient(135deg, #fafa14, #f6d123, #eda233);
     background-image: -ms-linear-gradient(135deg, #fafa14, #f6d123, #eda233);
     background-image: linear-gradient(135deg, #fafa14, #f6d123, #eda233);
-    color: white;
+    color: #fff;
     font-weight: bold;
     font-size: 16px;
 }
@@ -717,7 +717,7 @@ main {
     font-weight: 900;
     content: "\f106";
     font-size: 50px;
-    color: white;
+    color: #fff;
     position: absolute;
     width: 25px;
     height: 25px;
@@ -836,12 +836,12 @@ main {
     width: 11em;
     height: 11em;
     border-radius: 50%;
-    background: white;
-    background-image: -moz-linear-gradient(left, white 10%, rgba(255, 255, 255, 0) 42%);
-    background-image: -webkit-linear-gradient(left, white 10%, rgba(255, 255, 255, 0) 42%);
-    background-image: -o-linear-gradient(left, white 10%, rgba(255, 255, 255, 0) 42%);
-    background-image: -ms-linear-gradient(left, white 10%, rgba(255, 255, 255, 0) 42%);
-    background-image: linear-gradient(to right, white 10%, rgba(255, 255, 255, 0) 42%);
+    background: #fff;
+    background-image: -moz-linear-gradient(left, #fff 10%, rgb(13, 197, 193) 42%);
+    background-image: -webkit-linear-gradient(left, #fff 10%, rgb(13, 197, 193) 42%);
+    background-image: -o-linear-gradient(left, #fff 10%, rgb(13, 197, 193) 42%);
+    background-image: -ms-linear-gradient(left, #fff 10%, rgb(13, 197, 193) 42%);
+    background-image: linear-gradient(to right, #fff 10%, rgb(13, 197, 193) 42%);
     position: relative;
     -webkit-animation: load3 1.4s infinite linear;
     animation: load3 1.4s infinite linear;
@@ -853,7 +853,7 @@ main {
 .loader:before {
     width: 50%;
     height: 50%;
-    background: white;
+    background: #fff;
     border-radius: 100% 0 0 0;
     position: absolute;
     top: 0;
@@ -862,7 +862,7 @@ main {
 }
 
 .loader:after {
-    background: #0dc5c1;
+    background: #fff;
     width: 75%;
     height: 75%;
     border-radius: 50%;
@@ -902,23 +902,15 @@ main {
 /*Other*/
 .twitter-area {
     width: 400px;
-    height: 512px;
+    height: 500px;
     position: relative;
-    background-color: white;
+    background-color: #fff;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.twitter-area > iframe {
-    z-index: 2;
-}
-
-.twitter-timeline {
-    position: absolute;
-    z-index: 1;
-}
 
 /* media */
 /*PC表示*/
@@ -1023,7 +1015,6 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
-
     body,
     textarea,
     .footer,
@@ -1055,7 +1046,7 @@ main {
     }
 
     .hamburger span {
-        background-color: white;
+        background-color: #fff;
     }
 
     main {
@@ -1123,12 +1114,11 @@ main {
     }
 
     .alert {
-        color: white;
+        color: #fff;
     }
 }
 
 @media screen and (max-width: 1023px) and (prefers-color-scheme: dark) {
-
     .header,
     .header__nav {
         background-color: rgba(21, 32, 41, 0.95);

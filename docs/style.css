@@ -782,7 +782,7 @@ main {
     text-align: center
 }
 
-#page_top a::before:hover {
+#page_top a:hover {
     background: #db692bdd;
 }
 

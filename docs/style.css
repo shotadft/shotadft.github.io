@@ -1032,6 +1032,13 @@ main {
         background-color: #353b42;
     }
 
+    img {
+        background-image: url("/img/spinner-loading-white.webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        user-select: none
+    }
+
     .news_item {
         color: #333;
     }

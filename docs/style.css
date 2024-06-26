@@ -74,7 +74,7 @@ video {
     border: 0;
     outline: 0;
     vertical-align: baseline;
-    background: transparent;
+    background: transparent
 }
 
 html,
@@ -88,7 +88,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     color: #333;
-    line-height: 1em;
+    line-height: 1em
 }
 
 h1,
@@ -108,14 +108,14 @@ p,
 span :not(.summary_inner):not(.detailsIcon),
 pre :not(code.hljs):not(button.hljs-copy-button) {
     width: fit-content;
-    text-align: justify;
+    text-align: justify
 }
 
 code,
 pre code.hljs {
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 300
 }
 
 ol,
@@ -124,7 +124,7 @@ li {
     width: fit-content;
     margin-left: 10px;
     list-style-type: none;
-    line-height: 22.5px;
+    line-height: 22.5px
 }
 
 ul li {
@@ -133,18 +133,17 @@ ul li {
 
 ul ul li {
     list-style: circle;
-    margin-left: 14px;
 }
 
 ul ul ul li {
     list-style: square;
-    margin-left: 18px;
 }
 
-/*img {
+img :not("header__title") {
     background-image: url("/img/spinner-loading.webp");
     background-repeat: no-repeat;
-}*/
+    user-select: none
+}
 
 textarea {
     font-family: "Noto Sans", "Noto Sans JP", sans-serif;
@@ -154,7 +153,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
-    background-color: #fff;
+    background-color: #fff
 }
 
 textarea:read-only {
@@ -168,7 +167,7 @@ details {
 details summary {
     display: block;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #fff
 }
 
 details summary::-webkit-details-marker {
@@ -178,14 +177,14 @@ details summary::-webkit-details-marker {
 .summary_inner {
     display: flex;
     flex-direction: row;
-    text-align: justify;
+    text-align: left;
     justify-content: space-between;
     align-items: center;
     user-select: none;
     padding: 16px 24px;
     border: 1px solid #d2beff;
     font-weight: bold;
-    color: #0969DA;
+    color: #0969DA
 }
 
 .detailsIcon {
@@ -195,7 +194,7 @@ details summary::-webkit-details-marker {
     margin-left: 6px;
     flex-shrink: 0;
     transform-origin: center 43%;
-    transition: transform 0.4s;
+    transition: transform 0.4s
 }
 
 details.is-opened .detailsIcon {
@@ -209,7 +208,7 @@ details.is-opened .detailsIcon {
     display: block;
     width: 15px;
     height: 3px;
-    background-color: #7050ff;
+    background-color: #7050ff
 }
 
 .detailsIcon::before {
@@ -232,7 +231,7 @@ details.is-opened .detailsIcon {
     display: flex;
     text-align: left;
     flex-direction: column;
-    gap: 16px;
+    gap: 16px
 }
 
 article,
@@ -263,7 +262,6 @@ blockquote:after,
 q:before,
 q:after {
     content: "";
-    content: none;
 }
 
 a {
@@ -271,20 +269,20 @@ a {
     padding: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent;
+    background: transparent
 }
 
 ins {
     background-color: #ff9;
     color: #333;
-    text-decoration: none;
+    text-decoration: none
 }
 
 mark {
     background-color: #ff9;
     color: #333;
     font-style: italic;
-    font-weight: bold;
+    font-weight: bold
 }
 
 del {
@@ -294,40 +292,41 @@ del {
 abbr[title],
 dfn[title] {
     border-bottom: 1px dotted;
-    cursor: help;
+    cursor: help
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0;
+    border-spacing: 0
 }
 
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
+    border: 2px solid #8c8c8c;
     display: table;
     table-layout: fixed;
     font-family: "Noto Sans", "Noto Sans JP", sans-serif;
     font-size: 0.8rem;
-    white-space: nowrap;
-    letter-spacing: 1px;
+    letter-spacing: 1px
 }
 
 caption {
     caption-side: bottom;
     padding: 10px;
-    font-weight: bold;
+    font-weight: bold
 }
 
 thead,
 tfoot {
-    background-color: rgb(228 240 245);
+    background-color: #e4f0f5;
+    white-space: nowrap
 }
 
 th,
 td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
+    border: 1px solid #a0a0a0;
+    white-space: nowrap;
+    padding: 8px 10px
 }
 
 td:last-of-type {
@@ -335,7 +334,7 @@ td:last-of-type {
 }
 
 tbody>tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
+    background-color: #edeef2;
 }
 
 tfoot th {
@@ -382,14 +381,14 @@ main {
 
 .main .mainContents {
     display: flex;
-    flex-direction: row;
+    flex-direction: row
 }
 
 .heading_title {
     color: #333;
     width: 90%;
     line-height: 2em;
-    border-bottom: solid 3px #a9a9a9;
+    border-bottom: solid 3px #a9a9a9
 }
 
 /* メインイメージ */
@@ -405,14 +404,14 @@ main {
     background-image: linear-gradient(135deg, #fafa14, #f6d123, #eda233);
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 16px
 }
 
 .mainImg h1 {
     margin: auto;
     text-align: center;
     font-size: 175%;
-    line-height: 1.25em;
+    line-height: 1.25em
 }
 
 /* ヘッダー */
@@ -424,7 +423,7 @@ main {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9998;
+    z-index: 9998
 }
 
 .header ul,
@@ -438,7 +437,7 @@ main {
     align-items: center;
     justify-content: space-between;
     height: inherit;
-    position: relative;
+    position: relative
 }
 
 /* ヘッダーのロゴ部分 */
@@ -465,7 +464,7 @@ main {
     transform: translateX(100%);
     background-color: rgba(255, 255, 255, 0.95);
     transition: ease .4s;
-    display: flex;
+    display: flex
 }
 
 .nav__items {
@@ -478,7 +477,7 @@ main {
     margin-left: 0;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 /* ナビのリンク */
@@ -489,7 +488,7 @@ main {
     text-align: center;
     font-size: 24px;
     margin-bottom: 24px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .nav-items__item a:hover {
@@ -507,14 +506,14 @@ main {
 /* ハンバーガーメニュー */
 .header__hamburger {
     width: 48px;
-    height: 100%;
+    height: 100%
 }
 
 .hamburger {
     background-color: transparent;
     border-color: transparent;
     z-index: 9999;
-    cursor: pointer;
+    cursor: pointer
 }
 
 /* ハンバーガーメニューの線 */
@@ -524,7 +523,7 @@ main {
     background-color: black;
     position: relative;
     transition: ease .4s;
-    display: block;
+    display: block
 }
 
 .hamburger span:nth-child(1) {
@@ -555,7 +554,7 @@ main {
 
 .hamburger.active span:nth-child(3) {
     top: -13px;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg)
 }
 
 /* フッター */
@@ -564,14 +563,14 @@ main {
     margin-top: auto;
     border-top: #ccd1d9 solid 1px;
     background: #fafafa;
-    text-align: center;
+    text-align: center
 }
 
 .footer-nav {
     margin: 0 0 8px 0;
     width: 100%;
     list-style: none;
-    text-align: center;
+    text-align: center
 }
 
 .footer-nav-group {
@@ -580,7 +579,7 @@ main {
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
+    zoom: 1
 }
 
 .footer-nav-group>li {
@@ -590,12 +589,12 @@ main {
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
+    zoom: 1
 }
 
 .footer-nav-group>li a {
     color: #4e4e4e;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .footer-nav-group>li a:hover {
@@ -606,14 +605,14 @@ main {
     color: #545454;
     font-size: 0.8em;
     line-height: 1.75em;
-    margin-top: 4px;
+    margin-top: 4px
 }
 
 /*コンテナ*/
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh
 }
 
 /*お知らせ欄*/
@@ -625,14 +624,14 @@ main {
     width: 98%;
     background-color: #fff;
     margin: 6px 0;
-    padding: 65px 0 100px;
+    padding: 65px 0 100px
 }
 
 .sub_ttl {
     font-size: 30px;
     text-align: center;
     margin-bottom: 40px;
-    width: auto;
+    width: auto
 }
 
 /* ここからがニュース記事のCSS */
@@ -642,11 +641,11 @@ main {
 
 .news_list_item {
     padding: 25px 0;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6
 }
 
 .news_list_item:first-child {
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6
 }
 
 .news_list_item a {
@@ -654,14 +653,14 @@ main {
     display: flex;
     padding-right: 30px;
     text-decoration: none;
-    color: #333;
+    color: #333
 }
 
 .news_list_date {
     font-size: 15px;
     display: flex;
     margin-right: 15px;
-    align-items: center;
+    align-items: center
 }
 
 .news_item {
@@ -669,7 +668,7 @@ main {
     border-radius: 14px;
     width: 6em;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 20px
 }
 
 .news_list_item .new::after {
@@ -678,7 +677,7 @@ main {
     color: #fff;
     background: red;
     padding: 1px 3px;
-    font-size: 12px;
+    font-size: 12px
 }
 
 .news_list_item .pdf::after {
@@ -687,7 +686,7 @@ main {
     color: red;
     border: 1px solid red;
     padding: 1px 3px;
-    font-size: 12px;
+    font-size: 12px
 }
 
 .arrow {
@@ -696,7 +695,7 @@ main {
     background: #707070;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 0
 }
 
 .arrow::after {
@@ -708,7 +707,7 @@ main {
     transform: rotate(45deg);
     position: absolute;
     right: 0px;
-    bottom: 2px;
+    bottom: 2px
 }
 
 /*追従するトップへ戻るボタン*/
@@ -724,7 +723,7 @@ main {
     -webkit-opacity: 0.6;
     border-radius: 50%;
     -webkit-border-radius: 50%;
-    visibility: hidden;
+    visibility: hidden
 }
 
 #page_top a {
@@ -732,7 +731,7 @@ main {
     display: block;
     width: 100px;
     height: 100px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 #page_top a::before {
@@ -751,7 +750,7 @@ main {
     box-sizing: content-box;
     padding-right: 16px;
     margin: auto;
-    text-align: center;
+    text-align: center
 }
 
 #page_top a::before:hover {
@@ -771,14 +770,14 @@ main {
     padding: 10px 25px;
     color: #333;
     transition: 0.3s ease-in-out;
-    box-shadow: 5px 5px 0 #6bb6ff;
+    box-shadow: 5px 5px 0 #6bb6ff
 }
 
 .button_dl a:hover {
     background-color: #b3d9ff;
     box-shadow: 0 0 0;
     text-decoration: none;
-    transform: translate(5px, 5px);
+    transform: translate(5px, 5px)
 }
 
 /*アラート要素*/
@@ -792,7 +791,7 @@ main {
     border-radius: 0.25rem;
     color: #333;
     gap: 0.5rem;
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 .alert i {
@@ -802,13 +801,13 @@ main {
 .alert>a {
     cursor: pointer;
     color: #D4D4D4;
-    margin-left: auto;
+    margin-left: auto
 }
 
 .hide-box {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s, visibility 1s;
+    transition: opacity 0.5s, visibility 1s
 }
 
 .alert-success {
@@ -864,7 +863,7 @@ main {
     animation: load5 1.1s infinite ease;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
-    transform: translateZ(0);
+    transform: translateZ(0)
 }
 
 @-webkit-keyframes load5{0%,100%{box-shadow:0em -2.6em 0em 0em #0cc5c1,1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.5),-1.8em -1.8em 0 0em rgba(12,197,193,.7)}12.5%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.7),1.8em -1.8em 0 0em #0cc5c1,2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.5)}25%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.5),1.8em -1.8em 0 0em rgba(12,197,193,.7),2.5em 0em 0 0em #0cc5c1,1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.2)}37.5%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.5),2.5em 0em 0 0em rgba(12,197,193,.7),1.75em 1.75em 0 0em #0cc5c1,0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.2)}50%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.5),1.75em 1.75em 0 0em rgba(12,197,193,.7),0em 2.5em 0 0em #0cc5c1,-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.2)}62.5%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.5),0em 2.5em 0 0em rgba(12,197,193,.7),-1.8em 1.8em 0 0em #0cc5c1,-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.2)}75%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.5),-1.8em 1.8em 0 0em rgba(12,197,193,.7),-2.6em 0em 0 0em #0cc5c1,-1.8em -1.8em 0 0em rgba(12,197,193,.2)}87.5%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.5),-2.6em 0em 0 0em rgba(12,197,193,.7),-1.8em -1.8em 0 0em #0cc5c1}}@keyframes load5{0%,100%{box-shadow:0em -2.6em 0em 0em #0cc5c1,1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.5),-1.8em -1.8em 0 0em rgba(12,197,193,.7)}12.5%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.7),1.8em -1.8em 0 0em #0cc5c1,2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.5)}25%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.5),1.8em -1.8em 0 0em rgba(12,197,193,.7),2.5em 0em 0 0em #0cc5c1,1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.2)}37.5%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.5),2.5em 0em 0 0em rgba(12,197,193,.7),1.75em 1.75em 0 0em #0cc5c1,0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.2)}50%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.5),1.75em 1.75em 0 0em rgba(12,197,193,.7),0em 2.5em 0 0em #0cc5c1,-1.8em 1.8em 0 0em rgba(12,197,193,.2),-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.2)}62.5%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.5),0em 2.5em 0 0em rgba(12,197,193,.7),-1.8em 1.8em 0 0em #0cc5c1,-2.6em 0em 0 0em rgba(12,197,193,.2),-1.8em -1.8em 0 0em rgba(12,197,193,.2)}75%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.5),-1.8em 1.8em 0 0em rgba(12,197,193,.7),-2.6em 0em 0 0em #0cc5c1,-1.8em -1.8em 0 0em rgba(12,197,193,.2)}87.5%{box-shadow:0em -2.6em 0em 0em rgba(12,197,193,.2),1.8em -1.8em 0 0em rgba(12,197,193,.2),2.5em 0em 0 0em rgba(12,197,193,.2),1.75em 1.75em 0 0em rgba(12,197,193,.2),0em 2.5em 0 0em rgba(12,197,193,.2),-1.8em 1.8em 0 0em rgba(12,197,193,.5),-2.6em 0em 0 0em rgba(12,197,193,.7),-1.8em -1.8em 0 0em #0cc5c1}}
@@ -879,7 +878,7 @@ main {
     border-radius: 12px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 /* media */
@@ -887,7 +886,7 @@ main {
 @media screen and (min-width: 1024px) {
     body {
         width: 100%;
-        float: left;
+        float: left
     }
 
     .header {
@@ -905,7 +904,7 @@ main {
         height: inherit;
         display: flex;
         justify-content: end;
-        width: 48%;
+        width: 48%
     }
 
     .nav__items {
@@ -914,7 +913,7 @@ main {
         display: flex;
         align-items: center;
         height: initial;
-        justify-content: space-between;
+        justify-content: space-between
     }
 
     .nav-items__item:before {
@@ -925,7 +924,7 @@ main {
         width: 100%;
         height: 2px;
         background: #da8a00;
-        opacity: 0;
+        opacity: 0
     }
 
     .nav-items__item:hover:before {
@@ -934,7 +933,7 @@ main {
 
     .nav-items__item a {
         margin-bottom: 0;
-        font-size: 18px;
+        font-size: 18px
     }
 
     .nav-items__item a.active {
@@ -1062,11 +1061,11 @@ main {
 
     thead,
     tfoot {
-        background-color: rgb(98, 110, 117);
+        background-color: #626e75;
     }
 
     tbody>tr:nth-of-type(even) {
-        background-color: rgb(69, 70, 71);
+        background-color: #454647;
     }
 
     .footer-nav-group>li a {

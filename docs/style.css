@@ -1113,11 +1113,11 @@ main {
     }
 
     .footer-nav-group>li a:hover {
-        color: #AAA;
+        color: #999;
     }
 
     .footer-copyright {
-        color: #AAA;
+        color: #999;
         font-size: 0.8em;
         line-height: 1.75em;
     }

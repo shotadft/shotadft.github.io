@@ -460,8 +460,7 @@ main {
     opacity: 0.8;
 }
 
-.header__title img,
-.header__title svg {
+.header__title img {
     background-image: none;
     display: block;
 }

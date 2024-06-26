@@ -755,6 +755,10 @@ main {
     -webkit-border-radius: 50%
 }
 
+#page_top a:hover {
+    background: #db2b42dd;
+}
+
 #page_top a {
     position: relative;
     display: block;
@@ -780,10 +784,6 @@ main {
     padding-right: 16px;
     margin: auto;
     text-align: center
-}
-
-#page_top a:hover {
-    background: #db692bdd;
 }
 
 /* ダウンロードボタン */

@@ -113,8 +113,8 @@ pre :not(code.hljs):not(button.hljs-copy-button) {
 
 code,
 pre code.hljs {
-    font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
+    font-family: "Cascadia Code", monospace;
+    font-style: normal;
     font-weight: 300
 }
 

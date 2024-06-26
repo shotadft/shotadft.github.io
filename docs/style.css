@@ -142,7 +142,7 @@ ul ul ul li {
 img {
     background-image: url("/img/spinner-loading.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     user-select: none
 }
 

@@ -139,8 +139,9 @@ ul ul ul li {
     list-style: square;
 }
 
+/* background-image: url("/img/spinner-loading.webp"); */
 img {
-    /*background-image: url("/img/spinner-loading.webp");*/
+    background-image: none;
     background-repeat: no-repeat;
     background-size: contain;
     user-select: none

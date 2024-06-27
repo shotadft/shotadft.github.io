@@ -824,7 +824,7 @@ main {
 
 .hide-box {
     opacity: 0;
-    visibility: hidden;
+    display: none;
     transition: opacity 0.5s, visibility 1s;
     -webkit-transition: opacity 0.5s, visibility 1s;
     -moz-transition: opacity 0.5s, visibility 1s;

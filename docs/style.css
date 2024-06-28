@@ -822,12 +822,13 @@ main {
 .hide-box {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s, visibility 1s;
-}
-
-.hide-box::after {
+    transition: opacity 0.5s, visibility 1s ease-out;
     display: none;
-    content: "";
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 0;
+    width: 0;
 }
 
 .alert-success {

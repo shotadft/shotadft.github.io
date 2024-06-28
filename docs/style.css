@@ -582,7 +582,8 @@ main {
 .footer-nav-group {
     margin: 0;
     padding: 0;
-    display: -moz-inline-stack;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
     display: inline-block;
     vertical-align: middle;
     zoom: 1
@@ -592,7 +593,8 @@ main {
     margin: 0;
     padding: 0 6px;
     font-size: 0.9em;
-    display: -moz-inline-stack;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
     display: inline-block;
     vertical-align: middle;
     zoom: 1
@@ -765,6 +767,8 @@ main {
     background: #eee;
     border-radius: 3px;
     position: relative;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
     display: inline-block;
     text-align: justify;
     justify-content: center;
@@ -922,6 +926,7 @@ main {
         transform: initial;
         background-color: inherit;
         height: inherit;
+        display: -webkit-flex;
         display: flex;
         justify-content: end;
         width: 48%
@@ -930,6 +935,7 @@ main {
     .nav__items {
         margin: initial;
         width: 100%;
+        display: -webkit-flex;
         display: flex;
         align-items: center;
         height: initial;

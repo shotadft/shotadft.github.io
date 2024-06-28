@@ -818,10 +818,23 @@ main {
     margin-left: auto;
 }
 
+@keyframes hideBoxs {
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
 .hide-box {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 1s;
+    animation: hideBoxs;
 }
 
 .alert-success {

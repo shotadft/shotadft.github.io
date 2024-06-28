@@ -824,8 +824,10 @@ main {
     visibility: hidden;
     transition: opacity 0.5s, visibility 1s;
 }
+
 .hide-box::after {
     display: none;
+    content: "";
 }
 
 .alert-success {

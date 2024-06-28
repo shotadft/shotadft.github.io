@@ -820,23 +820,12 @@ main {
 }
 
 .hide-box {
-    animation: hideBoxs 1s ease-in;
-    animation-iteration-count: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 1s;
 }
-
-@keyframes hideBoxs {
-    0% {
-        opacity: 1;
-    }
-
-    99% {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    100% {
-        display: none;
-    }
+.hide-box::after {
+    display: none;
 }
 
 .alert-success {

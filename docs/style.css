@@ -823,12 +823,15 @@ main {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 1s ease-out;
-    display: none;
     margin: 0;
     padding: 0;
     border: 0;
     height: 0;
     width: 0;
+}
+
+.alert.hide-box .fa-triangle-exclamation {
+    font-size: 0px;
 }
 
 .alert-success {

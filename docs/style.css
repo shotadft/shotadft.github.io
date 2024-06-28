@@ -821,17 +821,7 @@ main {
 
 .hide-box {
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 1s ease-out;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    height: 0;
-    width: 0;
-}
-
-.alert.hide-box .fa-triangle-exclamation {
-    font-size: 0px;
+    display: none;
 }
 
 .alert-success {

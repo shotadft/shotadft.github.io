@@ -110,7 +110,7 @@
                     <div class="alert alert-warning">
                         <i class="fa-solid fa-triangle-exclamation"></i>
                         <p>警告: このページは一部JavaScriptで動いているから、JavaScriptを有効にしてから来てくれ。</p>
-                        <a onclick="$('.alert').attr('class', 'hide-box')"><i class="fa-solid fa-xmark"></i></a>
+                        <a onclick="this.parentNode.classList.add('hide-box');"><i class="fa-solid fa-xmark"></i></a>
                     </div>
                 </noscript>
                 <h2 class="heading_title">メインコンテンツ</h2>

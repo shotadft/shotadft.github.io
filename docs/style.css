@@ -139,9 +139,8 @@ ul ul ul li {
     list-style: square;
 }
 
-/* background-image: url("/img/spinner-loading.webp"); */
 img {
-    background-image: none;
+    /*background-image: url("/img/spinner-loading.webp");*/
     background-repeat: no-repeat;
     background-size: contain;
     user-select: none
@@ -290,6 +289,7 @@ table {
     table-layout: fixed;
     font-family: "Noto Sans", "Noto Sans JP", sans-serif;
     font-size: 0.8rem;
+    white-space: nowrap;
     letter-spacing: 1px;
 }
 
@@ -302,13 +302,11 @@ caption {
 thead,
 tfoot {
     background-color: #e4f0f5;
-    white-space: nowrap;
 }
 
 th,
 td {
     border: 1px solid #a0a0a0;
-    white-space: nowrap;
     padding: 8px 10px;
 }
 
@@ -331,11 +329,6 @@ tfoot td {
 .table_box {
     display: block;
     overflow: auto;
-}
-
-.table_box th,
-.table_box td {
-    white-space: nowrap;
 }
 
 .table_box::-webkit-scrollbar {
@@ -798,9 +791,8 @@ main {
 
 /*アラート要素*/
 .alert {
+    display: -webkit-flex;
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
     align-items: center;
     padding: 1rem;
     margin: 1rem 2px 1rem 2px;
@@ -824,11 +816,8 @@ main {
 
 .hide-box {
     opacity: 0;
-    display: none;
+    visibility: hidden;
     transition: opacity 0.5s, visibility 1s;
-    -webkit-transition: opacity 0.5s, visibility 1s;
-    -moz-transition: opacity 0.5s, visibility 1s;
-    -ms-transition: opacity 0.5s, visibility 1s;
 }
 
 .alert-success {
@@ -900,10 +889,8 @@ main {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
+    display: -webkit-flex;
     display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
     align-items: center;
     -webkit-align-items: center;
     -moz-align-items: center;
@@ -1036,7 +1023,7 @@ main {
     }
 
     img {
-        background-image: url("/img/spinner-loading-white.webp");
+        /*background-image: url("/img/spinner-loading-white.webp");*/
         background-repeat: no-repeat;
         background-size: contain;
         user-select: none

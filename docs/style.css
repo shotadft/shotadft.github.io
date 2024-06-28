@@ -804,6 +804,7 @@ main {
     border: 1px solid transparent;
     border-radius: 0.25rem;
     color: #333;
+    background-color: #fff;
     gap: 0.5rem;
     line-height: 1.5;
 }
@@ -816,6 +817,10 @@ main {
     cursor: pointer;
     color: #d4d4d4;
     margin-left: auto;
+}
+
+.hide-box {
+    animation: hideBoxs 1s linear;
 }
 
 @keyframes hideBoxs {
@@ -831,10 +836,6 @@ main {
     100% {
         display: none;
     }
-}
-
-.hide-box {
-    animation: hideBoxs;
 }
 
 .alert-success {
@@ -1131,6 +1132,7 @@ main {
 
     .alert {
         color: #fff;
+        background-color: transparent;
     }
 }
 

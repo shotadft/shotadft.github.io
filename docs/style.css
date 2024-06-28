@@ -820,7 +820,8 @@ main {
 }
 
 .hide-box {
-    animation: hideBoxs 1s linear;
+    animation: hideBoxs 1s ease-in;
+    animation-iteration-count: 1;
 }
 
 @keyframes hideBoxs {
@@ -834,7 +835,6 @@ main {
     }
 
     100% {
-        opacity: 0;
         display: none;
     }
 }

@@ -7,3 +7,7 @@ Sitemap: https://test.shotadft.com/sitemap/sitemap.xml
 
 User-agent: Googlebot-Image
 Disallow: /img/
+Allow: /img/banner.webp
+Allow: /img/ogp.webp
+Allow: /img/icon/favicon.ico
+Allow: /img/appIcon/OpenBrowser.ico

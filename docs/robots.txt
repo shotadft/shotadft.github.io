@@ -16,5 +16,14 @@ Allow: /img/appIcon/OpenBrowser.ico
 User-agent: AhrefsBot
 Disallow: /
 
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: proximic
+Disallow: /
+
 User-agent: DataForSeoBot
 Disallow: /

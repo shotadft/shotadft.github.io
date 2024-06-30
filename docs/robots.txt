@@ -10,4 +10,11 @@ Disallow: /img/
 Allow: /img/banner.webp
 Allow: /img/ogp.webp
 Allow: /img/icon/favicon.ico
+Allow: /img/appIcon/OpenBrowser.webp
 Allow: /img/appIcon/OpenBrowser.ico
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /

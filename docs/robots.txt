@@ -3,7 +3,7 @@ Disallow: /404.html
 Disallow: /sitemap/index.html
 Disallow: /app/OpenBrowser/download/
 Disallow: /tools/tool/nds/youtube_seeker/
-Sitemap: https://test.shotadft.com/sitemap/sitemap.xml
+Sitemap: https://www.shotadft.com/sitemap/sitemap.xml
 
 User-agent: Googlebot-Image
 Disallow: /img/

@@ -120,9 +120,9 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE S
     <script>hljs.highlightAll(); hljs.initLineNumbersOnLoad(); hljs.addPlugin(new CopyButtonPlugin());</script>
     <script src="/script/main.js" charset="utf-8"></script>
     <script>
-        $(function() {
-            var b = false;
-            function MITDialogFunc() {
+        var b = false;
+        function MITDialogFunc() {
+            $(function() {
                 const a = document.getElementById('MIT_dialog');
                 const c = document.getElementById('MIT_dialog_close');
 
@@ -138,8 +138,8 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE S
                     a.close();
                     b = false;
                 });
-            }
-        });
+            });
+        }
     </script>
 </body>
 </html>

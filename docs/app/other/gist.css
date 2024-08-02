@@ -1,16 +1,9 @@
+@charset "UTF-8";
+@import url("/fonts.css");
+
 /*=======
 Gist関連
 =======*/
-
-/* 奇数行と偶数行の背景色を濃いグレーで統一する */
-.gist table tr {
-    background-color: rgba(255, 255, 255, 0.945) !important;
-}
-
-/* 行番号を非表示にする */
-.blob-num {
-    display: none;
-}
 
 .gist-file {
     border-bottom: none !important;
@@ -20,7 +13,7 @@ Gist関連
 table.highlight tr td,
 table.highlight tr td span {
     font-size: 15px !important;
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+    font-family: "Cascadia Code", monospace !important;
 }
 
 /* 上部の余白を開ける */

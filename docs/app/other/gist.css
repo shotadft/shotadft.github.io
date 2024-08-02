@@ -5,11 +5,6 @@
 Gist関連
 =======*/
 
-.gist_frame {
-	height: 250px;
-	width: 1000px;
-}
-
 .gist-file {
     border-bottom: none !important;
 }

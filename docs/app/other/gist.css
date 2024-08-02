@@ -12,11 +12,6 @@ Gist関連
     display: none;
 }
 
-/* ソースコード下部のボックスを非表示にする */
-.gist-meta {
-    display: none;
-}
-
 .gist-file {
     border-bottom: none !important;
 }

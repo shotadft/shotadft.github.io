@@ -76,7 +76,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     </pre></p>
-                    <button type="button" id="MIT_dialog_close"></button>
+                    <button type="button" id="MIT_dialog_close">Close</button>
                 </dialog>
                 <h2>stringEx.h (C++ 17/VC++)</h2>
                 <p>string型に様々な関数を付け足したstringEx型を実装します。<br>
@@ -124,7 +124,6 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE S
         function MITDialogFunc() {
             $(function() {
                 const a = document.getElementById('MIT_dialog');
-                const c = document.getElementById('MIT_dialog_close');
 
                 if (!b) {
                     a.show();
@@ -134,7 +133,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE S
                     b = false;
                 }
 
-                c.onclick(() => {
+                $('#MIT_dialog_close').click(function() {
                     a.close();
                     b = false;
                 });

@@ -5,6 +5,11 @@
 Gist関連
 =======*/
 
+.gist iframe.render-viewer {
+	height: 700px !important;
+	width: 1000px !important;
+}
+
 .gist-file {
     border-bottom: none !important;
 }

@@ -1,0 +1,39 @@
+/*=======
+Gist関連
+=======*/
+
+/* 奇数行と偶数行の背景色を濃いグレーで統一する */
+.gist table tr {
+    background-color: rgba(220, 220, 220, 0.2) !important;
+}
+
+/* 行番号を非表示にする */
+.blob-num {
+    display: none;
+}
+
+/* ソースコード下部のボックスを非表示にする */
+.gist-meta {
+    display: none;
+}
+
+.gist-file {
+    border-bottom: none !important;
+}
+
+/* 文字大きくしてフォント変更する */
+table.highlight tr td,
+table.highlight tr td span {
+    font-size: 15px !important;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+}
+
+/* 上部の余白を開ける */
+.gist tr:first-child td {
+    padding-top: 12px !important;
+}
+
+/* 下部の余白を開ける */
+.gist tr:last-child td {
+    padding-bottom: 12px !important;
+}

@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サイトマップ - Shotadftのホームページ</title>
+    <title>OtherCodes - Shotadftのホームページ</title>
     <meta name="description" content="ただの個人ホームページ。色々とある。">
-    <link rel="icon" href="/img/icon/favicon.ico" />
-    <link rel="apple-touch-icon" href="/img/shotadft_icon_a.png" />
-    <link rel="shortcut icon" href="/img/icon/favicon.ico" />
+    <link rel="icon" href="img/icon/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/shotadft_icon_a.png" />
+    <link rel="shortcut icon" href="img/icon/favicon.ico" />
     <meta name="application-name" content="Shotadftのホームページ">
-    <meta name="msapplication-square150x150logo" content="/img/icon/s150x150.png">
+    <meta name="msapplication-square150x150logo" content="img/icon/s150x150.png">
     <meta name="msapplication-TileColor" content="#fcfc00">
     <meta name="theme-color" content="yellow">
-    <link rel="stylesheet" href="/css/sanitize.css">
+    <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Shotadft0780">
-    <meta property="og:title" content="Shotadftのホームページ - サイトマップ">
-    <meta property="og:url" content="https://www.shotadft.com/sitemap">
+    <meta property="og:title" content="Shotadftのホームページ - OtherCodes">
+    <meta property="og:url" content="https://www.shotadft.com/app/other">
     <meta property="og:image" content="https://www.shotadft.com/img/ogp.webp">
     <meta property="og:site_name" content="Shotadft/承太劇場のホームページ">
     <meta property="og:locale" content="ja_JP">
@@ -30,15 +30,15 @@
     <div class="container">
         <header class="header">
             <div class="header__inner">
-                <h1 class="header__title header-title"><a href="/"><img src="/img/shotadft_icon_a.webp"
-                            oncontextmenu="return false;" height="48" width="48" alt="Shotadftのホームページ" fetchpriority="high"  /></a></h1>
+                <h1 class="header__title header-title"><a href="#"><img src="img/shotadft_icon_a.webp" height="48" width="48" alt="Shotadftのホームページ" fetchpriority="high" /></a></h1>
                 <nav class="header__nav nav" id="js-nav">
                     <ul class="nav__items nav-items">
-                        <li class="nav-items__item"><a href="/" class="active"><i class="fa-solid fa-house"></i>&nbsp;ホーム</a>
+                        <li class="nav-items__item"><a href="#"><i
+                                    class="fa-solid fa-house"></i>&nbsp;ホーム</a>
                         </li>
-                        <li class="nav-items__item"><a href="/tools/"><i class="fa-solid fa-toolbox"></i>&nbsp;自作ツール</a>
+                        <li class="nav-items__item"><a href="tools/"><i class="fa-solid fa-toolbox"></i>&nbsp;自作ツール</a>
                         </li>
-                        <li class="nav-items__item"><a href="/app/">
+                        <li class="nav-items__item"><a href="app/" class="active">
                                 <i class="fa-regular fa-window-maximize"></i>&nbsp;自作アプリ</a></li>
                     </ul>
                 </nav>
@@ -51,9 +51,6 @@
         </header>
         <main>
             <div class="main">
-                <div class="mainImg">
-                    <h1>Shotadftのホームページ<br>サイトマップ</h1>
-                </div>
                 <noscript>
                     <div class="alert alert-warning">
                         <i class="fa-solid fa-triangle-exclamation"></i>
@@ -61,33 +58,23 @@
                         <a onclick="this.parentNode.classList.add('hide-box');"><i class="fa-solid fa-xmark"></i></a>
                     </div>
                 </noscript>
-                <ul>
-                    <li><a href="/"><i class="fa-solid fa-house"></i>&nbsp;ホーム</a></li>
-                    <ul>
-                        <li><i class="fa-solid fa-signs-post"></i>&nbsp;サイトマップ</li>
-                    </ul>
-                    <li><a href="/tools/"><i class="fa-solid fa-toolbox"></i>&nbsp;自作ツール保管庫</a></li>
-                    <ul>
-                        <li><a href="/tools/tool/nds/Oimori/letter_gen/">
-                                <small>おいでよ どうぶつの森</small>手紙バグ用文字列ジェネレーター</a></li>
-                        <li><a href="https://www.shotadft.com/tools/tool/youtube_seeker/">YouTube
-                                Seeker(YouTubeの動画が埋め込み形式で見れるサイト)</a></li>
-                    </ul>
-                    <li><a href="/app/"><i class="fa-regular fa-window-maximize"></i>&nbsp;自作アプリ保管庫</a></li>
-                    <ul>
-                        <li><a href="/app/OpenBrowser/">OpenBrowser</a></li>
-                    </ul>
-                </ul>
+                <h1 class="heading_title">単発コード達(全てMIT License)</h1>
+                <h2>stringEx.h (C++ 17/VC++)</h2>
+                <p>string型に様々な関数を付け足したstringEx型を実装します。<br>
+                使うときは単一ヘッダーライブラリとしてインクルードしてね</p>
+                <div>
+                    <script src="https://gist.github.com/shotadft/0066f002abc587828e98ed039c4bdeb2.js"></script>
+                </div>
             </div>
         </main>
         <footer class="footer">
             <div class="footer-nav">
                 <ul class="footer-nav-group">
-                    <li><a href="https://x.com/Shotadft0780" target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i>&nbsp;Twitter</a>
+                    <li><a href="https://x.com/Shotadft0780" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-x-twitter"></i>&nbsp;Twitter</a>
                     </li>
-                    <li><a href="https://www.youtube.com/channel/UCYEKrS7dINvdGiVm9vjS-rQ" target="_blank" rel="noopener noreferrer"><i
-                                class="fa-brands fa-youtube"></i>&nbsp;YouTube</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCYEKrS7dINvdGiVm9vjS-rQ" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>&nbsp;YouTube</a></li>
                     <li><a href="https://github.com/shotadft" target="_blank" rel="noopener noreferrer"><i
                                 class="fa-brands fa-github"></i>&nbsp;GitHub</a></li>
                 </ul>
@@ -104,7 +91,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/languages/javascript.min.js" integrity="sha512-XrpvbK+zc0wErJG1VptH0H4w4zyiniHOBR35DJ1VISA+cqYxhksvqFwZk0M8lX9ylaIjTXoMYolOPb93zdrGpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
-    <script>hljs.highlightAll();hljs.initLineNumbersOnLoad();hljs.addPlugin(new CopyButtonPlugin());</script>
-    <script src="/script/main.js" charset="utf-8"></script>
+    <script>hljs.highlightAll(); hljs.initLineNumbersOnLoad(); hljs.addPlugin(new CopyButtonPlugin());</script>
+    <script src="script/main.js" charset="utf-8"></script>
 </body>
 </html>

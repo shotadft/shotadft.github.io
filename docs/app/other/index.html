@@ -58,7 +58,7 @@
                         <a onclick="this.parentNode.classList.add('hide-box');"><i class="fa-solid fa-xmark"></i></a>
                     </div>
                 </noscript>
-                <h1 class="heading_title">単発コード達(全て<a href="javascript:(function(){const a=document.getElementById('MIT_dialog');a.show();})">MIT License</a>)</h1>
+                <h1 class="heading_title">単発コード達(全て<a href="javascript:MITDialogFunc();">MIT License</a>)</h1>
                 <dialog id="MIT_dialog">
                     <pre>MIT License
     Copyright 2024 Shotadft.
@@ -104,5 +104,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
     <script>hljs.highlightAll(); hljs.initLineNumbersOnLoad(); hljs.addPlugin(new CopyButtonPlugin());</script>
     <script src="/script/main.js" charset="utf-8"></script>
+    <script>
+        function MITDialogFunc() {
+            const a = document.getElementById('MIT_dialog');
+            a.show();
+        }
+    </script>
 </body>
 </html>

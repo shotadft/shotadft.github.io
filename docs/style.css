@@ -156,28 +156,36 @@ textarea {
     background-color: #fff
 }
 
-dialog[open] {
+dialog {
     background: #fff;
     border: #333 1px solid;
     border-radius: 10px;
     box-shadow: 0 0 10px #666;
     color: #333;
+    opacity: 0;
     transition: opacity .5s ease-in-out;
     width: 80%;
+}
+
+dialog .dialog-inner {
+    padding: 20px 0;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0);
+    transition: background .5s ease-in-out;
+}
+
+dialog.show {
+    opacity: 1;
+}
+
+dialog.show::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+dialog[open] {
     z-index: 9995;
-    &::backdrop {
-        background: rgba(0, 0, 0, 0);
-        transition: background .5s ease-in-out;
-    }
-    &.show {
-        opacity: 1;
-        &::backdrop {
-          background: rgba(0, 0, 0, 0.8);
-        }
-    }
-    .dialog-inner {
-        padding: 20px 0;
-    }
 }
 
 dialog button {

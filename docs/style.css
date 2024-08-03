@@ -165,23 +165,6 @@ dialog {
     opacity: 0;
     transition: opacity .5s ease-in-out;
     width: 80%;
-
-    &::backdrop {
-        background: rgba(0, 0, 0, 0);
-        transition: background .5s ease-in-out;
-    }
-
-    &.show {
-        opacity: 1;
-
-        &::backdrop {
-            background: rgba(0, 0, 0, 0.8);
-        }
-    }
-
-    .dialog-inner {
-        padding: 20px 0;
-    }
 }
 
 dialog button {
@@ -192,11 +175,6 @@ dialog button {
     font-size: 16px;
     padding: 15px 30px;
     transition: all .3s;
-
-    &:hover {
-        background: #333;
-        color: #fff;
-    }
 }
 
 dialog[open] {

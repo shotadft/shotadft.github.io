@@ -169,6 +169,7 @@ dialog {
 
 dialog .dialog-inner {
     padding: 20px 0;
+    line-break: anywhere;
 }
 
 dialog::backdrop {

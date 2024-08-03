@@ -59,7 +59,7 @@
                         <a onclick="this.parentNode.classList.add('hide-box');"><i class="fa-solid fa-xmark"></i></a>
                     </div>
                 </noscript>
-                <h1 class="heading_title">単発コード達(全て<a href="javascript:MITDialogFunc();">MIT License</a>)</h1>
+                <h1 class="heading_title">単発コード達(全て<a href="javascript:void(0);" class="dialog-open">MIT License</a>)</h1>
                 <dialog id="MIT_dialog">
                     <p style="font-family: 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif">
                         MIT&nbsp;License<br>
@@ -76,7 +76,7 @@
                         PARTICULAR&nbsp;PURPOSE&nbsp;AND&nbsp;NONINFRINGEMENT.&nbsp;IN&nbsp;NO&nbsp;EVENT&nbsp;SHALL&nbsp;THE&nbsp;AUTHORS&nbsp;OR&nbsp;COPYRIGHT&nbsp;HOLDERS&nbsp;BE&nbsp;LIABLE&nbsp;FOR&nbsp;ANY&nbsp;CLAIM,&nbsp;DAMAGES&nbsp;OR&nbsp;OTHER&nbsp;LIABILITY,&nbsp;WHETHER&nbsp;IN&nbsp;AN&nbsp;ACTION&nbsp;<br>
                         OF&nbsp;CONTRACT,&nbsp;TORT&nbsp;OR&nbsp;OTHERWISE,&nbsp;ARISING&nbsp;FROM,&nbsp;OUT&nbsp;OF&nbsp;OR&nbsp;IN&nbsp;CONNECTION&nbsp;WITH&nbsp;THE&nbsp;SOFTWARE&nbsp;OR&nbsp;THE&nbsp;USE&nbsp;OR&nbsp;OTHER&nbsp;DEALINGS&nbsp;IN&nbsp;THE&nbsp;SOFTWARE.<br>
                     </p>
-                    <button type="button" id="MIT_dialog_close">Close</button>
+                    <button type="button" class="dialog-close">閉じる</button>
                 </dialog>
                 <h2 id="stringEx_h">stringEx.h (C++ 17/VC++)</h2>
                 <p>string型に様々な関数を付け足したstringEx型を実装します。</p>
@@ -118,26 +118,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
     <script>hljs.highlightAll(); hljs.initLineNumbersOnLoad(); hljs.addPlugin(new CopyButtonPlugin());</script>
     <script src="/script/main.js" charset="utf-8"></script>
-    <script>
-        var b = false;
-        function MITDialogFunc() {
-            $(function() {
-                const a = document.getElementById('MIT_dialog');
-
-                if (!b) {
-                    a.show();
-                    b = true;
-                } else {
-                    a.close();
-                    b = false;
-                }
-
-                $('#MIT_dialog_close').click(function() {
-                    a.close();
-                    b = false;
-                });
-            });
-        }
-    </script>
 </body>
 </html>

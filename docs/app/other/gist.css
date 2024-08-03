@@ -5,6 +5,10 @@
 Gist関連
 =======*/
 
+.gist table tr {
+    background-color: rgba(255, 255, 255, 0.952) !important;
+}
+
 .gist-file {
     border-bottom: none !important;
 }
@@ -24,4 +28,10 @@ table.highlight tr td span {
 /* 下部の余白を開ける */
 .gist tr:last-child td {
     padding-bottom: 12px !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .gist table tr {
+        background-color: rgba(220, 220, 220, 0.952) !important;
+    }
 }

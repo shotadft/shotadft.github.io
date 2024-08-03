@@ -156,7 +156,7 @@ textarea {
     background-color: #fff
 }
 
-dialog {
+dialog[open] {
     background: #fff;
     border: #333 1px solid;
     border-radius: 10px;
@@ -1075,7 +1075,7 @@ main {
         width: 100%;
     }
 
-    dialog {
+    dialog[open] {
         width: 80%;
     }
 
@@ -1127,7 +1127,6 @@ main {
     }
 
     img {
-        /*background-image: url("/img/spinner-loading-white.webp");*/
         background-repeat: no-repeat;
         background-size: contain;
         user-select: none

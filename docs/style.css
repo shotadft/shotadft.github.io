@@ -176,6 +176,11 @@ dialog button {
     transition: all .3s;
 }
 
+dialog button:hover {
+    background: #333;
+    color: #fff;
+}
+
 dialog[open] {
     z-index: 9995;
 }

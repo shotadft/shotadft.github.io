@@ -164,6 +164,7 @@ dialog[open] {
     color: #333;
     transition: opacity .5s ease-in-out;
     width: 80%;
+    z-index: 9995;
 }
 
 dialog button {
@@ -179,10 +180,6 @@ dialog button {
 dialog button:hover {
     background: #333;
     color: #fff;
-}
-
-dialog[open] {
-    z-index: 9995;
 }
 
 textarea:read-only {

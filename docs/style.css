@@ -162,7 +162,6 @@ dialog[open] {
     border-radius: 10px;
     box-shadow: 0 0 10px #666;
     color: #333;
-    opacity: 0;
     transition: opacity .5s ease-in-out;
     width: 80%;
 }

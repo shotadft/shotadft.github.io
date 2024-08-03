@@ -156,6 +156,49 @@ textarea {
     background-color: #fff
 }
 
+dialog {
+    background: #fff;
+    border: #333 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #666;
+    color: #333;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    width: 80%;
+
+    &::backdrop {
+        background: rgba(0, 0, 0, 0);
+        transition: background .5s ease-in-out;
+    }
+
+    &.show {
+        opacity: 1;
+
+        &::backdrop {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .dialog-inner {
+        padding: 20px 0;
+    }
+}
+
+dialog button {
+    background: #fff;
+    border: #333 3px solid;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 30px;
+    transition: all .3s;
+
+    &:hover {
+        background: #333;
+        color: #fff;
+    }
+}
+
 dialog[open] {
     z-index: 9995;
 }
@@ -1054,7 +1097,7 @@ main {
         width: 100%;
     }
 
-    dialog[open] {
+    dialog {
         width: 80%;
     }
 
@@ -1087,6 +1130,7 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
+
     body,
     textarea,
     .footer,
@@ -1199,6 +1243,7 @@ main {
 }
 
 @media screen and (max-width: 1023px) and (prefers-color-scheme: dark) {
+
     .header,
     .header__nav {
         background-color: rgba(21, 32, 41, 0.95);

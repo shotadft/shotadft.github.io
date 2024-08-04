@@ -44,6 +44,10 @@ table.highlight tr td span {
         color: #96d0ff !important;
     }
 
+    .gist .blob-code-inner .pl-pds {
+        color: #96d0ff !important;
+    }
+
     .gist .blob-code-inner .pl-c {
         color: #768390 !important;
     }

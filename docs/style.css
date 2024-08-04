@@ -353,7 +353,7 @@ tfoot {
 }
 
 th,
-td:not(.gist .blob-num) {
+td:not(.gist .blob-num):not(.gist .blob-code) {
     border: 1px solid #a0a0a0;
     padding: 8px 10px;
 }

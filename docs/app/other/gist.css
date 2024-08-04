@@ -33,6 +33,6 @@ table.highlight tr td span {
     }
 
     .gist .blob-code-inner {
-        color: #fff;
+        color: #fff !important;
     }
 }

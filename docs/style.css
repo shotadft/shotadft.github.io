@@ -169,7 +169,7 @@ dialog {
 
 dialog .dialog-inner {
     padding: 20px 0;
-    line-height: 2.5px;
+    line-height: 1.25em;
     line-break: anywhere;
 }
 

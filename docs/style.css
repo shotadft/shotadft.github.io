@@ -169,12 +169,13 @@ dialog {
 
 dialog .dialog-inner {
     padding: 20px 0;
+    line-height: 2.5px;
     line-break: anywhere;
 }
 
 dialog::backdrop {
     background: rgba(0, 0, 0, 0);
-    transition: background .5s ease-in-out;
+    transition: background-color .5s ease-in-out;
 }
 
 dialog.show {
@@ -352,7 +353,7 @@ tfoot {
 }
 
 th,
-td {
+td:not(.blob-num) {
     border: 1px solid #a0a0a0;
     padding: 8px 10px;
 }
@@ -1131,7 +1132,6 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
-
     body,
     textarea,
     .footer,
@@ -1141,7 +1141,6 @@ main {
     .newsInner,
     .news_list_item a {
         background-color: #15202B;
-        background: #15202B;
         color: #ededed;
     }
 
@@ -1155,13 +1154,17 @@ main {
         user-select: none
     }
 
+    dialog {
+        background: #15202B;
+        color: #ededed;
+    }
+
     .news_item {
         color: #333;
     }
 
     details summary {
         background-color: #15202B;
-        background: #15202B;
     }
 
     .header {

@@ -35,4 +35,24 @@ table.highlight tr td span {
     .gist .blob-code-inner {
         color: #fff !important;
     }
+
+    .gist .blob-code-inner .pl-k {
+        color: #f47067 !important;
+    }
+
+    .gist .blob-code-inner .pl-s {
+        color: #96d0ff !important;
+    }
+
+    .gist .blob-code-inner .pl-c {
+        color: #768390 !important;
+    }
+
+    .gist .blob-code-inner .pl-c1 {
+        color: #6cb6ff !important;
+    }
+
+    .gist .blob-code-inner .pl-en {
+        color: #dcbdfb !important;
+    }
 }

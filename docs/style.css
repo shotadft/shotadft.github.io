@@ -177,16 +177,13 @@ dialog::backdrop {
     transition: background .5s ease-in-out;
 }
 
-dialog.show {
+dialog[open] {
+    z-index: 9995;
     opacity: 1;
 }
 
-dialog.show::backdrop {
+dialog[open]::backdrop {
     background: rgba(0, 0, 0, 0.8);
-}
-
-dialog[open] {
-    z-index: 9995;
 }
 
 dialog button {

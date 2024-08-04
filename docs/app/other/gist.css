@@ -13,25 +13,22 @@ Gist関連
     border-bottom: none !important;
 }
 
-/* 文字大きくしてフォント変更する */
 table.highlight tr td,
 table.highlight tr td span {
     font-size: 15px !important;
     font-family: "Cascadia Code", monospace !important;
 }
 
-/* 上部の余白を開ける */
 .gist tr:first-child td {
     padding-top: 12px !important;
 }
 
-/* 下部の余白を開ける */
 .gist tr:last-child td {
     padding-bottom: 12px !important;
 }
 
 @media (prefers-color-scheme: dark) {
     .gist table tr {
-        background-color: rgba(192, 192, 192, 0.815) !important;
+        background-color: rgba(97, 97, 97, 0.815) !important;
     }
 }

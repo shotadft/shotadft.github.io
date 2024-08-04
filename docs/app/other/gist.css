@@ -30,5 +30,6 @@ table.highlight tr td span {
 @media (prefers-color-scheme: dark) {
     .gist table tr {
         background-color: #15202be9 !important;
+        color: #fff;
     }
 }

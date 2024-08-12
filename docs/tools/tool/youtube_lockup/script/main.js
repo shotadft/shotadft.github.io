@@ -1,7 +1,9 @@
 $(function(){
     const mv_frame = $("#movie_frame");
     const inputURL = $("#urlInput");
-    const movieId = extractYouTubeId(inputURL);
+    const button = $("#mv_submit");
+    const movieId = '';
+
     function extractYouTubeId(url='') {
         let id = '';
         const regex = /(?:\/|v=)([A-Za-z0-9_-]{11})(?:\?|&|$)/;
@@ -11,5 +13,9 @@ $(function(){
         }
         return id;
     }
-    console.log(movieId);
+
+    button.submit(function() {
+        movieId = extractYouTubeId(inputURL);
+        console.log(movieId);     
+    });
 });

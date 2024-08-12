@@ -8,11 +8,19 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://www.shotadft.com/tools/tool/nds/Oimori/letter_gen/</loc>
+    <priority>0.60</priority>
+  </url>
+  <url>
     <loc>https://www.shotadft.com/app/</loc>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.shotadft.com/app/OpenBrowser/</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.shotadft.com/app/other/</loc>
     <priority>0.64</priority>
   </url>
 </urlset>

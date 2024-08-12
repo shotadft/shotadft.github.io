@@ -17,7 +17,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-
+<body style="background-color: #f8f8f8;">
+    <div class="container">
+        <main>
+            <div class="main" style="margin: 90px 8px 8px 8px;">
+                <header class="header">
+                    <div class="header__inner">
+                        <h1 class="header__title header-title"><a href="/"><img src="/img/shotadft_icon_a.webp"
+                                    oncontextmenu="return false;" height="48" width="48" alt="Shotadftのホームページ"
+                                    fetchpriority="high" /></a></h1>
+                        <nav class="header__nav nav" id="js-nav">
+                            <ul class="nav__items nav-items">
+                                <li class="nav-items__item"><a href="/"><i class="fa-solid fa-house"></i>&nbsp;ホーム</a>
+                                </li>
+                                <li class="nav-items__item"><a href="/tools/" class="active"><i
+                                            class="fa-solid fa-toolbox"></i>&nbsp;自作ツール</a>
+                                </li>
+                                <li class="nav-items__item"><a href="/app/">
+                                        <i class="fa-regular fa-window-maximize"></i>&nbsp;自作アプリ</a></li>
+                            </ul>
+                        </nav>
+                        <button type="button" class="header__hamburger hamburger" id="js-hamburger"
+                            aria-label="HamburgerMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </header>
+                <h1>YouTube Lockup</h1>
+                <form>
+                    <input type="text" placeholder="YouTube 動画URLを入力して下さい"><button type="submit" id="mv_submit">視聴</button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-nav">
+                <ul class="footer-nav-group">
+                    <li><a href="https://x.com/Shotadft0780" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-x-twitter"></i>&nbsp;Twitter</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCYEKrS7dINvdGiVm9vjS-rQ" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>&nbsp;YouTube</a></li>
+                    <li><a href="https://github.com/shotadft" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i>&nbsp;GitHub</a></li>
+                </ul>
+            </div>
+            <span class="footer-copyright"><span aria-label="Copyright">&copy;</span>2022-2024 Shotadft. All Rights
+                reserved.<br>
+                - 一部を除き、当サイトのコンテンツ(画像、動画、ソフトウェア等)の無断転載及び自作発言などは禁止とします。</span>
+        </footer>
+    </div>
 </body>
 </html>

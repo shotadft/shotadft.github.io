@@ -24,9 +24,9 @@
             <a onclick="this.parentNode.classList.add('hide-box');"><i class="fa-solid fa-xmark"></i></a>
         </div>
     </noscript>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-    <script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script type="text/javascript">
         $(function() { const n = document.getElementById("seconds"); for (let i = 5; i >= 0; i--)!function (i) { setTimeout((function() { n.textContent = `ダウンロードまで...${i}`, 0 === i && (n.innerHTML = '<a download href=\"https://github.com/shotadft/OpenBrowser/releases/download/v1.0.3/OpenBrowser_v1.0.3r1_Setup.zip\">始まらなかったらここをクリック(ミラー)</a>') }), 1e3 * (5 - i)) }(i) });
     </script>
     <p id="seconds"></p>

@@ -16,6 +16,7 @@ $(function(){
 
     button.submit(function() {
         movieId = extractYouTubeId(inputURL);
-        console.log(movieId);     
+        console.log(movieId);
+        return false;
     });
 });

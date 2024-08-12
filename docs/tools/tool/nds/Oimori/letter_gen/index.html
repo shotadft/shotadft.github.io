@@ -22,100 +22,103 @@
     <meta property="og:locale" content="ja_JP">
 </head>
 <body>
-    <main>
-        <div class="main">
-            <header class="header">
-                <div class="header__inner">
-                    <h1 class="header__title header-title"><a href="/"><img src="/img/shotadft_icon_a.webp"
-                                oncontextmenu="return false;" height="48" width="48" alt="Shotadftのホームページ"
-                                fetchpriority="high" /></a></h1>
-                    <nav class="header__nav nav" id="js-nav">
-                        <ul class="nav__items nav-items">
-                            <li class="nav-items__item"><a href="/"><i class="fa-solid fa-house"></i>&nbsp;ホーム</a>
-                            </li>
-                            <li class="nav-items__item"><a href="#" class="active"><i
-                                        class="fa-solid fa-toolbox"></i>&nbsp;自作ツール</a>
-                            </li>
-                            <li class="nav-items__item"><a href="/app/">
-                                    <i class="fa-regular fa-window-maximize"></i>&nbsp;自作アプリ</a></li>
-                        </ul>
-                    </nav>
-                    <button type="button" class="header__hamburger hamburger" id="js-hamburger"
-                        aria-label="HamburgerMenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </header>
-            <h1>手紙バグ用文字列ジェネレーター</h1>
-            <h2>これって何？</h2>
-            <p>「おいでよ どうぶつの森」の手紙バグ用ツール君。それ以上でもそれ以下でも無い。</p>
-            <p>なお、入力不可能文字の関係で入手できないアイテムもリストにあります。ご了承ください。</p>
-            <noscript>
-                <div class="alert alert-error">
-                    <i class="fa-solid fa-circle-xmark"></i>
-                    <p>警告: このツールはJavaScriptで動いているから、JavaScriptを有効にしてから来てくれ。</p>
-                    <a onclick="this.parentNode.classList.add('hide-box');"><i class="fa-solid fa-xmark"></i></a>
-                </div>
-            </noscript>
-            <h2>ツール</h2>
-            <table id="letter_gen" style="border: 0px;">
-                <tbody>
-                    <tr>
-                        <td>
-                            <form id="mainform">
-                                <div id="itemlist"></div>
-                                <label for="money">所持金</label><input type="number" id="money" min="0" value="1"
-                                    required><br>
-                                <button type="submit">生成</button><button type="reset">クリア</button>
-                                <button type="button" onclick="$('#result').val('');">出力結果のクリア</button><button
-                                    type="button"
-                                    onclick="navigator.clipboard.writeText($('#result').val());">コピー</button>
-                            </form>
-                        </td>
-                        <td>
-                            <form id="searchform">
-                                <label aria-label="検索欄">
-                                    <input type="text" id="search" value=""><button type="submit">検索</button><br>
-                                    <select id="search_result" size="15" style="width: 200px;">
+    <div class="container">
+        <main>
+            <div class="main">
+                <header class="header">
+                    <div class="header__inner">
+                        <h1 class="header__title header-title"><a href="/"><img src="/img/shotadft_icon_a.webp"
+                                    oncontextmenu="return false;" height="48" width="48" alt="Shotadftのホームページ"
+                                    fetchpriority="high" /></a></h1>
+                        <nav class="header__nav nav" id="js-nav">
+                            <ul class="nav__items nav-items">
+                                <li class="nav-items__item"><a href="/"><i class="fa-solid fa-house"></i>&nbsp;ホーム</a>
+                                </li>
+                                <li class="nav-items__item"><a href="#" class="active"><i
+                                            class="fa-solid fa-toolbox"></i>&nbsp;自作ツール</a>
+                                </li>
+                                <li class="nav-items__item"><a href="/app/">
+                                        <i class="fa-regular fa-window-maximize"></i>&nbsp;自作アプリ</a></li>
+                            </ul>
+                        </nav>
+                        <button type="button" class="header__hamburger hamburger" id="js-hamburger"
+                            aria-label="HamburgerMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </header>
+                <h1>手紙バグ用文字列ジェネレーター</h1>
+                <h2>これって何？</h2>
+                <p>「おいでよ どうぶつの森」の手紙バグ用ツール君。それ以上でもそれ以下でも無い。</p>
+                <p>なお、入力不可能文字の関係で入手できないアイテムもリストにあります。ご了承ください。</p>
+                <noscript>
+                    <div class="alert alert-error">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                        <p>警告: このツールはJavaScriptで動いているから、JavaScriptを有効にしてから来てくれ。</p>
+                        <a onclick="this.parentNode.classList.add('hide-box');"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                </noscript>
+                <h2>ツール</h2>
+                <table id="letter_gen" style="border: 0px;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <form id="mainform">
+                                    <div id="itemlist"></div>
+                                    <label for="money">所持金</label><input type="number" id="money" min="0" value="1"
+                                        required><br>
+                                    <button type="submit">生成</button><button type="reset">クリア</button>
+                                    <button type="button" onclick="$('#result').val('');">出力結果のクリア</button><button
+                                        type="button"
+                                        onclick="navigator.clipboard.writeText($('#result').val());">コピー</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form id="searchform">
+                                    <label aria-label="検索欄">
+                                        <input type="text" id="search" value=""><button type="submit">検索</button><br>
+                                        <select id="search_result" size="15" style="width: 200px;">
 
-                                    </select>
-                                    <button type="button" id="insertlist">入力</button>
-                                </label>
-                            </form>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <textarea id="result" rows="5" cols="80" style="resize:none;" placeholder="欲しいアイテムを選択してから、生成ボタンを押してください。"
-                readonly></textarea>
-            <hr>
-            <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br>
-                <label><input type="radio" name="intype" value="10" checked>10進</label>
-                <label><input type="radio" name="intype" value="16">16進</label><br>
-                <input type="number" value="0" id="input_cnv" maxlength="8" min="0" required> -&gt; <input type="text"
-                    value="[NUL 00]" id="output_cnv" readonly>
-                <button type="submit">変換</button>
-            </form>
-            <hr>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer-nav">
-            <ul class="footer-nav-group">
-                <li><a href="https://x.com/Shotadft0780" target="_blank"
-                        rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i>&nbsp;Twitter</a>
-                </li>
-                <li><a href="https://www.youtube.com/channel/UCYEKrS7dINvdGiVm9vjS-rQ" target="_blank" rel="noopener noreferrer"><i
-                            class="fa-brands fa-youtube"></i>&nbsp;YouTube</a></li>
-                <li><a href="https://github.com/shotadft" target="_blank" rel="noopener noreferrer"><i
-                            class="fa-brands fa-github"></i>&nbsp;GitHub</a></li>
-            </ul>
-        </div>
-        <span class="footer-copyright"><span aria-label="Copyright">&copy;</span>2022-2024 Shotadft. All Rights reserved.<br>
-            - 一部を除き、当サイトのコンテンツ(画像、動画、ソフトウェア等)の無断転載及び自作発言などは禁止とします。</span>
-    </footer>
+                                        </select>
+                                        <button type="button" id="insertlist">入力</button>
+                                    </label>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <textarea id="result" rows="5" cols="80" style="resize:none;"
+                    placeholder="欲しいアイテムを選択してから、生成ボタンを押してください。" readonly></textarea>
+                <hr>
+                <form id="converter"> おまけ: 数値 -&gt; 文字列コンバータ(4byte用)<br> 2byteで使う場合は最初の[NUL 00] 2つを無視してください。<br>
+                    <label><input type="radio" name="intype" value="10" checked>10進</label>
+                    <label><input type="radio" name="intype" value="16">16進</label><br>
+                    <input type="number" value="0" id="input_cnv" maxlength="8" min="0" required> -&gt; <input
+                        type="text" value="[NUL 00]" id="output_cnv" readonly>
+                    <button type="submit">変換</button>
+                </form>
+                <hr>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-nav">
+                <ul class="footer-nav-group">
+                    <li><a href="https://x.com/Shotadft0780" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-x-twitter"></i>&nbsp;Twitter</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCYEKrS7dINvdGiVm9vjS-rQ" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i>&nbsp;YouTube</a></li>
+                    <li><a href="https://github.com/shotadft" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i>&nbsp;GitHub</a></li>
+                </ul>
+            </div>
+            <span class="footer-copyright"><span aria-label="Copyright">&copy;</span>2022-2024 Shotadft. All Rights
+                reserved.<br>
+                - 一部を除き、当サイトのコンテンツ(画像、動画、ソフトウェア等)の無断転載及び自作発言などは禁止とします。</span>
+        </footer>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous"></script>
     <script src="script/dataset.js" charset="utf-8"></script>

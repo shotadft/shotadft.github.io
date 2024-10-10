@@ -117,6 +117,12 @@ pre code.hljs {
     font-weight: 300
 }
 
+table.highlight tbody tr td,
+table.highlight tbody tr td span {
+    font-size: 15px !important;
+    font-family: "Cascadia Code", monospace !important;
+}
+
 ol,
 ul,
 li {
@@ -325,7 +331,7 @@ q:after {
     content: "";
 }
 
-table:not(code.hljs table.hljs-ln) {
+table {
     border-collapse: collapse;
     border: 2px solid #8c8c8c;
     border-spacing: 0;
@@ -349,7 +355,7 @@ tfoot {
 }
 
 th,
-td:not(.gist .blob-num):not(.gist .blob-code):not(table#letter_gen tbody tr td):not(code.hljs table.hljs-ln tbody tr td.hljs-ln-line.hljs-ln-numbers):not(code.hljs table.hljs-ln tbody tr td.hljs-ln-line.hljs-ln-code) {
+td:not(.gist .blob-num):not(.gist .blob-code):not(table#letter_gen tbody tr td):not(pre code.hljs table.hljs-ln tbody tr td):not(pre code.hljs table.hljs-ln tbody tr td) {
     border: 1px solid #a0a0a0;
     padding: 8px 10px;
 }

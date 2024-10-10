@@ -13,8 +13,8 @@ Gist関連
     border-bottom: none !important;
 }
 
-table.highlight tr td,
-table.highlight tr td span {
+table.highlight tbody tr td,
+table.highlight tbody tr td span {
     font-size: 15px !important;
     font-family: "Cascadia Code", monospace !important;
 }

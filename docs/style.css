@@ -104,8 +104,8 @@ div#page_top:not(a),
 a:not(.button_dl):not(.hide-box),
 time,
 p,
-span:not(.summary_inner):not(.detailsIcon),
-pre:not(code.hljs):not(button.hljs-copy-button) {
+span>:not(.summary_inner):not(.detailsIcon),
+pre>:not(code.hljs):not(button.hljs-copy-button) {
     width: fit-content;
     text-align: justify
 }

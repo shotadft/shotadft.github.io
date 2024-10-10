@@ -331,7 +331,7 @@ q:after {
     content: "";
 }
 
-table {
+table:not(pre code.hljs table.hljs-ln) {
     border-collapse: collapse;
     border: 2px solid #8c8c8c;
     border-spacing: 0;

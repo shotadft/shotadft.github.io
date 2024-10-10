@@ -104,17 +104,17 @@ div#page_top:not(a),
 a:not(.button_dl):not(.hide-box),
 time,
 p,
-span>:not(.summary_inner):not(.detailsIcon),
-pre>:not(code.hljs):not(button.hljs-copy-button) {
+span :not(.summary_inner):not(.detailsIcon),
+pre :not(code.hljs):not(button.hljs-copy-button) {
     width: fit-content;
     text-align: justify
 }
 
 code,
 pre code.hljs {
-    font-family: "Cascadia Code", monospace;
-    font-style: normal;
-    font-weight: 300
+    font-family: "Cascadia Code", monospace !important;
+    font-style: normal !important;
+    font-weight: 300 !important
 }
 
 ol,

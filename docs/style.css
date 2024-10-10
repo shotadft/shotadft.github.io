@@ -353,7 +353,7 @@ tfoot {
 }
 
 th,
-td:not(.gist .blob-num):not(.gist .blob-code):not(table#letter_gen tbody tr td):not(pre code.hljs table.hljs-ln tbody tr td.hljs-ln-line.hljs-ln-numbers) {
+td:not(.gist .blob-num):not(.gist .blob-code):not(table#letter_gen tbody tr td):not(code.hljs table.hljs-ln tbody tr td.hljs-ln-line.hljs-ln-numbers):not(code.hljs table.hljs-ln tbody tr td.hljs-ln-line.hljs-ln-code) {
     border: 1px solid #a0a0a0;
     padding: 8px 10px;
 }

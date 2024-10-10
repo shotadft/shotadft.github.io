@@ -24,11 +24,11 @@
             <a onclick="this.parentNode.classList.add('hide-box');"><i class="fa-solid fa-xmark"></i></a>
         </div>
     </noscript>
+    <p id="seconds"></p>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-    <script type="text/javascript">
-        $(function() { const n = document.getElementById("seconds"); for (let i = 5; i >= 0; i--)!function (i) { setTimeout((function() { n.textContent = `ダウンロードまで...${i}`, 0 === i && (n.innerHTML = '<a download href=\"https://github.com/shotadft/OpenBrowser/releases/download/v1.0.3/OpenBrowser_v1.0.3r1_Setup.zip\">始まらなかったらここをクリック(ミラー)</a>') }), 1e3 * (5 - i)) }(i) });
+    <script type="text/javascript" defer>
+        $(function() { const n = document.getElementById("seconds"); for (let i = 5; i >= 0; i--)!function (i) { setTimeout((function() { n.textContent = `\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u307e\u3067...${i}`, 0 === i && (n.innerHTML = '<a download href=\"https://github.com/shotadft/OpenBrowser/releases/download/v1.0.3/OpenBrowser_v1.0.3r1_Setup.zip\">\u59cb\u307e\u3089\u306a\u304b\u3063\u305f\u3089\u3053\u3053\u3092\u30af\u30ea\u30c3\u30af(\u30df\u30e9\u30fc)</a>') }), 1e3 * (5 - i)) }(i) });
     </script>
-    <p id="seconds"></p>
 </body>
 </html>

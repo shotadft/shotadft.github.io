@@ -355,7 +355,7 @@ tfoot {
 }
 
 th,
-td:not(.gist .blob-num):not(.gist .blob-code):not(table#letter_gen tbody tr td):not(pre code.hljs table.hljs-ln tbody tr td):not(pre code.hljs table.hljs-ln tbody tr td) {
+td:not(.gist .blob-num):not(.gist .blob-code):not(table#letter_gen tbody tr td):not(pre code.hljs table.hljs-ln tbody tr td) {
     border: 1px solid #a0a0a0;
     padding: 8px 10px;
 }

@@ -358,7 +358,7 @@ td:last-of-type {
     text-align: center;
 }
 
-tbody>tr:nth-of-type(even) {
+tbody>tr:nth-of-type(even):not(table#letter_gen>tbody tr):not(pre code.hljs>table.hljs-ln tbody tr) {
     background-color: #edeef2;
 }
 
